@@ -1,31 +1,64 @@
-/* =========================
-   PORTADA
-========================= */
+/* ==================================================
+   PORTADA UBICACIÓN
+================================================== */
 
 .portada-ubicacion {
-    min-height: 350px;
+    min-height: 380px;
+
     display: flex;
     align-items: center;
 
-    padding: 60px 0;
+    background-color: var(--color-fondo-suave);
 
-    background-color: #292929;
-    color: white;
+    padding: 80px 0;
+}
+
+.portada-ubicacion .portada-contenido {
+    max-width: 750px;
 }
 
 .portada-ubicacion h1 {
-    font-size: 3rem;
-    font-weight: 700;
+    color: var(--color-principal);
+
+    font-size: 3.2rem;
+    font-weight: 800;
+
+    margin-bottom: 20px;
 }
 
 .portada-ubicacion p {
-    max-width: 650px;
+    color: var(--color-texto-suave);
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    margin-bottom: 0;
 }
 
 
-/* =========================
-   UBICACIÓN
-========================= */
+/* ==================================================
+   SECCIÓN UBICACIÓN
+================================================== */
+
+.ubicacion {
+    background-color: #ffffff;
+
+    padding: 90px 0 !important;
+}
+
+.ubicacion h2 {
+    color: var(--color-principal);
+
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   MAPA
+================================================== */
 
 .mapa-placeholder {
     width: 100%;
@@ -35,21 +68,125 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #e5e5e5;
-    border-radius: 10px;
+    background-color: var(--color-fondo-suave);
+
+    border: 1px solid #e5ebe8;
+    border-radius: 16px;
+
+    overflow: hidden;
 }
 
 .mapa-placeholder p {
+    color: var(--color-texto-suave);
+
     font-weight: 600;
+
     margin: 0;
 }
 
+
+/* ==================================================
+   INFORMACIÓN DE UBICACIÓN
+================================================== */
+
 .ubicacion-info {
-    padding: 30px;
+    height: 100%;
+
+    padding: 35px;
+
+    background-color: var(--color-fondo-suave);
+
+    border: 1px solid #e5ebe8;
+    border-radius: 16px;
 }
 
 .ubicacion-info h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+}
+
+.ubicacion-info p {
+    color: var(--color-texto-suave);
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   DATOS
+================================================== */
+
+.ubicacion-dato {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.ubicacion-icono {
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e8f2ee;
+    color: var(--color-principal);
+
+    border-radius: 12px;
+
+    font-size: 1.3rem;
+}
+
+.ubicacion-dato h5 {
+    color: var(--color-principal);
+
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 25px;
+
+    margin-bottom: 5px;
+}
+
+.ubicacion-dato p {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .portada-ubicacion {
+        min-height: 300px;
+
+        padding: 60px 0;
+    }
+
+    .portada-ubicacion h1 {
+        font-size: 2.3rem;
+    }
+
+    .portada-ubicacion p {
+        font-size: 1rem;
+    }
+
+    .ubicacion {
+        padding: 60px 0 !important;
+    }
+
+    .ubicacion h2 {
+        font-size: 2rem;
+    }
+
+    .mapa-placeholder {
+        height: 300px;
+    }
+
+    .ubicacion-info {
+        padding: 30px;
+    }
 }

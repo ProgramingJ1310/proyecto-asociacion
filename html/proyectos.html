@@ -1,364 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Proyectos | Asociación de Vivienda</title>
 
     <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/proyectos.css">
-</head>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
-<body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS general -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- CSS de proyectos -->
+    <link rel="stylesheet" href="../css/proyectos.css" />
+  </head>
+
+  <body>
     <!-- =========================
          NAVBAR
     ========================== -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
+      <div class="container">
+        <!-- LOGO / NOMBRE -->
 
-        <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <span class="logo-temporal">
+            <i class="bi bi-house-door-fill"></i>
+          </span>
 
-            <a class="navbar-brand" href="index.html">
-                Asociación
-            </a>
+          <span>Virgen de Loreto</span>
+        </a>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- BOTÓN CELULAR -->
 
-            <div class="collapse navbar-collapse" id="menuPrincipal">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <ul class="navbar-nav ms-auto">
+        <!-- MENÚ -->
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Inicio </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html"> Nosotros </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="proyectos.html">Proyectos</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="proyectos.html"> Proyectos </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html"> Galería </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html"> Ubicación </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"> Contacto </a>
+            </li>
 
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-outline-light" href="#">
-                            Portal del socio
-                        </a>
-                    </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-portal" href="#">
+                <i class="bi bi-person-circle me-1"></i>
 
-                </ul>
-
-            </div>
-
+                Portal del socio
+              </a>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
-
 
     <!-- =========================
          PORTADA
     ========================== -->
 
     <section class="portada-proyectos">
+      <div class="container">
+        <p class="seccion-etiqueta">Nuestra comunidad</p>
 
-        <div class="container">
+        <h1>Nuestros proyectos</h1>
 
-            <p class="seccion-etiqueta">
-                Nuestra comunidad
-            </p>
-
-            <h1>Nuestros proyectos</h1>
-
-            <p>
-                Conoce los proyectos realizados y las iniciativas
-                que tenemos previstas para nuestra comunidad.
-            </p>
-
-        </div>
-
+        <p>
+          Conoce los proyectos realizados y las iniciativas que tenemos
+          previstas para nuestra comunidad.
+        </p>
+      </div>
     </section>
-
 
     <!-- =========================
          PROYECTOS REALIZADOS
     ========================== -->
 
     <section class="proyectos-realizados py-5">
-
-        <div class="container">
-
-            <div class="mb-5">
-                <p class="seccion-etiqueta">Proyectos</p>
-                <h2>Proyectos realizados</h2>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Proyecto 1 -->
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card h-100">
-
-                        <img
-                            src="../img/proyecto1.jpg"
-                            class="card-img-top"
-                            alt="Proyecto realizado"
-                        >
-
-                        <div class="card-body">
-
-                            <span class="badge text-bg-success mb-2">
-                                Realizado
-                            </span>
-
-                            <h5 class="card-title">
-                                Proyecto realizado 1
-                            </h5>
-
-                            <p class="card-text">
-                                Breve descripción del proyecto realizado.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Proyecto 2 -->
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card h-100">
-
-                        <img
-                            src="../img/proyecto2.jpg"
-                            class="card-img-top"
-                            alt="Proyecto realizado"
-                        >
-
-                        <div class="card-body">
-
-                            <span class="badge text-bg-success mb-2">
-                                Realizado
-                            </span>
-
-                            <h5 class="card-title">
-                                Proyecto realizado 2
-                            </h5>
-
-                            <p class="card-text">
-                                Breve descripción del proyecto realizado.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Proyecto 3 -->
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card h-100">
-
-                        <img
-                            src="../img/proyecto3.jpg"
-                            class="card-img-top"
-                            alt="Proyecto realizado"
-                        >
-
-                        <div class="card-body">
-
-                            <span class="badge text-bg-success mb-2">
-                                Realizado
-                            </span>
-
-                            <h5 class="card-title">
-                                Proyecto realizado 3
-                            </h5>
-
-                            <p class="card-text">
-                                Breve descripción del proyecto realizado.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+      <div class="container">
+        <div class="mb-5">
+          <p class="seccion-etiqueta">Proyectos</p>
+          <h2>Proyectos realizados</h2>
         </div>
 
-    </section>
+        <div class="row g-4">
+          <!-- Proyecto 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="../img/proyecto1.jpg"
+                class="card-img-top"
+                alt="Proyecto realizado"
+              />
 
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2"> Realizado </span>
+
+                <h5 class="card-title">Proyecto realizado 1</h5>
+
+                <p class="card-text">
+                  Breve descripción del proyecto realizado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="../img/proyecto2.jpg"
+                class="card-img-top"
+                alt="Proyecto realizado"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2"> Realizado </span>
+
+                <h5 class="card-title">Proyecto realizado 2</h5>
+
+                <p class="card-text">
+                  Breve descripción del proyecto realizado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="../img/proyecto3.jpg"
+                class="card-img-top"
+                alt="Proyecto realizado"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2"> Realizado </span>
+
+                <h5 class="card-title">Proyecto realizado 3</h5>
+
+                <p class="card-text">
+                  Breve descripción del proyecto realizado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- =========================
          PROYECTOS FUTUROS
     ========================== -->
 
     <section class="proyectos-futuros py-5">
-
-        <div class="container">
-
-            <div class="mb-5">
-                <p class="seccion-etiqueta">Próximamente</p>
-                <h2>Proyectos futuros</h2>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Proyecto futuro 1 -->
-                <div class="col-md-6">
-
-                    <div class="proyecto-futuro">
-
-                        <span class="badge text-bg-warning mb-3">
-                            Proyecto futuro
-                        </span>
-
-                        <h3>Proyecto futuro 1</h3>
-
-                        <p>
-                            Breve descripción de una iniciativa
-                            planificada para la asociación.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Proyecto futuro 2 -->
-                <div class="col-md-6">
-
-                    <div class="proyecto-futuro">
-
-                        <span class="badge text-bg-warning mb-3">
-                            Proyecto futuro
-                        </span>
-
-                        <h3>Proyecto futuro 2</h3>
-
-                        <p>
-                            Breve descripción de una iniciativa
-                            planificada para la asociación.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+      <div class="container">
+        <div class="mb-5">
+          <p class="seccion-etiqueta">Próximamente</p>
+          <h2>Proyectos futuros</h2>
         </div>
-
-    </section>
-<footer class="footer">
-
-    <div class="container">
 
         <div class="row g-4">
+          <!-- Proyecto futuro 1 -->
+          <div class="col-md-6">
+            <div class="proyecto-futuro">
+              <div class="proyecto-icono">
+                <i class="bi bi-lightbulb"></i>
+              </div>
 
-            <!-- Asociación -->
-            <div class="col-md-6 col-lg-4">
+              <span class="badge text-bg-warning mb-3"> Proyecto futuro </span>
 
-                <h4>Asociación de Vivienda</h4>
+              <h3>Proyecto futuro 1</h3>
 
-                <p>
-                    Trabajamos unidos por el desarrollo, bienestar
-                    y crecimiento de nuestra comunidad.
-                </p>
-
+              <p>
+                Breve descripción de una iniciativa planificada para la
+                asociación.
+              </p>
             </div>
+          </div>
 
+          <!-- Proyecto futuro 2 -->
+          <div class="col-md-6">
+            <div class="proyecto-futuro">
+              <div class="proyecto-icono">
+                <i class="bi bi-lightbulb"></i>
+              </div>
 
-            <!-- Enlaces -->
-            <div class="col-md-6 col-lg-4">
+              <span class="badge text-bg-warning mb-3"> Proyecto futuro </span>
 
-                <h5>Enlaces rápidos</h5>
+              <h3>Proyecto futuro 2</h3>
 
-                <ul class="footer-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-
+              <p>
+                Breve descripción de una iniciativa planificada para la
+                asociación.
+              </p>
             </div>
-
-
-            <!-- Contacto -->
-            <div class="col-md-12 col-lg-4">
-
-                <h5>Contacto</h5>
-
-                <p>📍 Lima, Perú</p>
-                <p>☎ Teléfono institucional</p>
-                <p>✉ Correo institucional</p>
-
-            </div>
-
+          </div>
         </div>
-
-
-        <hr>
-
-
-        <div class="footer-inferior">
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Asociación -->
+          <div class="col-md-6 col-lg-4">
+            <h4>Asociación de Vivienda</h4>
 
             <p>
-                © 2026 Asociación de Vivienda.
-                Todos los derechos reservados.
+              Trabajamos unidos por el desarrollo, bienestar y crecimiento de
+              nuestra comunidad.
             </p>
+          </div>
 
+          <!-- Enlaces -->
+          <div class="col-md-6 col-lg-4">
+            <h5>Enlaces rápidos</h5>
+
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+              <li><a href="ubicacion.html">Ubicación</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Contacto -->
+          <div class="col-md-12 col-lg-4">
+            <h5>Contacto</h5>
+
+            <p>📍 Lima, Perú</p>
+            <p>☎ Teléfono institucional</p>
+            <p>✉ Correo institucional</p>
+          </div>
         </div>
 
-    </div>
+        <hr />
 
-</footer>
+        <div class="footer-inferior">
+          <p>© 2026 Asociación de Vivienda. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="../js/script.js"></script>
-
-</body>
-
+  </body>
 </html>

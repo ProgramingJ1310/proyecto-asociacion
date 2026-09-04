@@ -1,27 +1,74 @@
 <!doctype html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ubicación | Asociación de Vivienda</title>
+    <title>Ubicación | Asociación de Vivienda Virgen de Loreto</title>
 
-    <!-- Bootstrap -->
+    <!-- =========================
+         BOOTSTRAP
+    ========================== -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- CSS -->
+    <!-- =========================
+         BOOTSTRAP ICONS
+    ========================== -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- =========================
+         GOOGLE FONTS
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================
+         CSS
+    ========================== -->
+
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/nosotros.css" />
+
+    <link rel="stylesheet" href="../css/ubicacion.css" />
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- ==================================================
+         NAVBAR
+    =================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
       <div class="container">
-        <a class="navbar-brand" href="index.html"> Asociación </a>
+        <!-- LOGO / NOMBRE -->
+
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <span class="logo-temporal">
+            <i class="bi bi-house-door-fill"></i>
+          </span>
+
+          <span> Virgen de Loreto </span>
+        </a>
+
+        <!-- BOTÓN MENÚ MÓVIL -->
 
         <button
           class="navbar-toggler"
@@ -35,14 +82,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- MENÚ -->
+
         <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html"> Inicio </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="nosotros.html"> Nosotros </a>
+              <a class="nav-link" href="nosotros.html"> Nosotros </a>
             </li>
 
             <li class="nav-item">
@@ -54,175 +103,240 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="ubicacion.html">Ubicación</a>
+              <a class="nav-link active" href="ubicacion.html"> Ubicación </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html"> Contacto </a>
+              <a class="nav-link  " href="contacto.html"> Contacto </a>
             </li>
 
+            <!-- PORTAL DEL SOCIO -->
+
             <li class="nav-item ms-lg-3">
-              <a class="btn btn-outline-light" href="#"> Portal del socio </a>
+              <a class="btn btn-portal" href="#">
+                <i class="bi bi-person-circle me-1"></i>
+
+                Portal del socio
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- ==================================================
+         PORTADA
+    =================================================== -->
 
-    <!-- =========================
-     PORTADA
-========================= -->
+    <section class="portada-ubicacion">
+      <div class="container">
+        <div class="portada-contenido">
+          <p class="seccion-etiqueta">Encuéntranos</p>
 
-<section class="portada-ubicacion">
+          <h1>Nuestra ubicación</h1>
 
-    <div class="container">
-
-        <p class="seccion-etiqueta">
-            Encuéntranos
-        </p>
-
-        <h1>Nuestra ubicación</h1>
-
-        <p>
-            Conoce dónde estamos ubicados y cómo llegar
-            a nuestra asociación.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     UBICACIÓN
-========================= -->
-
-<section class="ubicacion py-5">
-
-    <div class="container">
-
-        <div class="row g-4 align-items-center">
-
-            <!-- MAPA -->
-            <div class="col-lg-7">
-
-                <div class="mapa-placeholder">
-
-                    <p>
-                        MAPA DE LA ASOCIACIÓN
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- INFORMACIÓN -->
-            <div class="col-lg-5">
-
-                <div class="ubicacion-info">
-
-                    <p class="seccion-etiqueta">
-                        Dirección
-                    </p>
-
-                    <h2>Visítanos</h2>
-
-                    <p>
-                        📍 Dirección de la asociación
-                    </p>
-
-                    <p>
-                        Ancón, Lima, Perú
-                    </p>
-
-                    <hr>
-
-                    <h5>Referencia</h5>
-
-                    <p>
-                        Aquí colocaremos una referencia que permita
-                        ubicar fácilmente el local institucional.
-                    </p>
-
-                </div>
-
-            </div>
-
+          <p>
+            Conoce dónde estamos ubicados y cómo llegar a nuestra asociación.
+          </p>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- ==================================================
+         UBICACIÓN
+    =================================================== -->
 
-</section>
-<footer class="footer">
+    <section class="ubicacion py-5">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <!-- =========================
+                     MAPA
+                ========================== -->
 
-    <div class="container">
+          <div class="col-lg-7">
+            <div class="mapa-placeholder">
+              <p>MAPA DE LA ASOCIACIÓN</p>
+            </div>
+          </div>
 
+          <!-- =========================
+                     INFORMACIÓN
+                ========================== -->
+
+          <div class="col-lg-5">
+            <div class="ubicacion-info">
+              <p class="seccion-etiqueta">Cómo encontrarnos</p>
+
+              <h2>Visítanos</h2>
+
+              <p>
+                Nuestra asociación se encuentra ubicada en Ancón, Lima, Perú.
+              </p>
+
+              <!-- UBICACIÓN -->
+
+              <div class="ubicacion-dato">
+                <div class="ubicacion-icono">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+
+                <div>
+                  <h5>Ubicación</h5>
+
+                  <p>Ancón, Lima, Perú</p>
+                </div>
+              </div>
+
+              <!-- REFERENCIA -->
+
+              <div class="ubicacion-dato">
+                <div class="ubicacion-icono">
+                  <i class="bi bi-signpost-2-fill"></i>
+                </div>
+
+                <div>
+                  <h5>Referencia</h5>
+
+                  <p>
+                    Aquí colocaremos una referencia para ubicar fácilmente el
+                    local institucional.
+                  </p>
+                </div>
+              </div>
+
+              <!-- HORARIO -->
+
+              <div class="ubicacion-dato">
+                <div class="ubicacion-icono">
+                  <i class="bi bi-clock-fill"></i>
+                </div>
+
+                <div>
+                  <h5>Horario de atención</h5>
+
+                  <p>Horario por definir</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="footer">
+      <div class="container">
         <div class="row g-4">
+          <!-- ASOCIACIÓN -->
 
-            <!-- Asociación -->
-            <div class="col-md-6 col-lg-4">
-
-                <h4>Asociación de Vivienda</h4>
-
-                <p>
-                    Trabajamos unidos por el desarrollo, bienestar
-                    y crecimiento de nuestra comunidad.
-                </p>
-
-            </div>
-
-
-            <!-- Enlaces -->
-            <div class="col-md-6 col-lg-4">
-
-                <h5>Enlaces rápidos</h5>
-
-                <ul class="footer-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-
-            </div>
-
-
-            <!-- Contacto -->
-            <div class="col-md-12 col-lg-4">
-
-                <h5>Contacto</h5>
-
-                <p>📍 Lima, Perú</p>
-                <p>☎ Teléfono institucional</p>
-                <p>✉ Correo institucional</p>
-
-            </div>
-
-        </div>
-
-
-        <hr>
-
-
-        <div class="footer-inferior">
+          <div class="col-md-6 col-lg-4">
+            <h4>Asociación de Vivienda</h4>
 
             <p>
-                © 2026 Asociación de Vivienda.
-                Todos los derechos reservados.
+              Trabajamos unidos por el desarrollo, bienestar y crecimiento de
+              nuestra comunidad.
             </p>
 
+            <!-- REDES SOCIALES -->
+
+            <div class="redes-sociales">
+              <a href="#" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="#" aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ENLACES -->
+
+          <div class="col-md-6 col-lg-4">
+            <h5>Enlaces rápidos</h5>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"> Inicio </a>
+              </li>
+
+              <li>
+                <a href="nosotros.html"> Nosotros </a>
+              </li>
+
+              <li>
+                <a href="proyectos.html"> Proyectos </a>
+              </li>
+
+              <li>
+                <a href="galeria.html"> Galería </a>
+              </li>
+
+              <li>
+                <a href="ubicacion.html"> Ubicación </a>
+              </li>
+
+              <li>
+                <a href="contacto.html"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACTO -->
+
+          <div class="col-md-12 col-lg-4">
+            <h5>Contacto</h5>
+
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i>
+              Ancón, Lima, Perú
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill me-2"></i>
+              Teléfono institucional
+            </p>
+
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i>
+              Correo institucional
+            </p>
+          </div>
         </div>
 
-    </div>
+        <hr />
 
-</footer>
-<!-- Bootstrap -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
+        <!-- PARTE INFERIOR -->
+
+        <div class="footer-inferior">
+          <p>
+            © 2026 Asociación de Vivienda Virgen de Loreto. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================================================
+         WHATSAPP FLOTANTE
+    =================================================== -->
+
+    <a href="#" class="whatsapp-flotante" aria-label="Contactar por WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript del proyecto -->
 
     <script src="../js/script.js"></script>
   </body>

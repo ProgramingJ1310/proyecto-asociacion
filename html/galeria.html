@@ -8,15 +8,32 @@
     <title>Galería | Asociación de Vivienda</title>
 
     <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+   <!-- Bootstrap -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/galeria.css">
-</head>
+<!-- Bootstrap Icons -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<!-- CSS general -->
+<link rel="stylesheet" href="../css/styles.css">
+
+<!-- CSS galería -->
+<link rel="stylesheet" href="../css/galeria.css">
 
 <body>
 
@@ -24,64 +41,103 @@
          NAVBAR
     ========================== -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
 
-        <div class="container">
+    <div class="container">
 
-            <a class="navbar-brand" href="index.html">
-                Asociación
-            </a>
+        <!-- LOGO / NOMBRE -->
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <a class="navbar-brand d-flex align-items-center gap-2"
+           href="index.html">
 
-            <div class="collapse navbar-collapse" id="menuPrincipal">
+            <span class="logo-temporal">
+                <i class="bi bi-house-door-fill"></i>
+            </span>
 
-                <ul class="navbar-nav ms-auto">
+            <span>Virgen de Loreto</span>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
+        </a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="proyectos.html">Proyectos</a>
-                    </li>
+        <!-- BOTÓN CELULAR -->
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
-                    </li>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+        <!-- MENÚ -->
 
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-outline-light" href="#">
-                            Portal del socio
-                        </a>
-                    </li>
+        <div
+            class="collapse navbar-collapse"
+            id="menuPrincipal"
+        >
 
-                </ul>
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="nosotros.html">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">
+                        Proyectos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="galeria.html">
+                        Galería
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">
+                        Ubicación
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+
+                    <a class="btn btn-portal" href="#">
+
+                        <i class="bi bi-person-circle me-1"></i>
+
+                        Portal del socio
+
+                    </a>
+
+                </li>
+
+            </ul>
 
         </div>
 
-    </nav>
+    </div>
+
+</nav>
     <!-- =========================
      PORTADA
 ========================= -->
@@ -154,7 +210,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria1.jpg"
+                    src="../img/deporte 1.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
@@ -162,7 +218,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria2.jpg"
+                    src="../img/deporte 2.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
@@ -170,7 +226,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria3.jpg"
+                    src="../img/evento-nav1.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
@@ -178,7 +234,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria4.jpg"
+                    src="../img/evento-nav1.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
@@ -186,7 +242,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria5.jpg"
+                    src="../img/evento-nav2.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
@@ -194,7 +250,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria6.jpg"
+                    src="../img/evento-nav3.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
@@ -202,7 +258,7 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria7.jpg"
+                    src="../img/evento-nav4.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
@@ -210,7 +266,56 @@
 
             <div class="col-6 col-md-4 col-lg-3">
                 <img
-                    src="../img/galeria8.jpg"
+                    src="../img/evento-nav5.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+             <div class="col-6 col-md-4 col-lg-3">
+                <img
+                    src="../img/evento-madre1.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+             <div class="col-6 col-md-4 col-lg-3">
+                <img
+                    src="../img/evento-madre2.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+             <div class="col-6 col-md-4 col-lg-3">
+                <img
+                    src="../img/evento-nav6.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img
+                    src="../img/actividad1.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img
+                    src="../img/actividad2.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img
+                    src="../img/vista1.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img
+                    src="../img/evento-nav6.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >

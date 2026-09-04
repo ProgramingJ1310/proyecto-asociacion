@@ -1,62 +1,267 @@
-/* =========================
-   PORTADA
-========================= */
+/* ==================================================
+   PORTADA CONTACTO
+================================================== */
 
 .portada-contacto {
-    min-height: 350px;
+    min-height: 380px;
+
     display: flex;
     align-items: center;
 
-    padding: 60px 0;
+    background-color: var(--color-fondo-suave);
 
-    background-color: #292929;
-    color: white;
+    padding: 80px 0;
+}
+
+.portada-contacto .portada-contenido {
+    max-width: 750px;
 }
 
 .portada-contacto h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
+    color: var(--color-principal);
 
-.portada-contacto p {
-    max-width: 650px;
-}
+    font-size: 3.2rem;
+    font-weight: 800;
 
-
-/* =========================
-   CONTACTO
-========================= */
-
-.contacto h2 {
-    font-size: 2.3rem;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
+.portada-contacto p {
+    color: var(--color-texto-suave);
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   SECCIÓN CONTACTO
+================================================== */
+
+.contacto {
+    background-color: #ffffff;
+
+    padding: 90px 0 !important;
+}
+
+.contacto h2 {
+    color: var(--color-principal);
+
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.contacto > .container > .row {
+    align-items: stretch;
+}
+
+
+/* ==================================================
+   INFORMACIÓN DE CONTACTO
+================================================== */
+
+.contacto-info {
+    height: 100%;
+
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+}
+
+.contacto-info > p {
+    color: var(--color-texto-suave);
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   DATOS DE CONTACTO
+================================================== */
+
 .contacto-dato {
-    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.contacto-icono {
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e8f2ee;
+    color: var(--color-principal);
+
+    border-radius: 12px;
+
+    font-size: 1.3rem;
 }
 
 .contacto-dato h5 {
+    color: var(--color-principal);
+
+    font-size: 1rem;
     font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.contacto-dato p {
+    color: var(--color-texto-suave);
+
+    line-height: 1.6;
+
+    margin-bottom: 0;
 }
 
 
-/* =========================
+/* ==================================================
    FORMULARIO
-========================= */
+================================================== */
 
 .formulario-contacto {
-    padding: 35px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
+    height: 100%;
+
+    padding: 40px;
+
+    background-color: var(--color-fondo-suave);
+
+    border: 1px solid #e5ebe8;
+    border-radius: 16px;
 }
 
 .formulario-contacto h3 {
-    font-weight: 700;
+    color: var(--color-principal);
+
+    font-size: 1.7rem;
+    font-weight: 800;
+
     margin-bottom: 30px;
 }
 
+
+/* LABELS */
+
+.formulario-contacto .form-label {
+    color: var(--color-texto);
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* INPUTS Y TEXTAREA */
+
 .formulario-contacto .form-control {
-    padding: 12px;
+    padding: 12px 14px;
+
+    background-color: white;
+
+    border: 1px solid #dce4e0;
+    border-radius: 10px;
+
+    color: var(--color-texto);
+
+    box-shadow: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* CUANDO HACEMOS CLIC EN UN CAMPO */
+
+.formulario-contacto .form-control:focus {
+    border-color: var(--color-principal-claro);
+
+    box-shadow: 0 0 0 3px
+                rgba(31, 107, 88, 0.12);
+}
+
+
+/* TEXTAREA */
+
+.formulario-contacto textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* ==================================================
+   BOTÓN ENVIAR
+================================================== */
+
+.formulario-contacto .btn-principal {
+    padding: 11px 22px;
+
+    border-radius: 10px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+
+    /* PORTADA */
+
+    .portada-contacto {
+        min-height: 300px;
+
+        padding: 60px 0;
+    }
+
+    .portada-contacto h1 {
+        font-size: 2.3rem;
+    }
+
+    .portada-contacto p {
+        font-size: 1rem;
+    }
+
+
+    /* CONTACTO */
+
+    .contacto {
+        padding: 60px 0 !important;
+    }
+
+    .contacto h2 {
+        font-size: 2rem;
+    }
+
+
+    /* INFORMACIÓN */
+
+    .contacto-info {
+        padding: 20px 0;
+    }
+
+
+    /* FORMULARIO */
+
+    .formulario-contacto {
+        padding: 30px;
+    }
+
+    .formulario-contacto h3 {
+        font-size: 1.5rem;
+    }
 }
