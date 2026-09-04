@@ -1,0 +1,62 @@
+/* =========================
+   PORTADA
+========================= */
+
+.portada-contacto {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+
+    padding: 60px 0;
+
+    background-color: #292929;
+    color: white;
+}
+
+.portada-contacto h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.portada-contacto p {
+    max-width: 650px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contacto-dato {
+    margin-top: 30px;
+}
+
+.contacto-dato h5 {
+    font-weight: 700;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario-contacto {
+    padding: 35px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.formulario-contacto h3 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.formulario-contacto .form-control {
+    padding: 12px;
+}

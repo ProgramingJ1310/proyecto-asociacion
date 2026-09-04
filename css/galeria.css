@@ -1,0 +1,49 @@
+/* =========================
+   PORTADA
+========================= */
+
+.portada-galeria {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+
+    background-color: #292929;
+    color: white;
+}
+
+.portada-galeria h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.portada-galeria p {
+    max-width: 650px;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.galeria h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.galeria-foto {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Categorías */
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}

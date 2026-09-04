@@ -1,0 +1,62 @@
+/* =========================
+   PORTADA
+========================= */
+
+.portada-proyectos {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+
+    background-color: #292929;
+    color: white;
+}
+
+.portada-proyectos h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.portada-proyectos p {
+    max-width: 650px;
+}
+
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.proyectos-realizados h2,
+.proyectos-futuros h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.proyectos-realizados .card {
+    border: none;
+}
+
+.proyectos-realizados .card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+
+/* =========================
+   PROYECTOS FUTUROS
+========================= */
+
+.proyectos-futuros {
+    background-color: #f5f5f5;
+}
+
+.proyecto-futuro {
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.proyecto-futuro h3 {
+    font-weight: 700;
+}
