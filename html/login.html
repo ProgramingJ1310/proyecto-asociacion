@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portal del Socio | Virgen de Loreto</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS GENERAL -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- CSS LOGIN -->
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+
+  <body class="login-body">
+    <!-- ==================================================
+         ENCABEZADO
+    =================================================== -->
+
+    <header class="login-header">
+      <div class="container">
+        <a href="index.html" class="login-logo">
+          <img
+            src="../img/logo-blanco.png"
+            alt="Asociación de Vivienda Virgen de Loreto"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- ==================================================
+         LOGIN
+    =================================================== -->
+
+    <main class="login-main">
+      <div class="login-card">
+        <!-- TÍTULO -->
+        <div class="login-titulo">
+          <span class="login-icono">
+            <i class="bi bi-person-circle"></i>
+          </span>
+
+          <h1>¡Bienvenido!</h1>
+
+          <p>Ingresa al Portal del Socio</p>
+        </div>
+
+        <!-- ==================================================
+                 FORMULARIO
+            =================================================== -->
+
+        <form id="formLogin">
+          <!-- DNI -->
+          <div class="login-campo">
+            <label for="dni"> Usuario </label>
+
+            <div class="login-input">
+              <i class="bi bi-person-vcard"></i>
+
+              <input
+                type="text"
+                id="dni"
+                name="dni"
+                placeholder="Ingresa tu usuario"
+                autocomplete="username"
+                required
+              />
+            </div>
+
+            <small class="login-error" id="errorDni"></small>
+          </div>
+
+          <!-- CONTRASEÑA -->
+          <div class="login-campo">
+            <label for="password"> Contraseña </label>
+
+            <div class="login-input">
+              <i class="bi bi-lock"></i>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Ingresa tu contraseña"
+                autocomplete="current-password"
+                required
+              />
+
+              <button
+                type="button"
+                class="btn-mostrar-password"
+                id="mostrarPassword"
+                aria-label="Mostrar contraseña"
+              >
+                <i class="bi bi-eye" id="iconoPassword"></i>
+              </button>
+            </div>
+
+            <small class="login-error" id="errorPassword"></small>
+          </div>
+
+          <!-- BOTÓN -->
+          <button type="submit" class="btn-login">Iniciar sesión</button>
+
+          <!-- RECUPERAR CONTRASEÑA -->
+          <div class="login-recuperar">
+            <a href="#"> ¿Olvidaste tu contraseña? </a>
+          </div>
+
+          <!-- MENSAJE -->
+          <div class="login-mensaje" id="loginMensaje"></div>
+        </form>
+
+        <!-- PRIMER INGRESO -->
+        <div class="login-primer-ingreso">
+          <i class="bi bi-info-circle"></i>
+
+          <span>
+            Si es tu primer ingreso, utiliza la contraseña temporal entregada
+            por la asociación.
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- LOGIN JS -->
+    <script src="../js/login.js"></script>
+  </body>
+</html>

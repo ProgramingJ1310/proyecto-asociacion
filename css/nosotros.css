@@ -1,6 +1,6 @@
-/* =========================
+/* ==================================================
    PORTADA NOSOTROS
-========================= */
+================================================== */
 
 .portada-nosotros {
     min-height: 380px;
@@ -10,10 +10,10 @@
 
     background-color: var(--color-fondo-suave);
 
-    padding: 80px 0;
+    padding: 150px 0 80px;
 }
 
-.portada-contenido {
+.portada-nosotros .portada-contenido {
     max-width: 750px;
 }
 
@@ -34,14 +34,16 @@
 
     margin-bottom: 0;
 }
-/* =========================
+
+
+/* ==================================================
    QUIÉNES SOMOS
-========================= */
+================================================== */
 
 .quienes-somos {
-    background-color: white;
+    background-color: var(--blanco);
 
-    padding: 90px 0 !important;
+    padding: 90px 0;
 }
 
 .quienes-somos h2 {
@@ -69,14 +71,15 @@
     border-radius: 18px;
 }
 
-/* =========================
+
+/* ==================================================
    HISTORIA
-========================= */
+================================================== */
 
 .historia {
     background-color: var(--color-fondo-suave);
 
-    padding: 90px 0 !important;
+    padding: 90px 0;
 }
 
 .historia-contenido {
@@ -102,16 +105,22 @@
     font-size: 1.05rem;
     line-height: 1.8;
 
+    margin-bottom: 18px;
+}
+
+.historia p:last-child {
     margin-bottom: 0;
 }
-/* =========================
+
+
+/* ==================================================
    MISIÓN Y VISIÓN
-========================= */
+================================================== */
 
 .mision-vision {
-    background-color: white;
+    background-color: var(--blanco);
 
-    padding: 90px 0 !important;
+    padding: 90px 0;
 }
 
 .mision-vision h2 {
@@ -128,7 +137,8 @@
 
     background-color: var(--color-fondo-suave);
 
-    border: 1px solid #e5ebe8;
+    border: 1px solid var(--color-borde);
+
     border-radius: 16px;
 
     transition:
@@ -139,26 +149,9 @@
 .proposito-card:hover {
     transform: translateY(-5px);
 
-    box-shadow: 0 12px 30px
-                rgba(0, 0, 0, 0.08);
-}
-
-.proposito-icono {
-    width: 55px;
-    height: 55px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #e8f2ee;
-    color: var(--color-principal);
-
-    border-radius: 14px;
-
-    font-size: 1.5rem;
-
-    margin-bottom: 25px;
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.08);
 }
 
 .proposito-card h3 {
@@ -177,16 +170,40 @@
 
     margin-bottom: 0;
 }
-/* =========================
-   RESPONSIVE
-========================= */
+
+
+/* ==================================================
+   MARGEN LATERAL DE ESTA PÁGINA
+================================================== */
+
+.portada-nosotros .contenido-web,
+.quienes-somos .contenido-web,
+.historia .contenido-web,
+.mision-vision .contenido-web {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
 
 @media (max-width: 768px) {
 
     .portada-nosotros {
-        min-height: 300px;
+        min-height: auto;
 
-        padding: 60px 0;
+        padding-top: 145px;
+        padding-bottom: 65px;
+    }
+
+    .portada-nosotros .contenido-web,
+    .quienes-somos .contenido-web,
+    .historia .contenido-web,
+    .mision-vision .contenido-web {
+        padding-left: 28px;
+        padding-right: 28px;
     }
 
     .portada-nosotros h1 {
@@ -197,13 +214,11 @@
         font-size: 1rem;
     }
 
-
     .quienes-somos,
     .historia,
     .mision-vision {
-        padding: 60px 0 !important;
+        padding: 65px 0;
     }
-
 
     .quienes-somos h2,
     .historia h2,
@@ -211,13 +226,102 @@
         font-size: 2rem;
     }
 
-
     .quienes-img {
         height: 300px;
     }
 
-
     .proposito-card {
         padding: 30px;
+    }
+}
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 576px) {
+
+    .portada-nosotros {
+        min-height: auto;
+
+        padding-top: 155px;
+        padding-bottom: 55px;
+    }
+
+    .portada-nosotros .contenido-web,
+    .quienes-somos .contenido-web,
+    .historia .contenido-web,
+    .mision-vision .contenido-web {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .portada-nosotros h1 {
+        font-size: 2rem;
+
+        margin-bottom: 18px;
+    }
+
+    .portada-nosotros p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .quienes-somos,
+    .historia,
+    .mision-vision {
+        padding: 60px 0;
+    }
+
+    .quienes-somos h2,
+    .historia h2,
+    .mision-vision h2 {
+        font-size: 1.75rem;
+    }
+
+    .quienes-img {
+        height: 240px;
+
+        object-fit: cover;
+    }
+
+    .historia-contenido {
+        text-align: left;
+    }
+
+    .proposito-card {
+        padding: 22px;
+
+        border-radius: 14px;
+    }
+}
+
+
+/* ==================================================
+   CELULAR PEQUEÑO
+================================================== */
+
+@media (max-width: 400px) {
+
+    .portada-nosotros .contenido-web,
+    .quienes-somos .contenido-web,
+    .historia .contenido-web,
+    .mision-vision .contenido-web {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .portada-nosotros {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .portada-nosotros h1 {
+        font-size: 1.9rem;
+    }
+
+    .proposito-card {
+        padding: 20px;
     }
 }

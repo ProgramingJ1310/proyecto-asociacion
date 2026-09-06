@@ -1,4 +1,4 @@
-/* ==================================================
+﻿/* ==================================================
    PORTADA PROYECTOS
 ================================================== */
 
@@ -10,7 +10,7 @@
 
     background-color: var(--color-fondo-suave);
 
-    padding: 80px 0;
+    padding: 150px 0 80px;
 }
 
 .portada-proyectos .portada-contenido {
@@ -37,179 +37,360 @@
 
 
 /* ==================================================
-   PROYECTOS REALIZADOS
+   MARGEN LATERAL DE LA PÁGINA
 ================================================== */
 
-.proyectos-realizados {
-    background-color: #ffffff;
-
-    padding: 90px 0 !important;
-}
-
-.proyectos-realizados h2 {
-    color: var(--color-principal);
-
-    font-size: 2.5rem;
-    font-weight: 800;
-
-    margin-bottom: 15px;
-}
-
-
-/* TARJETAS */
-
-.proyectos-realizados .card {
-    height: 100%;
-
-    background-color: white;
-
-    border: 1px solid #e5ebe8;
-    border-radius: 16px;
-
-    overflow: hidden;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.proyectos-realizados .card:hover {
-    transform: translateY(-6px);
-
-    box-shadow: 0 12px 30px
-                rgba(0, 0, 0, 0.10);
-}
-
-
-/* IMAGEN DEL PROYECTO */
-
-.proyectos-realizados .card-img-top {
-    width: 100%;
-    height: 230px;
-
-    object-fit: cover;
-}
-
-
-/* CONTENIDO DE LA TARJETA */
-
-.proyectos-realizados .card-body {
-    padding: 25px;
-}
-
-.proyectos-realizados .card-title {
-    color: var(--color-principal);
-
-    font-size: 1.25rem;
-    font-weight: 700;
-
-    margin-bottom: 12px;
-}
-
-.proyectos-realizados .card-text {
-    color: var(--color-texto-suave);
-
-    line-height: 1.7;
+.portada-proyectos .contenido-web,
+.proyectos-destacados .contenido-web,
+.proyectos-compromiso .contenido-web {
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 
 /* ==================================================
-   PROYECTOS FUTUROS
+   PROYECTOS DESTACADOS
 ================================================== */
 
-.proyectos-futuros {
-    background-color: var(--color-fondo-suave);
+.proyectos-destacados {
+    background-color: var(--blanco);
 
-    padding: 90px 0 !important;
+    padding: 90px 0;
 }
 
-.proyectos-futuros h2 {
+
+/* ENCABEZADO */
+
+/* ==================================================
+   ENCABEZADO DE PROYECTOS
+================================================== */
+
+.proyectos-encabezado {
+    max-width: 760px;
+
+    margin: 0 auto 60px;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+}
+
+
+.proyectos-encabezado .seccion-etiqueta {
+    display: block !important;
+
+    width: 100%;
+
+    margin: 0 0 12px 0 !important;
+
+    text-align: center !important;
+}
+
+
+.proyectos-encabezado h2 {
+    display: block !important;
+
+    width: 100%;
+
+    margin: 0 0 18px 0 !important;
+
     color: var(--color-principal);
 
     font-size: 2.5rem;
     font-weight: 800;
 
-    margin-bottom: 15px;
+    text-align: center !important;
 }
 
 
-/* TARJETA PROYECTO FUTURO */
+.proyectos-encabezado .proyectos-intro {
+    display: block !important;
 
-.proyecto-futuro {
-    height: 100%;
+    width: 100%;
+    max-width: 720px;
+
+    margin: 0 auto !important;
+
+    color: var(--color-texto-suave);
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    text-align: center !important;
+}
+
+
+/* ==================================================
+   BLOQUE DE CADA PROYECTO
+================================================== */
+
+.proyecto-detalle {
+    margin-bottom: 60px;
 
     padding: 35px;
 
-    background-color: white;
+    background-color: var(--color-fondo-suave);
 
-    border: 1px solid #e5ebe8;
-    border-radius: 16px;
+    border: 1px solid var(--color-borde);
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    border-radius: 18px;
 }
 
-.proyecto-futuro:hover {
-    transform: translateY(-5px);
-
-    box-shadow: 0 12px 30px
-                rgba(0, 0, 0, 0.08);
+.proyecto-detalle:last-child {
+    margin-bottom: 0;
 }
 
-.proyecto-futuro h3 {
+
+/* ==================================================
+   IMAGEN
+================================================== */
+
+.proyecto-detalle-img {
+    width: 100%;
+    height: 370px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+/* ==================================================
+   TÍTULO Y TEXTO
+================================================== */
+
+.proyecto-detalle h3 {
     color: var(--color-principal);
 
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 800;
 
-    margin-bottom: 15px;
+    margin-top: 16px;
+    margin-bottom: 18px;
 }
 
-.proyecto-futuro p {
+.proyecto-detalle > .row > div > p {
     color: var(--color-texto-suave);
 
-    line-height: 1.7;
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+
+/* ==================================================
+   ESTADO DEL PROYECTO
+================================================== */
+
+.estado-proyecto {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* EN PROCESO */
+
+.estado-proceso {
+    background-color: var(--color-acento-suave);
+
+    color: var(--color-acento);
+}
+
+
+/* EN DESARROLLO */
+
+.estado-desarrollo {
+    background-color: var(--azul-suave);
+
+    color: var(--color-principal);
+}
+
+
+/* ==================================================
+   INFORMACIÓN DEL PROYECTO
+================================================== */
+
+.informacion-proyecto {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 22px;
+}
+
+.informacion-icono {
+    min-width: 48px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--azul-suave);
+
+    color: var(--color-principal);
+
+    border-radius: 12px;
+
+    font-size: 1.25rem;
+}
+
+.informacion-proyecto h5 {
+    color: var(--color-principal);
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.informacion-proyecto p {
+    color: var(--color-texto-suave);
+
+    line-height: 1.6;
 
     margin-bottom: 0;
 }
 
 
 /* ==================================================
-   ICONO PROYECTO FUTURO
+   AVANCES
 ================================================== */
 
-.proyecto-icono {
-    width: 50px;
-    height: 50px;
+.avances-proyecto {
+    margin-top: 25px;
+}
+
+.avances-proyecto h5 {
+    color: var(--color-principal);
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.avance-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    color: var(--color-texto);
+
+    font-weight: 600;
+}
+
+.avance-item i {
+    color: var(--color-principal-claro);
+
+    font-size: 1.1rem;
+}
+
+.avance-item.pendiente {
+    color: var(--color-texto-suave);
+}
+
+.avance-item.pendiente i {
+    color: var(--color-texto-suave);
+}
+
+
+/* ==================================================
+   COMPROMISO
+================================================== */
+
+.proyectos-compromiso {
+    background-color: var(--color-fondo-suave);
+
+    padding: 80px 0;
+}
+
+.compromiso-contenido {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+.compromiso-icono {
+    min-width: 65px;
+
+    width: 65px;
+    height: 65px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: #e8f2ee;
+    background-color: var(--color-principal);
+
+    color: var(--blanco);
+
+    border-radius: 16px;
+
+    font-size: 1.6rem;
+}
+
+.proyectos-compromiso h2 {
     color: var(--color-principal);
 
-    border-radius: 12px;
+    font-size: 2rem;
+    font-weight: 800;
 
-    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
 
-    margin-bottom: 20px;
+.proyectos-compromiso p:last-child {
+    color: var(--color-texto-suave);
+
+    line-height: 1.8;
+
+    margin-bottom: 0;
 }
 
 
 /* ==================================================
-   RESPONSIVE
+   TABLET
 ================================================== */
 
 @media (max-width: 768px) {
 
-    /* PORTADA */
-
     .portada-proyectos {
-        min-height: 300px;
+        min-height: auto;
 
-        padding: 60px 0;
+        padding-top: 145px;
+        padding-bottom: 65px;
+    }
+
+    .portada-proyectos .contenido-web,
+    .proyectos-destacados .contenido-web,
+    .proyectos-compromiso .contenido-web {
+        padding-left: 28px;
+        padding-right: 28px;
     }
 
     .portada-proyectos h1 {
@@ -220,30 +401,177 @@
         font-size: 1rem;
     }
 
-
-    /* PROYECTOS */
-
-    .proyectos-realizados,
-    .proyectos-futuros {
-        padding: 60px 0 !important;
+    .proyectos-destacados {
+        padding: 65px 0;
     }
 
-    .proyectos-realizados h2,
-    .proyectos-futuros h2 {
+    .proyectos-encabezado {
+        margin-bottom: 45px;
+    }
+
+    .proyectos-destacados h2 {
         font-size: 2rem;
     }
 
+    .proyecto-detalle {
+        padding: 25px;
 
-    /* IMÁGENES */
-
-    .proyectos-realizados .card-img-top {
-        height: 210px;
+        margin-bottom: 40px;
     }
 
+    .proyecto-detalle-img {
+        height: 250px;
+    }
 
-    /* PROYECTOS FUTUROS */
+    .proyecto-detalle h3 {
+        font-size: 1.6rem;
+    }
 
-    .proyecto-futuro {
-        padding: 30px;
+    .proyectos-compromiso {
+        padding: 60px 0;
+    }
+
+    .compromiso-contenido {
+        flex-direction: column;
+    }
+
+    .proyectos-compromiso h2 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 576px) {
+
+    .portada-proyectos {
+        min-height: auto;
+
+        padding-top: 155px;
+        padding-bottom: 55px;
+    }
+
+    .portada-proyectos .contenido-web,
+    .proyectos-destacados .contenido-web,
+    .proyectos-compromiso .contenido-web {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .portada-proyectos h1 {
+        font-size: 2rem;
+
+        margin-bottom: 18px;
+    }
+
+    .portada-proyectos p {
+        font-size: 1rem;
+
+        line-height: 1.75;
+    }
+
+    .proyectos-destacados {
+        padding: 60px 0;
+    }
+
+    .proyectos-encabezado {
+        margin-bottom: 35px;
+    }
+
+    .proyectos-encabezado .seccion-etiqueta {
+        margin-bottom: 10px;
+    }
+
+    .proyectos-destacados h2 {
+        font-size: 1.75rem;
+    }
+
+    .proyectos-intro {
+        font-size: 0.98rem;
+    }
+
+    .proyecto-detalle {
+        padding: 18px;
+
+        margin-bottom: 28px;
+
+        border-radius: 14px;
+    }
+
+    .proyecto-detalle-img {
+        height: 210px;
+
+        border-radius: 12px;
+    }
+
+    .proyecto-detalle h3 {
+        font-size: 1.45rem;
+    }
+
+    .informacion-proyecto {
+        gap: 12px;
+    }
+
+    .informacion-icono {
+        min-width: 42px;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 1.05rem;
+    }
+
+    .proyectos-compromiso {
+        padding: 50px 0;
+    }
+
+    .compromiso-icono {
+        min-width: 54px;
+
+        width: 54px;
+        height: 54px;
+    }
+}
+
+
+/* ==================================================
+   CELULAR PEQUEÑO
+================================================== */
+
+@media (max-width: 400px) {
+
+    .portada-proyectos .contenido-web,
+    .proyectos-destacados .contenido-web,
+    .proyectos-compromiso .contenido-web {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .portada-proyectos {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .portada-proyectos h1 {
+        font-size: 1.9rem;
+    }
+
+    .proyectos-encabezado {
+        margin-bottom: 30px;
+    }
+
+    .proyecto-detalle {
+        padding: 16px;
+    }
+
+    .proyecto-detalle-img {
+        height: 190px;
+    }
+
+    .proyecto-detalle h3 {
+        font-size: 1.35rem;
     }
 }

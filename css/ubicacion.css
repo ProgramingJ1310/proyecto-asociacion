@@ -10,12 +10,14 @@
 
     background-color: var(--color-fondo-suave);
 
-    padding: 80px 0;
+    padding: 150px 0 80px;
 }
+
 
 .portada-ubicacion .portada-contenido {
     max-width: 750px;
 }
+
 
 .portada-ubicacion h1 {
     color: var(--color-principal);
@@ -25,6 +27,7 @@
 
     margin-bottom: 20px;
 }
+
 
 .portada-ubicacion p {
     color: var(--color-texto-suave);
@@ -36,15 +39,17 @@
 }
 
 
+
 /* ==================================================
    SECCIÓN UBICACIÓN
 ================================================== */
 
 .ubicacion {
-    background-color: #ffffff;
+    background-color: var(--blanco);
 
-    padding: 90px 0 !important;
+    padding: 90px 0;
 }
+
 
 .ubicacion h2 {
     color: var(--color-principal);
@@ -56,37 +61,260 @@
 }
 
 
+
+/* ==================================================
+   MARGEN LATERAL DE ESTA PÁGINA
+================================================== */
+
+.portada-ubicacion .contenido-web,
+.ubicacion .contenido-web {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+
 /* ==================================================
    MAPA
 ================================================== */
 
-.mapa-placeholder {
+/* ==================================================
+   MAPA MODERNO
+================================================== */
+
+.mapa-contenedor {
+    position: relative;
+
     width: 100%;
-    height: 420px;
+    height: 480px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    border: 1px solid var(--color-borde);
+
+    box-shadow:
+        0 20px 50px rgba(20, 45, 80, 0.12);
+}
+
+
+/* MAPA */
+
+.mapa-contenedor iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+/* ==================================================
+   TARJETA FLOTANTE
+================================================== */
+
+.mapa-tarjeta {
+    position: absolute;
+
+    left: 28px;
+    bottom: 28px;
+
+    width: 330px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    padding: 22px;
+
+    background-color: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.16);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 5;
+}
+
+
+/* ICONO */
+
+.mapa-tarjeta-icono {
+    min-width: 48px;
+
+    width: 48px;
+    height: 48px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: var(--color-fondo-suave);
+    background-color: var(--color-principal);
 
-    border: 1px solid #e5ebe8;
-    border-radius: 16px;
+    color: white;
 
-    overflow: hidden;
+    border-radius: 14px;
+
+    font-size: 1.2rem;
 }
 
-.mapa-placeholder p {
+
+/* ETIQUETA */
+
+.mapa-tarjeta-info > span {
+    display: block;
+
+    color: var(--color-principal-claro);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.4px;
+
+    margin-bottom: 5px;
+}
+
+
+/* TÍTULO */
+
+.mapa-tarjeta h3 {
+    color: var(--color-principal);
+
+    font-size: 1.15rem;
+    font-weight: 800;
+
+    margin-bottom: 6px;
+}
+
+
+/* DIRECCIÓN */
+
+.mapa-tarjeta p {
     color: var(--color-texto-suave);
 
-    font-weight: 600;
+    font-size: 0.87rem;
+    line-height: 1.5;
 
-    margin: 0;
+    margin-bottom: 14px;
 }
 
 
 /* ==================================================
-   INFORMACIÓN DE UBICACIÓN
+   BOTÓN CÓMO LLEGAR
+================================================== */
+
+.btn-como-llegar {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--color-principal);
+
+    font-size: 0.86rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        gap 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.btn-como-llegar:hover {
+    gap: 12px;
+
+    color: var(--color-principal-claro);
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .mapa-contenedor {
+        height: 430px;
+
+        border-radius: 18px;
+    }
+
+
+    .mapa-tarjeta {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .mapa-contenedor {
+        height: 460px;
+
+        border-radius: 16px;
+    }
+
+
+    .mapa-tarjeta {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+
+        width: auto;
+
+        padding: 17px;
+
+        gap: 12px;
+
+        border-radius: 15px;
+    }
+
+
+    .mapa-tarjeta-icono {
+        min-width: 42px;
+
+        width: 42px;
+        height: 42px;
+
+        border-radius: 12px;
+
+        font-size: 1.05rem;
+    }
+
+
+    .mapa-tarjeta h3 {
+        font-size: 1rem;
+    }
+
+
+    .mapa-tarjeta p {
+        font-size: 0.82rem;
+    }
+
+}
+
+
+
+/* ==================================================
+   INFORMACIÓN
 ================================================== */
 
 .ubicacion-info {
@@ -96,19 +324,23 @@
 
     background-color: var(--color-fondo-suave);
 
-    border: 1px solid #e5ebe8;
+    border: 1px solid var(--color-borde);
+
     border-radius: 16px;
 }
+
 
 .ubicacion-info h2 {
     font-size: 2rem;
 }
 
-.ubicacion-info p {
+
+.ubicacion-info > p {
     color: var(--color-texto-suave);
 
     line-height: 1.7;
 }
+
 
 
 /* ==================================================
@@ -117,6 +349,7 @@
 
 .ubicacion-dato {
     display: flex;
+
     align-items: flex-start;
 
     gap: 15px;
@@ -124,21 +357,29 @@
     margin-top: 25px;
 }
 
+
 .ubicacion-icono {
     min-width: 48px;
+
+    width: 48px;
     height: 48px;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 
-    background-color: #e8f2ee;
+    background-color: var(--color-fondo-suave);
+
     color: var(--color-principal);
+
+    border: 1px solid var(--color-borde);
 
     border-radius: 12px;
 
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
+
 
 .ubicacion-dato h5 {
     color: var(--color-principal);
@@ -149,44 +390,192 @@
     margin-bottom: 5px;
 }
 
+
 .ubicacion-dato p {
+    color: var(--color-texto-suave);
+
+    line-height: 1.6;
+
     margin-bottom: 0;
 }
 
 
+
 /* ==================================================
-   RESPONSIVE
+   TABLET
 ================================================== */
 
 @media (max-width: 768px) {
 
     .portada-ubicacion {
-        min-height: 300px;
+        min-height: auto;
 
-        padding: 60px 0;
+        padding-top: 145px;
+        padding-bottom: 65px;
     }
+
+
+    .portada-ubicacion .contenido-web,
+    .ubicacion .contenido-web {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
 
     .portada-ubicacion h1 {
         font-size: 2.3rem;
     }
 
+
     .portada-ubicacion p {
         font-size: 1rem;
     }
 
+
     .ubicacion {
-        padding: 60px 0 !important;
+        padding: 65px 0;
     }
+
 
     .ubicacion h2 {
         font-size: 2rem;
     }
 
+
     .mapa-placeholder {
         height: 300px;
     }
 
+
     .ubicacion-info {
         padding: 30px;
     }
+
+}
+
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 576px) {
+
+    .portada-ubicacion {
+        min-height: auto;
+
+        padding-top: 155px;
+        padding-bottom: 55px;
+    }
+
+
+    .portada-ubicacion .contenido-web,
+    .ubicacion .contenido-web {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+
+    .portada-ubicacion h1 {
+        font-size: 2rem;
+
+        margin-bottom: 18px;
+    }
+
+
+    .portada-ubicacion p {
+        font-size: 1rem;
+
+        line-height: 1.75;
+    }
+
+
+    .ubicacion {
+        padding: 60px 0;
+    }
+
+
+   .mapa-placeholder {
+    width: 100%;
+    height: 420px;
+
+    border: 1px solid var(--color-borde);
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.mapa-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    border: 0;
+}
+    .ubicacion-info {
+        padding: 22px;
+
+        border-radius: 14px;
+    }
+
+
+    .ubicacion-info h2 {
+        font-size: 1.75rem;
+    }
+
+
+    .ubicacion-dato {
+        gap: 12px;
+
+        margin-top: 22px;
+    }
+
+
+    .ubicacion-icono {
+        min-width: 42px;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 1.05rem;
+    }
+
+}
+
+
+
+/* ==================================================
+   CELULAR PEQUEÑO
+================================================== */
+
+@media (max-width: 400px) {
+
+    .portada-ubicacion .contenido-web,
+    .ubicacion .contenido-web {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+
+    .portada-ubicacion {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+
+    .portada-ubicacion h1 {
+        font-size: 1.9rem;
+    }
+
+
+    .ubicacion-info {
+        padding: 20px;
+    }
+
+
+    .mapa-placeholder {
+        height: 230px;
+        min-height: 230px;
+    }
+
 }

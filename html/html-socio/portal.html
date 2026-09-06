@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Portal del Socio | Virgen de Loreto</title>
+
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- BOOTSTRAP -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- CSS GENERAL -->
+    <link
+        rel="stylesheet"
+        href="../../css/styles.css"
+    >
+
+
+    <!-- CSS PORTAL -->
+    <link
+        rel="stylesheet"
+        href="../../css/portal.css"
+    >
+
+</head>
+
+
+<body class="portal-body">
+
+
+    <div class="portal-layout">
+
+
+        <!-- ==================================================
+             SIDEBAR
+        =================================================== -->
+
+        <aside class="portal-sidebar" id="portalSidebar">
+
+
+            <!-- LOGO -->
+            <div class="sidebar-logo">
+
+                <a href="../index.html">
+
+                    <img
+                        src="../../img/logo.png"
+                        alt="Asociación de Vivienda Virgen de Loreto"
+                    >
+
+                </a>
+
+            </div>
+
+
+            <!-- USUARIO -->
+            <div class="sidebar-usuario">
+
+                <div class="sidebar-avatar">
+
+                    <i class="bi bi-person-fill"></i>
+
+                </div>
+
+
+                <div class="sidebar-usuario-info">
+
+                    <span>Socio</span>
+
+                    <strong>María López</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENÚ -->
+            <nav class="sidebar-menu">
+
+
+                <a
+                    href="portal.html"
+                    class="sidebar-link active"
+                    aria-current="page"
+                >
+
+                    <i class="bi bi-grid-1x2-fill"></i>
+
+                    <span>Inicio</span>
+
+                </a>
+
+
+                <a
+                    href="mis-datos.html"
+                    class="sidebar-link"
+                >
+
+                    <i class="bi bi-person-vcard"></i>
+
+                    <span>Mis datos</span>
+
+                </a>
+
+
+                <a
+                    href="estado-cuenta.html"
+                    class="sidebar-link"
+                >
+
+                    <i class="bi bi-wallet2"></i>
+
+                    <span>Estado de cuenta</span>
+
+                </a>
+
+
+                <a
+                    href="mis-pagos.html"
+                    class="sidebar-link"
+                >
+
+                    <i class="bi bi-receipt"></i>
+
+                    <span>Mis pagos</span>
+
+                </a>
+
+            </nav>
+
+
+            <!-- CERRAR SESIÓN -->
+            <div class="sidebar-footer">
+
+                <a
+                    href="../login.html"
+                    class="sidebar-cerrar"
+                >
+
+                    <i class="bi bi-box-arrow-left"></i>
+
+                    <span>Cerrar sesión</span>
+
+                </a>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- ==================================================
+             CONTENIDO PRINCIPAL
+        =================================================== -->
+
+        <main class="portal-contenido">
+
+
+            <!-- ==================================================
+                 HEADER
+            =================================================== -->
+
+            <header class="portal-header">
+
+
+                <!-- BOTÓN MOBILE -->
+                <button
+                    class="portal-menu-mobile"
+                    id="abrirMenu"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-controls="portalSidebar"
+                    aria-expanded="false"
+                >
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+
+                <!-- TÍTULO -->
+                <div class="portal-header-titulo">
+
+                    <p>Portal del socio</p>
+
+                    <h1>Bienvenida, María</h1>
+
+                </div>
+
+
+                <!-- LADO DERECHO -->
+                <div class="portal-header-derecha">
+
+
+                    <!-- NOTIFICACIONES -->
+                    <button
+                        class="portal-notificacion"
+                        type="button"
+                        aria-label="Notificaciones"
+                    >
+
+                        <i class="bi bi-bell"></i>
+
+                    </button>
+
+
+                    <!-- PERFIL -->
+                    <div class="portal-perfil">
+
+                        <span class="portal-avatar">
+
+                            <i class="bi bi-person-fill"></i>
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- ==================================================
+                 DASHBOARD
+            =================================================== -->
+
+            <div class="portal-main">
+
+
+                <!-- ==================================================
+                     BIENVENIDA
+                =================================================== -->
+
+                <section class="portal-bienvenida">
+
+                    <div>
+
+                        <p class="portal-etiqueta">
+                            Resumen general
+                        </p>
+
+                        <h2>
+                            Bienvenido al Portal del Socio
+                        </h2>
+
+                        <p>
+                            Desde aquí podrás consultar la información
+                            relacionada con tus predios, pagos y estado
+                            de cuenta.
+                        </p>
+
+                    </div>
+
+
+                    <div class="bienvenida-icono">
+
+                        <i class="bi bi-house-check-fill"></i>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ==================================================
+                     TARJETAS RESUMEN
+                =================================================== -->
+
+                <section class="portal-resumen">
+
+
+                    <!-- PREDIOS -->
+                    <article class="resumen-card">
+
+                        <div class="resumen-icono">
+
+                            <i class="bi bi-houses-fill"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Predios registrados
+                            </span>
+
+                            <strong>
+                                3
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TOTAL PAGADO -->
+                    <article class="resumen-card">
+
+                        <div class="resumen-icono">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Total pagado
+                            </span>
+
+                            <strong>
+                                S/ 1,250.00
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SALDO PENDIENTE -->
+                    <article class="resumen-card">
+
+                        <div class="resumen-icono resumen-icono-pendiente">
+
+                            <i class="bi bi-clock-history"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Saldo pendiente
+                            </span>
+
+                            <strong>
+                                S/ 150.00
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ÚLTIMO PAGO -->
+                    <article class="resumen-card">
+
+                        <div class="resumen-icono">
+
+                            <i class="bi bi-receipt-cutoff"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Último pago
+                            </span>
+
+                            <strong>
+                                S/ 50.00
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- ==================================================
+                     MIS PREDIOS
+                =================================================== -->
+
+                <section class="portal-panel">
+
+
+                    <div class="portal-panel-header">
+
+                        <div>
+
+                            <p class="panel-etiqueta">
+                                Propiedades
+                            </p>
+
+                            <h3>
+                                Mis predios
+                            </h3>
+
+                            <p class="panel-descripcion">
+                                Predios registrados a nombre del socio.
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="mis-datos.html"
+                            class="panel-enlace"
+                        >
+
+                            Ver detalles
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="predios-grid">
+
+
+                        <!-- PREDIO 1 -->
+                        <article class="predio-card">
+
+                            <div class="predio-card-top">
+
+                                <div class="predio-icono">
+
+                                    <i class="bi bi-house-door-fill"></i>
+
+                                </div>
+
+                                <span class="predio-estado">
+                                    Activo
+                                </span>
+
+                            </div>
+
+
+                            <div class="predio-contenido">
+
+                                <span>
+                                    Predio 01
+                                </span>
+
+                                <h4>
+                                    Mz. 2 - Lote 8
+                                </h4>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- PREDIO 2 -->
+                        <article class="predio-card">
+
+                            <div class="predio-card-top">
+
+                                <div class="predio-icono">
+
+                                    <i class="bi bi-house-door-fill"></i>
+
+                                </div>
+
+                                <span class="predio-estado">
+                                    Activo
+                                </span>
+
+                            </div>
+
+
+                            <div class="predio-contenido">
+
+                                <span>
+                                    Predio 02
+                                </span>
+
+                                <h4>
+                                    Mz. 17 - Lote 5
+                                </h4>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- PREDIO 3 -->
+                        <article class="predio-card">
+
+                            <div class="predio-card-top">
+
+                                <div class="predio-icono">
+
+                                    <i class="bi bi-house-door-fill"></i>
+
+                                </div>
+
+                                <span class="predio-estado">
+                                    Activo
+                                </span>
+
+                            </div>
+
+
+                            <div class="predio-contenido">
+
+                                <span>
+                                    Predio 03
+                                </span>
+
+                                <h4>
+                                    Mz. 20 - Lote 3
+                                </h4>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- ==================================================
+                     RESUMEN FINANCIERO
+                =================================================== -->
+
+                <div class="portal-columnas">
+
+
+                    <!-- ESTADO DE CUENTA -->
+                    <section class="portal-panel">
+
+                        <div class="portal-panel-header">
+
+                            <div>
+
+                                <p class="panel-etiqueta">
+                                    Finanzas
+                                </p>
+
+                                <h3>
+                                    Estado de cuenta
+                                </h3>
+
+                                <p class="panel-descripcion">
+                                    Resumen general de tus obligaciones.
+                                </p>
+
+                            </div>
+
+
+                            <a
+                                href="estado-cuenta.html"
+                                class="panel-enlace"
+                            >
+
+                                Ver detalle
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="estado-cuenta-resumen">
+
+
+                            <div class="estado-linea">
+
+                                <span>
+                                    Total registrado
+                                </span>
+
+                                <strong>
+                                    S/ 1,400.00
+                                </strong>
+
+                            </div>
+
+
+                            <div class="estado-linea">
+
+                                <span>
+                                    Total pagado
+                                </span>
+
+                                <strong class="estado-pagado-texto">
+                                    S/ 1,250.00
+                                </strong>
+
+                            </div>
+
+
+                            <div class="estado-linea estado-pendiente-linea">
+
+                                <span>
+                                    Saldo pendiente
+                                </span>
+
+                                <strong>
+                                    S/ 150.00
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- ÚLTIMO PAGO -->
+                    <section class="portal-panel">
+
+                        <div class="portal-panel-header">
+
+                            <div>
+
+                                <p class="panel-etiqueta">
+                                    Movimiento reciente
+                                </p>
+
+                                <h3>
+                                    Último pago
+                                </h3>
+
+                                <p class="panel-descripcion">
+                                    Último movimiento registrado.
+                                </p>
+
+                            </div>
+
+
+                            <a
+                                href="mis-pagos.html"
+                                class="panel-enlace"
+                            >
+
+                                Ver pagos
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="ultimo-pago-card">
+
+
+                            <div class="ultimo-pago-top">
+
+                                <div class="pago-icono">
+
+                                    <i class="bi bi-check-lg"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Cuota ordinaria
+                                    </span>
+
+                                    <strong>
+                                        S/ 50.00
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="ultimo-pago-datos">
+
+
+                                <div>
+
+                                    <span>
+                                        Fecha
+                                    </span>
+
+                                    <strong>
+                                        15/08/2026
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Predio
+                                    </span>
+
+                                    <strong>
+                                        Mz. 2 - Lote 8
+                                    </strong>
+
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="ultimo-pago-footer">
+
+                                <span class="pago-estado">
+                                    Pagado
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     AVISOS RECIENTES
+                =================================================== -->
+
+                <section class="portal-panel">
+
+
+                    <div class="portal-panel-header">
+
+                        <div>
+
+                            <p class="panel-etiqueta">
+                                Comunicados
+                            </p>
+
+                            <h3>
+                                Avisos recientes
+                            </h3>
+
+                            <p class="panel-descripcion">
+                                Información importante para los socios.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="panel-enlace panel-enlace-boton"
+                        >
+
+                            Ver todos
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="avisos-lista">
+
+
+                        <!-- AVISO 1 -->
+                        <article class="aviso-item">
+
+                            <div class="aviso-fecha">
+
+                                <strong>
+                                    20
+                                </strong>
+
+                                <span>
+                                    AGO
+                                </span>
+
+                            </div>
+
+
+                            <div class="aviso-contenido">
+
+                                <div class="aviso-titulo">
+
+                                    <h4>
+                                        Asamblea general
+                                    </h4>
+
+                                    <span class="aviso-etiqueta importante">
+                                        Importante
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Se comunica a los socios que se realizará
+                                    una asamblea general en el local institucional.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- AVISO 2 -->
+                        <article class="aviso-item">
+
+                            <div class="aviso-fecha">
+
+                                <strong>
+                                    12
+                                </strong>
+
+                                <span>
+                                    AGO
+                                </span>
+
+                            </div>
+
+
+                            <div class="aviso-contenido">
+
+                                <div class="aviso-titulo">
+
+                                    <h4>
+                                        Actualización de datos
+                                    </h4>
+
+                                    <span class="aviso-etiqueta">
+                                        Información
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Los socios pueden actualizar sus datos
+                                    personales y de contacto en la oficina
+                                    de la asociación.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- AVISO 3 -->
+                        <article class="aviso-item">
+
+                            <div class="aviso-fecha">
+
+                                <strong>
+                                    05
+                                </strong>
+
+                                <span>
+                                    AGO
+                                </span>
+
+                            </div>
+
+
+                            <div class="aviso-contenido">
+
+                                <div class="aviso-titulo">
+
+                                    <h4>
+                                        Avance de proyectos
+                                    </h4>
+
+                                    <span class="aviso-etiqueta">
+                                        Comunidad
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Se encuentra disponible nueva información
+                                    sobre los proyectos que se vienen desarrollando
+                                    en la asociación.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- BOOTSTRAP -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- JS PORTAL -->
+    <script src="../../js/portal.js"></script>
+
+
+</body>
+
+</html>

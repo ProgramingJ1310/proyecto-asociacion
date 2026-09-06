@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ubicación | Asociación de Vivienda Virgen de Loreto</title>
+    <title>Ubicaci&oacute;n | Asociación de Vivienda Virgen de Loreto</title>
 
     <!-- =========================
          BOOTSTRAP
@@ -57,15 +57,12 @@
       <div class="container">
         <!-- LOGO / NOMBRE -->
 
-        <a
-          class="navbar-brand d-flex align-items-center gap-2"
-          href="index.html"
-        >
-          <span class="logo-temporal">
-            <i class="bi bi-house-door-fill"></i>
-          </span>
-
-          <span> Virgen de Loreto </span>
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="../img/logo.png"
+            alt="Asociación de Vivienda Virgen de Loreto"
+            class="navbar-logo"
+          />
         </a>
 
         <!-- BOTÓN MENÚ MÓVIL -->
@@ -99,15 +96,17 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="galeria.html"> Galería </a>
+              <a class="nav-link" href="galeria.html"> Galer&iacute;a </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="ubicacion.html"> Ubicación </a>
+              <a class="nav-link active" href="ubicacion.html">
+                Ubicaci&oacute;n
+              </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link  " href="contacto.html"> Contacto </a>
+              <a class="nav-link" href="contacto.html"> Contacto </a>
             </li>
 
             <!-- PORTAL DEL SOCIO -->
@@ -129,8 +128,8 @@
     =================================================== -->
 
     <section class="portada-ubicacion">
-      <div class="container">
-        <div class="portada-contenido">
+      <div class="container contenido-web">
+        <div class="portada-contenido animar">
           <p class="seccion-etiqueta">Encuéntranos</p>
 
           <h1>Nuestra ubicación</h1>
@@ -147,49 +146,90 @@
     =================================================== -->
 
     <section class="ubicacion py-5">
-      <div class="container">
+      <div class="container contenido-web">
         <div class="row g-4 align-items-stretch">
           <!-- =========================
                      MAPA
                 ========================== -->
 
-          <div class="col-lg-7">
-            <div class="mapa-placeholder">
-              <p>MAPA DE LA ASOCIACIÓN</p>
-            </div>
+          <div class="col-lg-7 animar-izquierda">
+            <!-- MAPA -->
+<div class="mapa-contenedor">
+
+    <!-- MAPA DE GOOGLE -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4917.629298839673!2d-77.13994613699487!3d-11.802506122080766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d527f3904b87%3A0x96c46f393efcc8f3!2sCASA.%20Asoc.%20De%20viviendas%20Virgen%20de%20Loreto%20Piedras%20Gordas%20FAP!5e1!3m2!1ses-419!2sus!4v1788652529384!5m2!1ses-419!2sus"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Ubicación de la Asociación de Vivienda Virgen de Loreto"
+    ></iframe>
+
+
+    <!-- TARJETA FLOTANTE -->
+    <div class="mapa-tarjeta">
+
+        <div class="mapa-tarjeta-icono">
+            <i class="bi bi-geo-alt-fill"></i>
+        </div>
+
+        <div class="mapa-tarjeta-info">
+
+            <span>Encuéntranos</span>
+
+            <h3>Virgen de Loreto</h3>
+
+            <p>
+                Km 41.5 de la Panamericana Norte
+            </p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=-11.8025061%2C-77.1399461"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-como-llegar"
+            >
+                Cómo llegar
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
           </div>
 
           <!-- =========================
                      INFORMACIÓN
                 ========================== -->
 
-          <div class="col-lg-5">
+          <div class="col-lg-5 animar-derecha">
             <div class="ubicacion-info">
               <p class="seccion-etiqueta">Cómo encontrarnos</p>
 
               <h2>Visítanos</h2>
 
               <p>
-                Nuestra asociación se encuentra ubicada en Ancón, Lima, Perú.
+               Nuestra asociación se encuentra ubicada en el distrito de Santa Rosa, Lima, con acceso desde la Panamericana Norte.
               </p>
 
               <!-- UBICACIÓN -->
 
-              <div class="ubicacion-dato">
+              <div class="ubicacion-dato animar">
                 <div class="ubicacion-icono">
                   <i class="bi bi-geo-alt-fill"></i>
                 </div>
 
                 <div>
                   <h5>Ubicación</h5>
-
-                  <p>Ancón, Lima, Perú</p>
+                  <p>Km 41.5 de la Panamericana Norte</p>
                 </div>
               </div>
 
               <!-- REFERENCIA -->
 
-              <div class="ubicacion-dato">
+              <div class="ubicacion-dato animar">
                 <div class="ubicacion-icono">
                   <i class="bi bi-signpost-2-fill"></i>
                 </div>
@@ -197,16 +237,13 @@
                 <div>
                   <h5>Referencia</h5>
 
-                  <p>
-                    Aquí colocaremos una referencia para ubicar fácilmente el
-                    local institucional.
-                  </p>
+                  <p>Frente al puente Campamento</p>
                 </div>
               </div>
 
               <!-- HORARIO -->
 
-              <div class="ubicacion-dato">
+              <div class="ubicacion-dato animar">
                 <div class="ubicacion-icono">
                   <i class="bi bi-clock-fill"></i>
                 </div>
@@ -214,7 +251,7 @@
                 <div>
                   <h5>Horario de atención</h5>
 
-                  <p>Horario por definir</p>
+                  <p>12:00 pm - 8:00 pm</p>
                 </div>
               </div>
             </div>
@@ -223,99 +260,87 @@
       </div>
     </section>
 
+    <a
+      href="https://wa.me/51908912426?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20Asociaci%C3%B3n%20de%20Vivienda%20Virgen%20de%20Loreto."
+      class="whatsapp-flotante"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
     <!-- ==================================================
          FOOTER
     =================================================== -->
 
     <footer class="footer">
       <div class="container">
-        <div class="row g-4">
-          <!-- ASOCIACIÓN -->
+        <div class="footer-grid">
+          <!-- IDENTIDAD -->
+          <div class="footer-col footer-marca animar">
+            <a href="index.html" class="footer-logo">
+              <span class="footer-logo-icono">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
 
-          <div class="col-md-6 col-lg-4">
-            <h4>Asociación de Vivienda</h4>
+              <span>Virgen de Loreto</span>
+            </a>
 
             <p>
-              Trabajamos unidos por el desarrollo, bienestar y crecimiento de
-              nuestra comunidad.
+              Asociación de Vivienda Virgen de Loreto, una comunidad organizada
+              y comprometida con su desarrollo y bienestar.
+            </p>
+          </div>
+
+          <!-- CONTACTO -->
+          <div class="footer-col animar">
+            <p class="footer-titulo">Contacto</p>
+
+            <a href="tel:+51908912426" class="footer-dato">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+51 908 912 426</span>
+            </a>
+
+            <a href="mailto:aviloreto@gmail.com" class="footer-dato">
+              <i class="bi bi-envelope-fill"></i>
+              <span>aviloreto@gmail.com</span>
+            </a>
+
+            <a href="ubicacion.html" class="footer-dato">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Km 41.5 de la Panamericana Norte</span>
+            </a>
+          </div>
+
+          <!-- REDES -->
+          <div class="footer-col footer-redes-col animar">
+            <p class="footer-titulo">Síguenos</p>
+
+            <p class="footer-redes-texto">
+              Mantente al tanto de nuestras actividades y novedades.
             </p>
 
-            <!-- REDES SOCIALES -->
-
-            <div class="redes-sociales">
-              <a href="#" aria-label="Facebook">
+            <div class="footer-redes">
+              <a
+                href="https://www.facebook.com/profile.php?id=100068321126724"
+                class="footer-red-social"
+                aria-label="Facebook"
+              >
                 <i class="bi bi-facebook"></i>
               </a>
 
-              <a href="#" aria-label="TikTok">
+              <a href="#" class="footer-red-social" aria-label="TikTok">
                 <i class="bi bi-tiktok"></i>
               </a>
             </div>
           </div>
-
-          <!-- ENLACES -->
-
-          <div class="col-md-6 col-lg-4">
-            <h5>Enlaces rápidos</h5>
-
-            <ul class="footer-links">
-              <li>
-                <a href="index.html"> Inicio </a>
-              </li>
-
-              <li>
-                <a href="nosotros.html"> Nosotros </a>
-              </li>
-
-              <li>
-                <a href="proyectos.html"> Proyectos </a>
-              </li>
-
-              <li>
-                <a href="galeria.html"> Galería </a>
-              </li>
-
-              <li>
-                <a href="ubicacion.html"> Ubicación </a>
-              </li>
-
-              <li>
-                <a href="contacto.html"> Contacto </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- CONTACTO -->
-
-          <div class="col-md-12 col-lg-4">
-            <h5>Contacto</h5>
-
-            <p>
-              <i class="bi bi-geo-alt-fill me-2"></i>
-              Ancón, Lima, Perú
-            </p>
-
-            <p>
-              <i class="bi bi-telephone-fill me-2"></i>
-              Teléfono institucional
-            </p>
-
-            <p>
-              <i class="bi bi-envelope-fill me-2"></i>
-              Correo institucional
-            </p>
-          </div>
         </div>
 
-        <hr />
+        <div class="footer-bottom">
+          <p>© 2026 Asociación de Vivienda Virgen de Loreto</p>
 
-        <!-- PARTE INFERIOR -->
-
-        <div class="footer-inferior">
-          <p>
-            © 2026 Asociación de Vivienda Virgen de Loreto. Todos los derechos
-            reservados.
-          </p>
+          <span> Todos los derechos reservados. </span>
         </div>
       </div>
     </footer>
@@ -334,10 +359,11 @@
 
     <!-- Bootstrap -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
 
-    <!-- JavaScript del proyecto -->
-
-    <script src="../js/script.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/animaciones.js"></script>
   </body>
 </html>

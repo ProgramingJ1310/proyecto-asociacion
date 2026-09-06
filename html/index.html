@@ -1,469 +1,481 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Asociación de Vivienda</title>
 
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet" >
-    
-<link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
->
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Nuestro CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-<body>
-
-<!-- =========================
+  <body class="pagina-inicio">
+    <!-- =========================
      NAVBAR
 ========================= -->
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
-
-    <div class="container">
-
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
+      <div class="container">
         <!-- LOGO / NOMBRE -->
-        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-
-            <span class="logo-temporal">
-                <i class="bi bi-house-door-fill"></i>
-            </span>
-
-            <span>Virgen de Loreto</span>
-
-        </a>
-
+    <a class="navbar-brand" href="index.html">
+    <img
+        src="../img/logo.png"
+        alt="Asociación de Vivienda Virgen de Loreto"
+        class="navbar-logo"
+    >
+</a>
 
         <!-- BOTÓN CELULAR -->
         <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false"
-            aria-label="Abrir menú"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
         >
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-
 
         <!-- OPCIONES -->
         <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"> Inicio </a>
+            </li>
 
-            <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html"> Nosotros </a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">
-                        Inicio
-                    </a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html"> Proyectos </a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">
-                        Nosotros
-                    </a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html"> Galer&iacute;a </a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="proyectos.html">
-                        Proyectos
-                    </a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html"> Ubicaci&oacute;n </a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">
-                        Galería
-                    </a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"> Contacto </a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="ubicacion.html">
-                        Ubicación
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">
-                        Contacto
-                    </a>
-                </li>
-
-                <li class="nav-item ms-lg-3">
-                    <a class="btn btn-portal" href="#">
-                        <i class="bi bi-person-circle me-1"></i>
-                        Portal del socio
-                    </a>
-                </li>
-
-            </ul>
-
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-portal" href="login.html">
+                <i class="bi bi-person-circle me-1"></i>
+                Portal del socio
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-fondo"></div>
 
-    </div>
+      <div class="hero-overlay"></div>
 
-</nav>
-<section class="hero">
-    <div class="container">
+      <div class="container contenido-web hero-container">
         <div class="hero-contenido">
+          <p class="hero-etiqueta">Bienvenidos</p>
 
-            <p class="hero-etiqueta">
-                Bienvenidos
-            </p>
+          <h1>
+            Asociación de Vivienda
+            <span>Virgen de Loreto</span>
+          </h1>
 
-            <h1>
-                Asociación de Vivienda
-                <span>Virgen de Loreto</span>
-            </h1>
+          <p class="hero-descripcion">
+            Trabajamos unidos por el desarrollo, bienestar y crecimiento de
+            nuestra comunidad.
+          </p>
 
-            <p class="hero-descripcion">
-                Trabajamos unidos por el desarrollo, bienestar
-                y crecimiento de nuestra comunidad.
-            </p>
+          <div class="hero-botones">
+            <a href="nosotros.html" class="btn btn-principal btn-lg">
+              Conócenos
+            </a>
 
-            <div class="hero-botones">
-                <a href="nosotros.html" class="btn btn-principal btn-lg">
-    Conócenos
-</a>
-
-<a href="proyectos.html" class="btn btn-outline-principal btn-lg">
-    Ver proyectos
-</a>
-            </div>
-
+            <a href="proyectos.html" class="btn btn-outline-principal btn-lg">
+              Ver proyectos
+            </a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="sobre-nosotros py-5">
+    <section class="sobre-nosotros">
+      <div class="container contenido-web">
+        <div class="row align-items-center g-5">
+          <!-- Imagen -->
+          <div class="col-lg-6 animar-izquierda">
+            <div class="nosotros-imagen">
+              <img
+                src="../img/VISTA.png"
+                alt="Asociación de Vivienda Virgen de Loreto"
+              />
 
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <!-- Imagen -->
-            <div class="col-lg-6 mb-4 mb-lg-0">
-
-                <div class="nosotros-imagen">
-                    <img
-                        src="../img/asociacion.jpg"
-                        alt="Asociación de Vivienda Virgen de Loreto"
-                        class="img-fluid"
-                    >
+              <div class="nosotros-badge">
+                <div class="nosotros-badge-icono">
+                  <i class="bi bi-people-fill"></i>
                 </div>
 
+                <div>
+                  <strong>Comunidad organizada</strong>
+                  <span>Trabajando por nuestro desarrollo</span>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <!-- Información -->
-            <div class="col-lg-6">
+          <!-- Texto -->
+          <div class="col-lg-6 animar-derecha">
+            <p class="seccion-etiqueta">Sobre nosotros</p>
 
-                <p class="seccion-etiqueta">
-                    Sobre nosotros
-                </p>
+          <h2 class="nosotros-titulo">
+    Unidos por una
+    <span class="palabra-verde">comunidad</span>
+    que <span class="palabra-dorada">crece</span> junta.
+</h2>
 
-                <h2>
-                    Unidos por el desarrollo de nuestra comunidad
-                </h2>
+            <p class="nosotros-texto">
+              Somos una asociación comprometida con el bienestar, organización y
+              desarrollo de nuestros socios y de nuestra comunidad.
+            </p>
 
-                <p class="nosotros-texto">
-                    Somos una asociación comprometida con el bienestar,
-                    organización y desarrollo de nuestros socios y de
-                    nuestra comunidad.
-                </p>
-
-              <a href="nosotros.html" class="btn btn-principal">
-    Conocer más
-    <i class="bi bi-arrow-right ms-1"></i>
-</a>
-            </div>
-
+            <a href="nosotros.html" class="btn btn-principal nosotros-boton">
+              Conocer más
+              <i class="bi bi-arrow-up-right ms-2"></i>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- =========================
+    <!-- =========================
      PROYECTOS
 ========================= -->
+    <section class="proyectos-inicio">
+      <div class="container contenido-web">
+        <!-- Encabezado -->
+        <div class="proyectos-encabezado animar">
+          <div>
+            <p class="seccion-etiqueta">Nuestros proyectos</p>
 
-<section class="proyectos-inicio py-5">
+            <h2>Proyectos que impulsan el desarrollo de nuestra comunidad</h2>
+          </div>
 
-    <div class="container">
-
-        <!-- Título -->
-        <div class="text-center mb-5">
-
-            <p class="seccion-etiqueta">
-                Nuestros proyectos
-            </p>
-
-            <h2>Trabajando por nuestra comunidad</h2>
-
-            <p>
-                Conoce algunos de nuestros proyectos realizados
-                y las iniciativas que tenemos para el futuro.
-            </p>
-
+          <p class="proyectos-introduccion">
+            Conoce las iniciativas que estamos desarrollando para mejorar
+            nuestros servicios, espacios y calidad de vida como comunidad.
+          </p>
         </div>
 
-        <!-- Tarjetas -->
+        <!-- Proyectos -->
         <div class="row g-4">
+          <!-- ELECTRIFICACIÓN -->
+          <div class="col-lg-6 animar">
+            <article class="proyecto-card">
+              <div class="proyecto-imagen">
+                <img
+                  src="../img/proyecto1.jpg"
+                  alt="Proyecto de electrificación definitiva"
+                />
 
-            <!-- Proyecto 1 -->
-            <div class="col-md-6 col-lg-4">
+                <span class="proyecto-estado">
+                  <span class="estado-punto"></span>
+                  En proceso
+                </span>
+              </div>
 
-                <div class="card h-100">
+              <div class="proyecto-contenido">
+                <span class="proyecto-numero">01</span>
 
-                    <img
-                        src="../img/proyecto1.jpg"
-                        class="card-img-top"
-                        alt="Proyecto de la asociación"
-                    >
+                <h3>Electrificación definitiva</h3>
 
-                    <div class="card-body">
+                <p>
+                  Proyecto orientado a mejorar y consolidar el servicio
+                  eléctrico para beneficio de nuestra comunidad.
+                </p>
 
-                        <span class="badge text-bg-success mb-2">
-                            Realizado
-                        </span>
+                <a href="proyectos.html" class="proyecto-enlace">
+                  Conocer proyecto
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
 
-                        <h5 class="card-title">
-                            Proyecto comunitario
-                        </h5>
+          <!-- CENTRO RECREACIONAL -->
+          <div class="col-lg-6 animar">
+            <article class="proyecto-card">
+              <div class="proyecto-imagen">
+                <img
+                  src="../img/proyecto2.jpg"
+                  alt="Proyecto Centro Recreacional"
+                />
 
-                        <p class="card-text">
-                            Proyecto desarrollado para mejorar los
-                            espacios y servicios de nuestra comunidad.
-                        </p>
+                <span class="proyecto-estado">
+                  <span class="estado-punto"></span>
+                  En desarrollo
+                </span>
+              </div>
 
-                    </div>
+              <div class="proyecto-contenido">
+                <span class="proyecto-numero">02</span>
 
-                </div>
+                <h3>Centro Recreacional</h3>
 
-            </div>
+                <p>
+                  Espacio de la asociación que cuenta con canchas sintéticas y
+                  oficinas administrativas, con nuevas áreas proyectadas para su
+                  desarrollo.
+                </p>
 
-
-            <!-- Proyecto 2 -->
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card h-100">
-
-                    <img
-                        src="../img/proyecto2.jpg"
-                        class="card-img-top"
-                        alt="Proyecto de la asociación"
-                    >
-
-                    <div class="card-body">
-
-                        <span class="badge text-bg-success mb-2">
-                            Realizado
-                        </span>
-
-                        <h5 class="card-title">
-                            Mejoramiento de espacios
-                        </h5>
-
-                        <p class="card-text">
-                            Iniciativa orientada al mejoramiento
-                            de las áreas de nuestra asociación.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Proyecto 3 -->
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card h-100">
-
-                    <img
-                        src="../img/proyecto3.jpg"
-                        class="card-img-top"
-                        alt="Proyecto futuro de la asociación"
-                    >
-
-                    <div class="card-body">
-
-                        <span class="badge text-bg-warning mb-2">
-                            Próximamente
-                        </span>
-
-                        <h5 class="card-title">
-                            Proyecto futuro
-                        </h5>
-
-                        <p class="card-text">
-                            Una nueva iniciativa que contribuirá
-                            al crecimiento de nuestra comunidad.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+                <a href="proyectos.html" class="proyecto-enlace">
+                  Conocer proyecto
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
 
-        <!-- Botón -->
-        <div class="text-center mt-5">
-
-          <a href="proyectos.html" class="btn btn-principal">
-    Ver todos los proyectos
-    <i class="bi bi-arrow-right ms-1"></i>
-</a>
-
+        <!-- Botón final -->
+        <div class="proyectos-footer animar">
+          <a href="proyectos.html" class="btn btn-principal proyectos-boton">
+            Ver todos los proyectos
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
         </div>
-
-    </div>
-
-</section>
-<!-- =========================
+      </div>
+    </section>
+    <!-- =========================
      GALERÍA
 ========================= -->
 
-<section class="galeria-inicio py-5">
+    <section class="galeria-inicio">
+      <div class="container contenido-web">
+        <!-- Encabezado -->
+        <div class="galeria-encabezado animar">
+          <div>
+            <p class="seccion-etiqueta">Nuestra comunidad</p>
 
-    <div class="container">
+            <h2>Momentos que forman parte de nuestra historia</h2>
+          </div>
 
-        <div class="text-center mb-5">
-
-            <p class="seccion-etiqueta">
-                Nuestra comunidad
-            </p>
-
-            <h2>Galería</h2>
-
-            <p>
-                Conoce algunas de las actividades, proyectos y momentos
-                importantes de nuestra asociación.
-            </p>
-
+          <p class="galeria-descripcion">
+            Conoce algunas de las actividades, proyectos y momentos importantes
+            de nuestra asociación.
+          </p>
         </div>
 
+        <!-- Collage -->
+        <div class="galeria-grid">
+          <!-- Imagen grande -->
+          <a href="#" class="galeria-item galeria-grande animar" data-imagen="../img/comu1.jpg" data-titulo="Comunidad">
+            <img src="../img/comu1.jpg" alt="Actividad de la asociación" />
 
-        <div class="row g-3">
+            <div class="galeria-overlay">
+              <span>Comunidad</span>
 
-            <div class="col-6 col-md-4">
-                <img
-                    src="../img/galeria1.jpg"
-                    alt="Actividad de la asociación"
-                    class="img-fluid galeria-img"
-                >
+              <i class="bi bi-arrow-up-right"></i>
             </div>
+          </a>
 
-            <div class="col-6 col-md-4">
-                <img
-                    src="../img/galeria2.jpg"
-                    alt="Actividad de la asociación"
-                    class="img-fluid galeria-img"
-                >
+          <!-- Imagen 2 -->
+          <a href="#" class="galeria-item animar" data-imagen="../img/comu3.jpg" data-titulo="Actividades">
+            <img src="../img/comu3.jpg" alt="Actividad de la asociación" />
+
+            <div class="galeria-overlay">
+              <span>Actividades</span>
+
+              <i class="bi bi-arrow-up-right"></i>
             </div>
+          </a>
 
-            <div class="col-6 col-md-4">
-                <img
-                    src="../img/galeria3.jpg"
-                    alt="Actividad de la asociación"
-                    class="img-fluid galeria-img"
-                >
+          <!-- Imagen 3 -->
+          <a href="#" class="galeria-item animar" data-imagen="../img/proyecto9.jpg" data-titulo="Proyectos">
+            <img src="../img/proyecto9.jpg" alt="Actividad de la asociación" />
+
+            <div class="galeria-overlay">
+              <span>Proyectos</span>
+
+              <i class="bi bi-arrow-up-right"></i>
             </div>
+          </a>
 
-            <div class="col-6 col-md-4">
-                <img
-                    src="../img/galeria4.jpg"
-                    alt="Actividad de la asociación"
-                    class="img-fluid galeria-img"
-                >
+          <!-- Imagen 4 -->
+          <a href="#" class="galeria-item animar" data-imagen="../img/comu2.jpg" data-titulo="Asociación">
+            <img src="../img/comu2.jpg" alt="Actividad de la asociación" />
+
+            <div class="galeria-overlay">
+              <span>Asociación</span>
+
+              <i class="bi bi-arrow-up-right"></i>
             </div>
+          </a>
 
-            <div class="col-6 col-md-4">
-                <img
-                    src="../img/galeria5.jpg"
-                    alt="Actividad de la asociación"
-                    class="img-fluid galeria-img"
-                >
+          <!-- Imagen 5 -->
+          <a href="#" class="galeria-item animar" data-imagen="../img/cancha1.jpg" data-titulo="Desarrollo">
+            <img src="../img/cancha1.jpg" alt="Actividad de la asociación" />
+
+            <div class="galeria-overlay">
+              <span>Desarrollo</span>
+
+              <i class="bi bi-arrow-up-right"></i>
             </div>
+          </a>
 
-            <div class="col-6 col-md-4">
-                <img
-                    src="../img/galeria6.jpg"
-                    alt="Actividad de la asociación"
-                    class="img-fluid galeria-img"
-                >
+          <!-- Imagen 6 -->
+          <a href="#" class="galeria-item galeria-ancha animar" data-imagen="../img/comu5.jpg" data-titulo="Nuestra comunidad">
+            <img src="../img/comu5.jpg" alt="Actividad de la asociación" />
+
+            <div class="galeria-overlay">
+              <span>Nuestra comunidad</span>
+
+              <i class="bi bi-arrow-up-right"></i>
             </div>
-
+          </a>
         </div>
 
+        <!-- Botón -->
+        <div class="galeria-footer animar">
+          <a href="galeria.html" class="btn btn-principal galeria-boton">
+            Ver galería completa
 
-        <div class="text-center mt-4">
-
-            <a href="galeria.html" class="btn btn-principal">
-    Ver galería completa
-    <i class="bi bi-images ms-1"></i>
-</a>
-
+            <i class="bi bi-images ms-2"></i>
+          </a>
         </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+     VISOR DE IMÁGENES
+================================================== -->
+
+<div class="visor-imagen" id="visorImagen">
+
+    <button
+        class="visor-cerrar"
+        id="cerrarVisor"
+        aria-label="Cerrar imagen"
+    >
+        <i class="bi bi-x-lg"></i>
+    </button>
+
+
+    <div class="visor-contenido">
+
+        <img
+            src=""
+            alt=""
+            id="imagenAmpliada"
+            class="imagen-ampliada"
+        >
+
+        <p
+            class="visor-titulo"
+            id="tituloImagen"
+        ></p>
 
     </div>
 
-</section>
-<!-- =========================
+</div>
+    <!-- =========================
      UBICACIÓN Y CONTACTO
 ========================= -->
 
-<section class="informacion-inicio py-5">
+  
 
-    <div class="container">
+    <div class="lightbox-galeria" id="lightboxGaleria" aria-hidden="true">
+      <div class="lightbox-contenido" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+        <button class="lightbox-cerrar" type="button" aria-label="Cerrar imagen">
+          <i class="bi bi-x-lg"></i>
+        </button>
+
+        <img src="" alt="" id="lightboxImagen" />
+
+        <p id="lightboxTitulo"></p>
+      </div>
+    </div>
+<section class="informacion-inicio">
+
+    <div class="container contenido-web">
 
         <div class="row g-4">
 
-            <!-- Ubicación -->
-            <div class="col-lg-6">
+            <!-- =====================================
+                 UBICACIÓN
+            ====================================== -->
+
+            <div class="col-lg-6 animar-izquierda">
 
                 <div class="info-card">
-<div class="info-icono">
-    <i class="bi bi-geo-alt-fill"></i>
-</div>
-<div class="info-icono">
-    <i class="bi bi-chat-dots-fill"></i>
-</div>
+
+                    <!-- Icono principal -->
+                    <div class="info-icono">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                    <!-- Título -->
                     <p class="seccion-etiqueta">
                         Encuéntranos
                     </p>
 
                     <h2>Nuestra ubicación</h2>
 
-                    <p>
+                    <p class="info-texto">
                         Conoce dónde se encuentra nuestra asociación
                         y cómo llegar hasta nuestro local institucional.
                     </p>
 
-                    <p>
-                        <strong>📍 Ubicación:</strong><br>
-                        Lima, Perú
-                    </p>
 
-                    <a href="ubicacion.html" class="btn btn-dark">
+                    <!-- Dirección -->
+                    <div class="info-dato">
+
+                        <i class="bi bi-pin-map-fill"></i>
+
+                        <div>
+                            <span>Ubicaci&oacute;n</span>
+
+                            <strong>
+                                Km 41.5 de la Panamericana Norte
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Enlace -->
+                    <a
+                        href="ubicacion.html"
+                        class="info-enlace"
+                    >
                         Ver ubicación
+
+                        <i class="bi bi-arrow-up-right"></i>
                     </a>
 
                 </div>
@@ -471,30 +483,84 @@
             </div>
 
 
-            <!-- Contacto -->
-            <div class="col-lg-6">
+            <!-- =====================================
+                 CONTACTO
+            ====================================== -->
+
+            <div class="col-lg-6 animar-derecha">
 
                 <div class="info-card">
 
+                    <!-- Icono principal -->
+                    <div class="info-icono">
+                        <i class="bi bi-chat-dots-fill"></i>
+                    </div>
+
+                    <!-- Título -->
                     <p class="seccion-etiqueta">
                         Contáctanos
                     </p>
 
                     <h2>Estamos para ayudarte</h2>
 
-                    <p>
+                    <p class="info-texto">
                         Si deseas realizar alguna consulta o necesitas
                         información sobre nuestra asociación, puedes
                         comunicarte con nosotros.
                     </p>
 
-                    <p>
-                        <strong>Información de contacto</strong><br>
-                        Teléfono y correo institucional
-                    </p>
 
-                    <a href="contacto.html" class="btn btn-dark">
+                    <!-- Datos de contacto -->
+                    <div class="contacto-datos">
+
+                        <!-- Teléfono -->
+                        <a
+                            href="tel:+51908912437"
+                            class="info-dato"
+                        >
+
+                            <i class="bi bi-telephone-fill"></i>
+
+                            <div>
+                                <span>Teléfono</span>
+
+                                <strong>
+                                  +51 908 912 426
+                                </strong>
+                            </div>
+
+                        </a>
+
+
+                        <!-- Correo -->
+                        <a
+                            href="mailto:aviloreto@gmail.com"
+                            class="info-dato"
+                        >
+
+                            <i class="bi bi-envelope-fill"></i>
+
+                            <div>
+                                <span>Correo electrónico</span>
+
+                                <strong>
+                                    aviloreto@gmail.com
+                                </strong>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Enlace -->
+                    <a
+                        href="contacto.html"
+                        class="info-enlace"
+                    >
                         Contáctanos
+
+                        <i class="bi bi-arrow-up-right"></i>
                     </a>
 
                 </div>
@@ -506,93 +572,143 @@
     </div>
 
 </section>
-<!-- WHATSAPP FLOTANTE -->
+    <!-- WHATSAPP FLOTANTE -->
 
-<a
-    href="#"
+ <a
+    href="https://wa.me/51908912426"
     class="whatsapp-flotante"
+    target="_blank"
+    rel="noopener noreferrer"
     aria-label="Contactar por WhatsApp"
 >
     <i class="bi bi-whatsapp"></i>
 </a>
-<!-- =========================
-     FOOTER
-========================= -->
+  
 
-<footer class="footer">
+
+            <!-- =====================================
+                 FOOTER
+            ====================================== -->
+
+
+
+    <footer class="footer">
 
     <div class="container">
 
-        <div class="row g-4">
+        <div class="footer-grid">
 
-            <!-- Asociación -->
-            <div class="col-md-6 col-lg-4">
+            <!-- IDENTIDAD -->
+            <div class="footer-col footer-marca">
 
-                <h4>Asociación de Vivienda</h4>
+                <a href="index.html" class="footer-logo">
+                    <span class="footer-logo-icono">
+                        <i class="bi bi-house-door-fill"></i>
+                    </span>
+
+                    <span>Virgen de Loreto</span>
+                </a>
 
                 <p>
-                    Trabajamos unidos por el desarrollo, bienestar
-                    y crecimiento de nuestra comunidad.
+                    Asociación de Vivienda Virgen de Loreto,
+                    una comunidad organizada y comprometida
+                    con su desarrollo y bienestar.
                 </p>
 
             </div>
 
 
-            <!-- Enlaces -->
-            <div class="col-md-6 col-lg-4">
+            <!-- CONTACTO -->
+            <div class="footer-col">
 
-                <h5>Enlaces rápidos</h5>
+                <p class="footer-titulo">
+                    Contacto
+                </p>
 
-                <ul class="footer-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+                <a href="tel:+51908912437" class="footer-dato">
+                    <i class="bi bi-telephone-fill"></i>
+                    <span>+51 908 912 426</span>
+                </a>
+
+                <a
+                    href="mailto:aviloreto@gmail.com"
+                    class="footer-dato"
+                >
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>aviloreto@gmail.com</span>
+                </a>
+
+                <a href="ubicacion.html" class="footer-dato">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Km 41.5 de la Panamericana Norte</span>
+                </a>
 
             </div>
 
 
-            <!-- Contacto -->
-            <div class="col-md-12 col-lg-4">
+            <!-- REDES -->
+            <div class="footer-col footer-redes-col">
 
-                <h5>Contacto</h5>
+                <p class="footer-titulo">
+                    Síguenos
+                </p>
 
-                <p>📍 Lima, Perú</p>
-                <p>☎ Teléfono institucional</p>
-                <p>✉ Correo institucional</p>
+                <p class="footer-redes-texto">
+                    Mantente al tanto de nuestras actividades
+                    y novedades.
+                </p>
+
+                <div class="footer-redes">
+
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100068321126724"
+                        class="footer-red-social"
+                        aria-label="Facebook"
+                    >
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="footer-red-social"
+                        aria-label="TikTok"
+                    >
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
 
-        <hr>
-
-
-        <div class="footer-inferior">
+        <div class="footer-bottom">
 
             <p>
-                © 2026 Asociación de Vivienda.
-                Todos los derechos reservados.
+                © 2026 Asociación de Vivienda Virgen de Loreto
             </p>
+
+            <span>
+                Todos los derechos reservados.
+            </span>
 
         </div>
 
     </div>
 
 </footer>
+   
 
     <!-- Bootstrap JS -->
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
 
-    <!-- Nuestro JavaScript -->
-    <script src="../js/script.js"></script>
-
-</body>
-
+<script src="../js/main.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/animaciones.js"></script>
+<script src="../js/index.js"></script>
+  </body>
 </html>
+

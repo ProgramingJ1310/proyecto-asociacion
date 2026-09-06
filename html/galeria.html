@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Galería | Asociación de Vivienda</title>
+    <title>Galer&iacute;a | Asociación de Vivienda</title>
 
     <!-- Bootstrap -->
    <!-- Bootstrap -->
@@ -47,15 +47,12 @@
 
         <!-- LOGO / NOMBRE -->
 
-        <a class="navbar-brand d-flex align-items-center gap-2"
-           href="index.html">
-
-            <span class="logo-temporal">
-                <i class="bi bi-house-door-fill"></i>
-            </span>
-
-            <span>Virgen de Loreto</span>
-
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="../img/logo.png"
+            alt="Asociación de Vivienda Virgen de Loreto"
+            class="navbar-logo"
+          >
         </a>
 
 
@@ -103,13 +100,13 @@
 
                 <li class="nav-item">
                     <a class="nav-link active" href="galeria.html">
-                        Galería
+                        Galer&iacute;a
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="ubicacion.html">
-                        Ubicación
+                        Ubicaci&oacute;n
                     </a>
                 </li>
 
@@ -144,18 +141,24 @@
 
 <section class="portada-galeria">
 
-    <div class="container">
+    <div class="container contenido-web">
 
-        <p class="seccion-etiqueta">
-            Nuestra comunidad
-        </p>
+        <div class="portada-contenido animar">
 
-        <h1>Galería</h1>
+            <p class="seccion-etiqueta">
+                Nuestra comunidad
+            </p>
 
-        <p>
-            Conoce a través de imágenes nuestras actividades,
-            proyectos y momentos importantes como comunidad.
-        </p>
+            <h1>
+                Galería
+            </h1>
+
+            <p>
+                Conoce a través de imágenes nuestras actividades,
+                proyectos y momentos importantes como comunidad.
+            </p>
+
+        </div>
 
     </div>
 
@@ -166,9 +169,9 @@
 
 <section class="galeria py-5">
 
-    <div class="container">
+    <div class="container contenido-web">
 
-        <div class="text-center mb-5">
+        <div class="text-center mb-5 animar">
 
             <p class="seccion-etiqueta">
                 Nuestros recuerdos
@@ -180,25 +183,25 @@
 
 
         <!-- Categorías -->
-        <div class="categorias text-center mb-5">
+        <div class="categorias text-center mb-5 animar">
 
-            <button class="btn btn-dark">
+            <button class="btn active" data-categoria="todas">
                 Todas
             </button>
 
-            <button class="btn btn-outline-dark">
+            <button class="btn" data-categoria="proyectos">
                 Proyectos
             </button>
 
-            <button class="btn btn-outline-dark">
+            <button class="btn" data-categoria="actividades">
                 Actividades
             </button>
 
-            <button class="btn btn-outline-dark">
+            <button class="btn" data-categoria="eventos">
                 Eventos
             </button>
 
-            <button class="btn btn-outline-dark">
+            <button class="btn" data-categoria="deportes">
                 Deportes
             </button>
 
@@ -208,7 +211,7 @@
         <!-- Fotografías -->
         <div class="row g-3">
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="deportes">
                 <img
                     src="../img/deporte 1.jpg"
                     class="img-fluid galeria-foto"
@@ -216,7 +219,7 @@
                 >
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="deportes">
                 <img
                     src="../img/deporte 2.jpg"
                     class="img-fluid galeria-foto"
@@ -224,7 +227,7 @@
                 >
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-nav1.jpg"
                     class="img-fluid galeria-foto"
@@ -232,7 +235,7 @@
                 >
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-nav1.jpg"
                     class="img-fluid galeria-foto"
@@ -240,7 +243,7 @@
                 >
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-nav2.jpg"
                     class="img-fluid galeria-foto"
@@ -248,7 +251,7 @@
                 >
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-nav3.jpg"
                     class="img-fluid galeria-foto"
@@ -256,7 +259,7 @@
                 >
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-nav4.jpg"
                     class="img-fluid galeria-foto"
@@ -264,62 +267,175 @@
                 >
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-nav5.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
-             <div class="col-6 col-md-4 col-lg-3">
+             <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-madre1.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
-             <div class="col-6 col-md-4 col-lg-3">
+             <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-madre2.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
-             <div class="col-6 col-md-4 col-lg-3">
+             <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
                 <img
                     src="../img/evento-nav6.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
                 <img
                     src="../img/actividad1.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
                 <img
                     src="../img/actividad2.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="proyectos">
                 <img
                     src="../img/vista1.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="proyectos">
                 <img
-                    src="../img/evento-nav6.jpg"
+                    src="../img/proyecto1.jpg"
                     class="img-fluid galeria-foto"
                     alt="Actividad de la asociación"
                 >
             </div>
+             <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="deportes">
+                <img
+                    src="../img/deporte3.png"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+             <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="deportes">
+                <img
+                    src="../img/deporte4.png"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+              <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="proyectos">
+                <img
+                    src="../img/proyecto2.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+              <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="proyectos">
+                <img
+                    src="../img/proyecto3.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+              <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="proyectos">
+                <img
+                    src="../img/proyecto4.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+             <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
+                <img
+                    src="../img/actividad3.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+              <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
+                <img
+                    src="../img/actividad4.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
+                <img
+                    src="../img/actividad5.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
+                <img
+                    src="../img/actividad6.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
+                <img
+                    src="../img/actividad7.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="actividades">
+                <img
+                    src="../img/actividad8.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="proyectos">
+                <img
+                    src="../img/proyecto7.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
+                <img
+                    src="../img/evento-madre3.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="proyectos">
+                <img
+                    src="../img/proyecto9.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+             <div class="col-6 col-md-4 col-lg-3 galeria-item animar" data-categoria="eventos">
+                <img
+                    src="../img/evento-direc.jpg"
+                    class="img-fluid galeria-foto"
+                    alt="Actividad de la asociación"
+                >
+            </div>
+            
+            
+            
+
+           
+
+
 
         </div>
 
@@ -330,64 +446,115 @@
 
     <div class="container">
 
-        <div class="row g-4">
+        <div class="footer-grid">
 
-            <!-- Asociación -->
-            <div class="col-md-6 col-lg-4">
+            <!-- IDENTIDAD -->
+            <div class="footer-col footer-marca animar">
 
-                <h4>Asociación de Vivienda</h4>
+                <a href="index.html" class="footer-logo">
+                    <span class="footer-logo-icono">
+                        <i class="bi bi-house-door-fill"></i>
+                    </span>
+
+                    <span>Virgen de Loreto</span>
+                </a>
 
                 <p>
-                    Trabajamos unidos por el desarrollo, bienestar
-                    y crecimiento de nuestra comunidad.
+                    Asociación de Vivienda Virgen de Loreto,
+                    una comunidad organizada y comprometida
+                    con su desarrollo y bienestar.
                 </p>
 
             </div>
 
 
-            <!-- Enlaces -->
-            <div class="col-md-6 col-lg-4">
+            <!-- CONTACTO -->
+            <div class="footer-col animar">
 
-                <h5>Enlaces rápidos</h5>
+                <p class="footer-titulo">
+                    Contacto
+                </p>
 
-                <ul class="footer-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+                <a href="tel:+51908912426" class="footer-dato">
+                    <i class="bi bi-telephone-fill"></i>
+                    <span>+51 908 912 426</span>
+                </a>
+
+                <a
+                    href="mailto:aviloreto@gmail.com"
+                    class="footer-dato"
+                >
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>aviloreto@gmail.com</span>
+                </a>
+
+                <a href="ubicacion.html" class="footer-dato">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Km 41.5 de la Panamericana Norte</span>
+                </a>
 
             </div>
 
 
-            <!-- Contacto -->
-            <div class="col-md-12 col-lg-4">
+            <!-- REDES -->
+            <div class="footer-col footer-redes-col animar">
 
-                <h5>Contacto</h5>
+                <p class="footer-titulo">
+                    Síguenos
+                </p>
 
-                <p>📍 Lima, Perú</p>
-                <p>☎ Teléfono institucional</p>
-                <p>✉ Correo institucional</p>
+                <p class="footer-redes-texto">
+                    Mantente al tanto de nuestras actividades
+                    y novedades.
+                </p>
+
+                <div class="footer-redes">
+
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100068321126724"
+                        class="footer-red-social"
+                        aria-label="Facebook"
+                    >
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="footer-red-social"
+                        aria-label="TikTok"
+                    >
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
 
-        <hr>
-
-
-        <div class="footer-inferior">
+        <div class="footer-bottom">
 
             <p>
-                © 2026 Asociación de Vivienda.
-                Todos los derechos reservados.
+                © 2026 Asociación de Vivienda Virgen de Loreto
             </p>
+
+            <span>
+                Todos los derechos reservados.
+            </span>
 
         </div>
 
     </div>
 
 </footer>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="../js/main.js"></script>
+<script src="../js/animaciones.js"></script>
+<script src="../js/galeria.js"></script>
+</body>
+</html>
