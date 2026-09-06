@@ -1,757 +1,398 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Mis Pagos | Virgen de Loreto</title>
 
-
     <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- BOOTSTRAP -->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- BOOTSTRAP ICONS -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    >
-
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- CSS -->
-    <link
-        rel="stylesheet"
-        href="../../css/styles.css"
-    >
+    <link rel="stylesheet" href="../../css/styles.css" />
 
-    <link
-        rel="stylesheet"
-        href="../../css/portal.css"
-    >
+    <link rel="stylesheet" href="../../css/portal.css" />
+  </head>
 
-</head>
-
-
-<body class="portal-body">
-
-
+  <body class="portal-body">
     <div class="portal-layout">
+      <!-- SIDEBAR -->
+      <aside class="portal-sidebar" id="portalSidebar">
+        <div class="portal-overlay" id="portalOverlay"></div>
 
+        <!-- LOGO -->
+        <div class="sidebar-logo">
+          <a href="../index.html">
+            <img
+              src="../../img/logo.png"
+              alt="Asociación de Vivienda Virgen de Loreto"
+            />
+          </a>
+        </div>
 
-        <!-- SIDEBAR -->
-        <aside
-            class="portal-sidebar"
-            id="portalSidebar"
-        >
+        <!-- USUARIO -->
+        <div class="sidebar-usuario">
+          <div class="sidebar-avatar">
+            <i class="bi bi-person-fill"></i>
+          </div>
 
+          <div class="sidebar-usuario-info">
+            <span>Socio</span>
 
-            <!-- LOGO -->
-            <div class="sidebar-logo">
+            <strong>María López</strong>
+          </div>
+        </div>
 
-                <a href="../index.html">
+        <!-- MENÚ -->
+        <nav class="sidebar-menu">
+          <a href="portal.html" class="sidebar-link">
+            <i class="bi bi-grid-1x2-fill"></i>
 
-                    <img
-                        src="../../img/logo.png"
-                        alt="Asociación de Vivienda Virgen de Loreto"
-                    >
+            <span>Inicio</span>
+          </a>
 
-                </a>
+          <a href="mis-datos.html" class="sidebar-link">
+            <i class="bi bi-person-vcard"></i>
 
+            <span>Mis datos</span>
+          </a>
+
+          <a href="estado-cuenta.html" class="sidebar-link">
+            <i class="bi bi-wallet2"></i>
+
+            <span>Estado de cuenta</span>
+          </a>
+
+          <a
+            href="mis-pagos.html"
+            class="sidebar-link active"
+            aria-current="page"
+          >
+            <i class="bi bi-receipt"></i>
+
+            <span>Mis pagos</span>
+          </a>
+        </nav>
+
+        <!-- CERRAR SESIÓN -->
+        <div class="sidebar-footer">
+          <a href="../login.html" class="sidebar-cerrar">
+            <i class="bi bi-box-arrow-left"></i>
+
+            <span>Cerrar sesión</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- CONTENIDO -->
+      <main class="portal-contenido">
+        <!-- HEADER -->
+        <header class="portal-header">
+          <button
+            class="portal-menu-mobile"
+            id="abrirMenu"
+            type="button"
+            aria-label="Abrir menú"
+            aria-controls="portalSidebar"
+            aria-expanded="false"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div class="portal-header-titulo">
+            <p>Portal del socio</p>
+
+            <h1>Mis pagos</h1>
+          </div>
+
+          <div class="portal-header-derecha">
+            <button
+              class="portal-notificacion"
+              type="button"
+              aria-label="Notificaciones"
+            >
+              <i class="bi bi-bell"></i>
+            </button>
+
+            <div class="portal-perfil">
+              <span class="portal-avatar">
+                <i class="bi bi-person-fill"></i>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="portal-main">
+          <!-- PRESENTACIÓN -->
+          <section class="portal-bienvenida">
+            <div>
+              <p class="portal-etiqueta">Historial</p>
+
+              <h2>Mis pagos</h2>
+
+              <p>
+                Consulta los pagos registrados correspondientes a tus predios.
+              </p>
             </div>
 
+            <div class="bienvenida-icono">
+              <i class="bi bi-receipt-cutoff"></i>
+            </div>
+          </section>
 
-            <!-- USUARIO -->
-            <div class="sidebar-usuario">
+          <!-- FILTROS -->
+          <section class="portal-panel pagos-filtro-panel">
+            <div class="portal-panel-header">
+              <div>
+                <p class="panel-etiqueta">Consulta</p>
 
-                <div class="sidebar-avatar">
+                <h3>Historial de pagos</h3>
 
-                    <i class="bi bi-person-fill"></i>
-
-                </div>
-
-
-                <div class="sidebar-usuario-info">
-
-                    <span>Socio</span>
-
-                    <strong>María López</strong>
-
-                </div>
-
+                <p class="panel-descripcion">
+                  Puedes consultar los pagos según el predio registrado.
+                </p>
+              </div>
             </div>
 
+            <div class="pagos-filtros">
+              <div class="pago-filtro-grupo">
+                <label for="predioPago"> Predio </label>
 
-            <!-- MENÚ -->
-            <nav class="sidebar-menu">
+                <select id="predioPago" class="cuenta-select">
+                  <option>Todos mis predios</option>
 
+                  <option>Mz. 2 - Lote 8</option>
 
-                <a
-                    href="portal.html"
-                    class="sidebar-link"
-                >
+                  <option>Mz. 17 - Lote 5</option>
 
-                    <i class="bi bi-grid-1x2-fill"></i>
+                  <option>Mz. 20 - Lote 3</option>
+                </select>
+              </div>
 
-                    <span>Inicio</span>
+              <div class="pago-filtro-grupo">
+                <label for="anioPago"> Año </label>
 
-                </a>
+                <select id="anioPago" class="cuenta-select">
+                  <option>2026</option>
 
+                  <option>2025</option>
 
-                <a
-                    href="mis-datos.html"
-                    class="sidebar-link"
-                >
+                  <option>2024</option>
+                </select>
+              </div>
+            </div>
+          </section>
 
-                    <i class="bi bi-person-vcard"></i>
+          <!-- RESUMEN -->
+          <section class="portal-resumen pagos-resumen">
+            <article class="resumen-card">
+              <div class="resumen-icono">
+                <i class="bi bi-receipt"></i>
+              </div>
 
-                    <span>Mis datos</span>
+              <div>
+                <span> Pagos registrados </span>
 
-                </a>
+                <strong> 8 </strong>
+              </div>
+            </article>
 
+            <article class="resumen-card">
+              <div class="resumen-icono">
+                <i class="bi bi-cash-stack"></i>
+              </div>
 
-                <a
-                    href="estado-cuenta.html"
-                    class="sidebar-link"
-                >
+              <div>
+                <span> Total pagado </span>
 
-                    <i class="bi bi-wallet2"></i>
+                <strong class="estado-pagado-texto"> S/ 1,250.00 </strong>
+              </div>
+            </article>
 
-                    <span>Estado de cuenta</span>
+            <article class="resumen-card">
+              <div class="resumen-icono">
+                <i class="bi bi-calendar-check"></i>
+              </div>
 
-                </a>
+              <div>
+                <span> Último pago </span>
 
+                <strong> 15/08/2026 </strong>
+              </div>
+            </article>
+          </section>
 
-                <a
-                    href="mis-pagos.html"
-                    class="sidebar-link active"
-                    aria-current="page"
-                >
+          <!-- TABLA PAGOS -->
+          <section class="portal-panel">
+            <div class="portal-panel-header">
+              <div>
+                <p class="panel-etiqueta">Movimientos</p>
 
-                    <i class="bi bi-receipt"></i>
+                <h3>Pagos registrados</h3>
 
-                    <span>Mis pagos</span>
-
-                </a>
-
-
-            </nav>
-
-
-            <!-- CERRAR SESIÓN -->
-            <div class="sidebar-footer">
-
-                <a
-                    href="../login.html"
-                    class="sidebar-cerrar"
-                >
-
-                    <i class="bi bi-box-arrow-left"></i>
-
-                    <span>Cerrar sesión</span>
-
-                </a>
-
+                <p class="panel-descripcion">
+                  Historial de movimientos registrados en la cuenta del socio.
+                </p>
+              </div>
             </div>
 
+            <div class="tabla-responsive">
+              <table class="cuenta-tabla">
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
 
-        </aside>
+                    <th>Concepto</th>
 
+                    <th>Predio</th>
 
+                    <th>Monto</th>
 
-        <!-- CONTENIDO -->
-        <main class="portal-contenido">
+                    <th>Estado</th>
 
+                    <th>Comprobante</th>
+                  </tr>
+                </thead>
 
-            <!-- HEADER -->
-            <header class="portal-header">
+                <tbody>
+                  <tr>
+                    <td>15/08/2026</td>
 
+                    <td>Cuota ordinaria</td>
 
-                <button
-                    class="portal-menu-mobile"
-                    id="abrirMenu"
-                    type="button"
-                    aria-label="Abrir menú"
-                    aria-controls="portalSidebar"
-                    aria-expanded="false"
-                >
+                    <td>Mz. 2 - Lote 8</td>
 
-                    <i class="bi bi-list"></i>
+                    <td>S/ 50.00</td>
 
-                </button>
+                    <td>
+                      <span class="cuenta-estado pagado"> Pagado </span>
+                    </td>
 
+                    <td>
+                      <button class="pago-comprobante" type="button">
+                        <i class="bi bi-file-earmark-text"></i>
 
-                <div class="portal-header-titulo">
+                        Ver
+                      </button>
+                    </td>
+                  </tr>
 
-                    <p>Portal del socio</p>
+                  <tr>
+                    <td>01/08/2026</td>
 
-                    <h1>Mis pagos</h1>
+                    <td>Cuota ordinaria</td>
 
-                </div>
+                    <td>Mz. 17 - Lote 5</td>
 
+                    <td>S/ 100.00</td>
 
-                <div class="portal-header-derecha">
+                    <td>
+                      <span class="cuenta-estado pagado"> Pagado </span>
+                    </td>
 
+                    <td>
+                      <button class="pago-comprobante" type="button">
+                        <i class="bi bi-file-earmark-text"></i>
 
-                    <button
-                        class="portal-notificacion"
-                        type="button"
-                        aria-label="Notificaciones"
-                    >
+                        Ver
+                      </button>
+                    </td>
+                  </tr>
 
-                        <i class="bi bi-bell"></i>
+                  <tr>
+                    <td>18/07/2026</td>
 
-                    </button>
+                    <td>Aporte extraordinario</td>
 
+                    <td>Mz. 20 - Lote 3</td>
 
-                    <div class="portal-perfil">
+                    <td>S/ 150.00</td>
 
-                        <span class="portal-avatar">
+                    <td>
+                      <span class="cuenta-estado pagado"> Pagado </span>
+                    </td>
 
-                            <i class="bi bi-person-fill"></i>
+                    <td>
+                      <button class="pago-comprobante" type="button">
+                        <i class="bi bi-file-earmark-text"></i>
 
-                        </span>
+                        Ver
+                      </button>
+                    </td>
+                  </tr>
 
-                    </div>
+                  <tr>
+                    <td>05/07/2026</td>
 
+                    <td>Cuota ordinaria</td>
 
-                </div>
+                    <td>Mz. 2 - Lote 8</td>
 
+                    <td>S/ 50.00</td>
 
-            </header>
+                    <td>
+                      <span class="cuenta-estado pagado"> Pagado </span>
+                    </td>
 
-
-
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="portal-main">
-
-
-                <!-- PRESENTACIÓN -->
-                <section class="portal-bienvenida">
-
-                    <div>
-
-                        <p class="portal-etiqueta">
-                            Historial
-                        </p>
-
-                        <h2>
-                            Mis pagos
-                        </h2>
-
-                        <p>
-                            Consulta los pagos registrados
-                            correspondientes a tus predios.
-                        </p>
-
-                    </div>
-
-
-                    <div class="bienvenida-icono">
-
-                        <i class="bi bi-receipt-cutoff"></i>
-
-                    </div>
-
-                </section>
-
-
-
-                <!-- FILTROS -->
-                <section class="portal-panel pagos-filtro-panel">
-
-
-                    <div class="portal-panel-header">
-
-                        <div>
-
-                            <p class="panel-etiqueta">
-                                Consulta
-                            </p>
-
-                            <h3>
-                                Historial de pagos
-                            </h3>
-
-                            <p class="panel-descripcion">
-                                Puedes consultar los pagos según
-                                el predio registrado.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="pagos-filtros">
-
-
-                        <div class="pago-filtro-grupo">
-
-                            <label for="predioPago">
-                                Predio
-                            </label>
-
-                            <select
-                                id="predioPago"
-                                class="cuenta-select"
-                            >
-
-                                <option>
-                                    Todos mis predios
-                                </option>
-
-                                <option>
-                                    Mz. 2 - Lote 8
-                                </option>
-
-                                <option>
-                                    Mz. 17 - Lote 5
-                                </option>
-
-                                <option>
-                                    Mz. 20 - Lote 3
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <div class="pago-filtro-grupo">
-
-                            <label for="anioPago">
-                                Año
-                            </label>
-
-                            <select
-                                id="anioPago"
-                                class="cuenta-select"
-                            >
-
-                                <option>
-                                    2026
-                                </option>
-
-                                <option>
-                                    2025
-                                </option>
-
-                                <option>
-                                    2024
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                    </div>
-
-
-                </section>
-
-
-
-                <!-- RESUMEN -->
-                <section class="portal-resumen pagos-resumen">
-
-
-                    <article class="resumen-card">
-
-                        <div class="resumen-icono">
-
-                            <i class="bi bi-receipt"></i>
-
-                        </div>
-
-
-                        <div>
-
-                            <span>
-                                Pagos registrados
-                            </span>
-
-                            <strong>
-                                8
-                            </strong>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <article class="resumen-card">
-
-                        <div class="resumen-icono">
-
-                            <i class="bi bi-cash-stack"></i>
-
-                        </div>
-
-
-                        <div>
-
-                            <span>
-                                Total pagado
-                            </span>
-
-                            <strong class="estado-pagado-texto">
-                                S/ 1,250.00
-                            </strong>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <article class="resumen-card">
-
-                        <div class="resumen-icono">
-
-                            <i class="bi bi-calendar-check"></i>
-
-                        </div>
-
-
-                        <div>
-
-                            <span>
-                                Último pago
-                            </span>
-
-                            <strong>
-                                15/08/2026
-                            </strong>
-
-                        </div>
-
-                    </article>
-
-
-                </section>
-
-
-
-                <!-- TABLA PAGOS -->
-                <section class="portal-panel">
-
-
-                    <div class="portal-panel-header">
-
-                        <div>
-
-                            <p class="panel-etiqueta">
-                                Movimientos
-                            </p>
-
-                            <h3>
-                                Pagos registrados
-                            </h3>
-
-                            <p class="panel-descripcion">
-                                Historial de movimientos registrados
-                                en la cuenta del socio.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="tabla-responsive">
-
-                        <table class="cuenta-tabla">
-
-
-                            <thead>
-
-                                <tr>
-
-                                    <th>Fecha</th>
-
-                                    <th>Concepto</th>
-
-                                    <th>Predio</th>
-
-                                    <th>Monto</th>
-
-                                    <th>Estado</th>
-
-                                    <th>Comprobante</th>
-
-                                </tr>
-
-                            </thead>
-
-
-                            <tbody>
-
-
-                                <tr>
-
-                                    <td>
-                                        15/08/2026
-                                    </td>
-
-                                    <td>
-                                        Cuota ordinaria
-                                    </td>
-
-                                    <td>
-                                        Mz. 2 - Lote 8
-                                    </td>
-
-                                    <td>
-                                        S/ 50.00
-                                    </td>
-
-                                    <td>
-
-                                        <span class="cuenta-estado pagado">
-                                            Pagado
-                                        </span>
-
-                                    </td>
-
-                                    <td>
-
-                                        <button
-                                            class="pago-comprobante"
-                                            type="button"
-                                        >
-
-                                            <i class="bi bi-file-earmark-text"></i>
-
-                                            Ver
-
-                                        </button>
-
-                                    </td>
-
-                                </tr>
-
-
-
-                                <tr>
-
-                                    <td>
-                                        01/08/2026
-                                    </td>
-
-                                    <td>
-                                        Cuota ordinaria
-                                    </td>
-
-                                    <td>
-                                        Mz. 17 - Lote 5
-                                    </td>
-
-                                    <td>
-                                        S/ 100.00
-                                    </td>
-
-                                    <td>
-
-                                        <span class="cuenta-estado pagado">
-                                            Pagado
-                                        </span>
-
-                                    </td>
-
-                                    <td>
-
-                                        <button
-                                            class="pago-comprobante"
-                                            type="button"
-                                        >
-
-                                            <i class="bi bi-file-earmark-text"></i>
-
-                                            Ver
-
-                                        </button>
-
-                                    </td>
-
-                                </tr>
-
-
-
-                                <tr>
-
-                                    <td>
-                                        18/07/2026
-                                    </td>
-
-                                    <td>
-                                        Aporte extraordinario
-                                    </td>
-
-                                    <td>
-                                        Mz. 20 - Lote 3
-                                    </td>
-
-                                    <td>
-                                        S/ 150.00
-                                    </td>
-
-                                    <td>
-
-                                        <span class="cuenta-estado pagado">
-                                            Pagado
-                                        </span>
-
-                                    </td>
-
-                                    <td>
-
-                                        <button
-                                            class="pago-comprobante"
-                                            type="button"
-                                        >
-
-                                            <i class="bi bi-file-earmark-text"></i>
-
-                                            Ver
-
-                                        </button>
-
-                                    </td>
-
-                                </tr>
-
-
-
-                                <tr>
-
-                                    <td>
-                                        05/07/2026
-                                    </td>
-
-                                    <td>
-                                        Cuota ordinaria
-                                    </td>
-
-                                    <td>
-                                        Mz. 2 - Lote 8
-                                    </td>
-
-                                    <td>
-                                        S/ 50.00
-                                    </td>
-
-                                    <td>
-
-                                        <span class="cuenta-estado pagado">
-                                            Pagado
-                                        </span>
-
-                                    </td>
-
-                                    <td>
-
-                                        <button
-                                            class="pago-comprobante"
-                                            type="button"
-                                        >
-
-                                            <i class="bi bi-file-earmark-text"></i>
-
-                                            Ver
-
-                                        </button>
-
-                                    </td>
-
-                                </tr>
-
-
-                            </tbody>
-
-
-                        </table>
-
-                    </div>
-
-
-                </section>
-
-
-
-                <!-- NOTA -->
-                <section class="cuenta-aviso">
-
-                    <div class="cuenta-aviso-icono">
-
-                        <i class="bi bi-info-circle-fill"></i>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            Datos de prueba
-                        </strong>
-
-                        <p>
-                            Este historial se está mostrando únicamente
-                            para desarrollar la interfaz. Cuando se conecte
-                            la base de datos, los pagos del socio se
-                            cargarán automáticamente.
-                        </p>
-
-                    </div>
-
-                </section>
-
-
+                    <td>
+                      <button class="pago-comprobante" type="button">
+                        <i class="bi bi-file-earmark-text"></i>
+
+                        Ver
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- NOTA -->
+          <section class="cuenta-aviso">
+            <div class="cuenta-aviso-icono">
+              <i class="bi bi-info-circle-fill"></i>
             </div>
 
+            <div>
+              <strong> Datos de prueba </strong>
 
-        </main>
-
-
+              <p>
+                Este historial se está mostrando únicamente para desarrollar la
+                interfaz. Cuando se conecte la base de datos, los pagos del
+                socio se cargarán automáticamente.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
 
-
-
     <!-- BOOTSTRAP -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JS -->
     <script src="../../js/portal.js"></script>
-
-
-</body>
-
+  </body>
 </html>
