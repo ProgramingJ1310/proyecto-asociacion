@@ -1,9 +1,11 @@
 /* ==================================================
-   VISOR DE GALERÍA DEL INDEX
+   VISOR DE GALERIA
 ================================================== */
 
 const itemsGaleriaIndex =
-    document.querySelectorAll(".galeria-inicio .galeria-item");
+    document.querySelectorAll(
+        ".galeria-inicio .galeria-item, .galeria .galeria-item"
+    );
 
 const visorImagen =
     document.getElementById("visorImagen");
@@ -29,11 +31,21 @@ itemsGaleriaIndex.forEach((item) => {
         evento.preventDefault();
 
 
+        const imagen =
+            item.querySelector("img");
+
         const rutaImagen =
-            item.dataset.imagen;
+            item.dataset.imagen || imagen?.getAttribute("src");
 
         const titulo =
-            item.dataset.titulo;
+            item.dataset.titulo || imagen?.alt || "Imagen de la galeria";
+
+
+        if (!rutaImagen) {
+
+            return;
+
+        }
 
 
         imagenAmpliada.src =
