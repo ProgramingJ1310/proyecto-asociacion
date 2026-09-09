@@ -186,6 +186,266 @@
 
 
 /* ==================================================
+   CONSEJO DIRECTIVO
+================================================== */
+
+.seccion-directiva {
+    padding: 90px 0;
+    background-color: var(--crema);
+}
+
+
+/* ENCABEZADO */
+
+.directiva-encabezado,
+.vigilancia-encabezado {
+    max-width: 720px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.seccion-etiqueta {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: var(--terracota);
+
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.directiva-encabezado h2,
+.vigilancia-encabezado h2 {
+    margin-bottom: 14px;
+
+    color: var(--azul-oscuro);
+
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+}
+
+.directiva-encabezado p,
+.vigilancia-encabezado p {
+    margin-bottom: 16px;
+
+    color: var(--texto-suave);
+
+    line-height: 1.7;
+}
+
+.directiva-periodo {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    background-color: var(--terracota-suave);
+    color: var(--terracota);
+
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   PRESIDENTE DESTACADO
+================================================== */
+
+.directiva-presidente {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.directivo-destacado {
+    width: 100%;
+    max-width: 350px;
+}
+
+
+/* ==================================================
+   GRIDS
+================================================== */
+
+.directiva-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+.vigilancia-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* ==================================================
+   CARD
+================================================== */
+
+.directivo-card {
+    overflow: hidden;
+
+    background-color: var(--blanco);
+
+    border:
+        1px solid rgba(39, 76, 119, 0.10);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(27, 48, 72, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.directivo-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 32px rgba(27, 48, 72, 0.12);
+}
+
+
+/* ==================================================
+   FOTO
+================================================== */
+
+.directivo-foto {
+    width: 100%;
+    height: 260px;
+
+    overflow: hidden;
+
+    background-color: var(--azul-suave);
+}
+
+.directivo-foto img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.35s ease;
+}
+
+.directivo-card:hover .directivo-foto img {
+    transform: scale(1.035);
+}
+
+
+/* ==================================================
+   INFORMACIÓN
+================================================== */
+
+.directivo-info {
+    padding: 20px;
+
+    text-align: center;
+}
+
+.directivo-cargo {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--terracota);
+
+    font-size: 0.70rem;
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.directivo-info h3 {
+    margin: 0;
+
+    color: var(--azul-oscuro);
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    line-height: 1.45;
+}
+
+
+/* ==================================================
+   CONSEJO DE VIGILANCIA
+================================================== */
+
+.vigilancia-encabezado {
+    margin-top: 85px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 991px) {
+
+    .directiva-grid,
+    .vigilancia-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .seccion-directiva {
+        padding: 65px 0;
+    }
+
+    .directiva-encabezado,
+    .vigilancia-encabezado {
+        margin-bottom: 30px;
+    }
+
+    .directiva-grid,
+    .vigilancia-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .directivo-card {
+        max-width: 360px;
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .directivo-foto {
+        height: 300px;
+    }
+
+    .vigilancia-encabezado {
+        margin-top: 65px;
+    }
+
+}
+
+/* ==================================================
    TABLET
 ================================================== */
 

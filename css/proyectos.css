@@ -269,6 +269,26 @@
     margin-bottom: 0;
 }
 
+.objetivo-proyecto {
+    margin-top: 24px;
+}
+
+.objetivo-proyecto span {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--color-principal-oscuro);
+    font-weight: 700;
+}
+
+.objetivo-proyecto p {
+    margin: 0;
+    color: var(--color-texto-suave);
+    line-height: 1.7;
+}
+
+
+
 
 /* ==================================================
    AVANCES

@@ -1,665 +1,445 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Proyectos | Asociación de Vivienda Virgen de Loreto</title>
 
-
     <!-- BOOTSTRAP -->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- BOOTSTRAP ICONS -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    >
-
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- GOOGLE FONTS -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS GENERAL -->
-    <link
-        rel="stylesheet"
-        href="../css/styles.css"
-    >
-
+    <link rel="stylesheet" href="../css/styles.css" />
 
     <!-- CSS PROYECTOS -->
-    <link
-        rel="stylesheet"
-        href="../css/proyectos.css"
-    >
+    <link rel="stylesheet" href="../css/proyectos.css" />
+  </head>
 
-</head>
-
-
-<body>
-
-
+  <body>
     <!-- ==================================================
          NAVBAR
     =================================================== -->
 
     <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
+      <div class="container">
+        <!-- LOGO -->
 
-        <div class="container">
-
-            <!-- LOGO -->
-
-            <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.html">
           <img
             src="../img/logo.png"
             alt="Asociación de Vivienda Virgen de Loreto"
             class="navbar-logo"
-          >
+          />
         </a>
 
+        <!-- BOTÓN CELULAR -->
 
-            <!-- BOTÓN CELULAR -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-                aria-controls="menuPrincipal"
-                aria-expanded="false"
-                aria-label="Abrir menú"
-            >
+        <!-- MENÚ -->
 
-                <span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Inicio </a>
+            </li>
 
-            </button>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html"> Nosotros </a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link active" href="proyectos.html"> Proyectos </a>
+            </li>
 
-            <!-- MENÚ -->
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html"> Galer&iacute;a </a>
+            </li>
 
-            <div
-                class="collapse navbar-collapse"
-                id="menuPrincipal"
-            >
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html"> Ubicaci&oacute;n </a>
+            </li>
 
-                <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"> Contacto </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="index.html"
-                        >
-                            Inicio
-                        </a>
-                    </li>
+            <!-- PORTAL DEL SOCIO -->
 
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-portal" href="login.html">
+                <i class="bi bi-person-circle me-1"></i>
 
-                    <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="nosotros.html"
-                        >
-                            Nosotros
-                        </a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link active"
-                            href="proyectos.html"
-                        >
-                            Proyectos
-                        </a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="galeria.html"
-                        >
-                            Galer&iacute;a
-                        </a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="ubicacion.html"
-                        >
-                            Ubicaci&oacute;n
-                        </a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="contacto.html"
-                        >
-                            Contacto
-                        </a>
-                    </li>
-
-
-                    <!-- PORTAL DEL SOCIO -->
-
-                    <li class="nav-item ms-lg-3">
-
-                        <a
-                            class="btn btn-portal"
-                            href="login.html"
-                        >
-
-                            <i class="bi bi-person-circle me-1"></i>
-
-                            Portal del socio
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
+                Portal del socio
+              </a>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
-
-
 
     <!-- ==================================================
          PORTADA
     =================================================== -->
-<section class="portada-proyectos">
+    <section class="portada-proyectos">
+      <div class="container contenido-web">
+        <div class="portada-contenido animar">
+          <p class="seccion-etiqueta">Nuestro trabajo</p>
 
-    <div class="container contenido-web">
+          <h1>Proyectos de nuestra comunidad</h1>
 
-            <div class="portada-contenido animar">
-
-                <p class="seccion-etiqueta">
-                    Nuestro trabajo
-                </p>
-
-                <h1>
-                    Proyectos de nuestra comunidad
-                </h1>
-
-                <p>
-                    Conoce los proyectos que contribuyen al desarrollo,
-                    crecimiento y mejora de nuestra Asociación de Vivienda
-                    Virgen de Loreto.
-                </p>
-
-            </div>
-
+          <p>
+            Conoce los proyectos que contribuyen al desarrollo, crecimiento y
+            mejora de nuestra Asociación de Vivienda Virgen de Loreto.
+          </p>
         </div>
-
+      </div>
     </section>
-
-
 
     <!-- ==================================================
          PROYECTOS EN DESARROLLO
     =================================================== -->
 
-<section class="proyectos-destacados">
+    <section class="proyectos-destacados">
+      <div class="container contenido-web">
+        <!-- TÍTULO -->
 
-    <div class="container contenido-web">
+        <div class="text-center proyectos-encabezado animar">
+          <p class="seccion-etiqueta">Nuestros proyectos</p>
 
+          <h2>Proyectos en desarrollo</h2>
 
-            <!-- TÍTULO -->
+          <p class="proyectos-intro">
+            Actualmente nuestra comunidad continúa trabajando en proyectos
+            orientados a mejorar los servicios, infraestructura y espacios para
+            nuestros asociados.
+          </p>
+        </div>
 
-            <div class="text-center proyectos-encabezado animar">
-
-                <p class="seccion-etiqueta">
-                    Nuestros proyectos
-                </p>
-
-                <h2>
-                    Proyectos en desarrollo
-                </h2>
-
-                <p class="proyectos-intro">
-                    Actualmente nuestra comunidad continúa trabajando
-                    en proyectos orientados a mejorar los servicios,
-                    infraestructura y espacios para nuestros asociados.
-                </p>
-
-            </div>
-
-
-
-            <!-- ==================================================
+        <!-- ==================================================
                  PROYECTO 1
                  ELECTRIFICACIÓN DEFINITIVA
             =================================================== -->
 
-            <div class="proyecto-detalle animar">
+        <div class="proyecto-detalle animar">
+          <div class="row g-4 align-items-center">
+            <!-- IMAGEN -->
 
-                <div class="row g-4 align-items-center">
-
-
-                    <!-- IMAGEN -->
-
-                    <div class="col-lg-6 animar-izquierda">
-
-                        <img
-                            src="../img/proyecto1.jpg"
-                            alt="Proyecto de electrificación definitiva"
-                            class="proyecto-detalle-img"
-                        >
-
-                    </div>
-
-
-
-                    <!-- INFORMACIÓN -->
-
-                    <div class="col-lg-6 animar-derecha">
-
-                        <span class="estado-proyecto estado-proceso">
-
-                            <i class="bi bi-hourglass-split me-1"></i>
-
-                            En proceso
-
-                        </span>
-
-
-                        <h3>
-                            Electrificación definitiva
-                        </h3>
-
-
-                        <p>
-                            Proyecto orientado a alcanzar la
-                            electrificación definitiva de nuestra
-                            asociación, contribuyendo a mejorar los
-                            servicios básicos y las condiciones de
-                            nuestra comunidad.
-                        </p>
-
-
-                        <div class="informacion-proyecto">
-
-                            <div class="informacion-icono">
-
-                                <i class="bi bi-lightning-charge-fill"></i>
-
-                            </div>
-
-                            <div>
-
-                                <h5>
-                                    Objetivo
-                                </h5>
-
-                                <p>
-                                    Contar con un servicio de
-                                    electrificación definitiva para
-                                    la asociación.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="informacion-proyecto">
-
-                            <div class="informacion-icono">
-
-                                <i class="bi bi-activity"></i>
-
-                            </div>
-
-                            <div>
-
-                                <h5>
-                                    Estado actual
-                                </h5>
-
-                                <p>
-                                    Proyecto actualmente en proceso.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="col-lg-6 animar-izquierda">
+              <img
+                src="../img/proyecto1.jpg"
+                alt="Proyecto de electrificación definitiva"
+                class="proyecto-detalle-img"
+              />
             </div>
 
+            <!-- INFORMACIÓN -->
 
+            <div class="col-lg-6 animar-derecha">
+              <span class="estado-proyecto estado-proceso">
+                <i class="bi bi-hourglass-split me-1"></i>
 
-            <!-- ==================================================
+                En proceso
+              </span>
+
+              <h3>Electrificación definitiva</h3>
+
+              <p>
+                Proyecto orientado a alcanzar la electrificación definitiva de
+                nuestra asociación, contribuyendo a mejorar los servicios
+                básicos y las condiciones de nuestra comunidad.
+              </p>
+
+              <div class="informacion-proyecto">
+                <div class="informacion-icono">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+
+                <div>
+                  <h5>Objetivo</h5>
+
+                  <p>
+                    Contar con un servicio de electrificación definitiva para la
+                    asociación.
+                  </p>
+                </div>
+              </div>
+
+              <div class="informacion-proyecto">
+                <div class="informacion-icono">
+                  <i class="bi bi-activity"></i>
+                </div>
+
+                <div>
+                  <h5>Estado actual</h5>
+
+                  <p>Proyecto actualmente en proceso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================
                  PROYECTO 2
                  CENTRO RECREACIONAL
             =================================================== -->
 
-            <div class="proyecto-detalle animar">
+        <div class="proyecto-detalle animar">
+          <div class="row g-4 align-items-center">
+            <!-- IMAGEN -->
 
-                <div class="row g-4 align-items-center">
-
-
-                    <!-- IMAGEN -->
-
-                    <div class="col-lg-6 order-lg-2 animar-derecha">
-
-                        <img
-                            src="../img/CR.png"
-                            alt="Centro Recreacional de la Asociación Virgen de Loreto"
-                            class="proyecto-detalle-img"
-                        >
-
-                    </div>
-
-
-
-                    <!-- INFORMACIÓN -->
-
-                    <div class="col-lg-6 order-lg-1 animar-izquierda">
-
-                        <span class="estado-proyecto estado-desarrollo">
-
-                            <i class="bi bi-tools me-1"></i>
-
-                            En desarrollo
-
-                        </span>
-
-
-                        <h3>
-                            Centro Recreacional
-                        </h3>
-
-
-                        <p>
-                            El Centro Recreacional es un espacio de la
-                            asociación destinado a actividades deportivas,
-                            recreativas y administrativas.
-                        </p>
-
-
-                        <p>
-                            Actualmente el recinto ya cuenta con algunas
-                            instalaciones implementadas y continuará
-                            desarrollándose progresivamente.
-                        </p>
-
-
-                        <!-- AVANCES -->
-
-                        <div class="avances-proyecto">
-
-                            <h5>
-                                Avances actuales
-                            </h5>
-
-
-                            <div class="avance-item">
-
-                                <i class="bi bi-check-circle-fill"></i>
-
-                                <span>
-                                    Canchas sintéticas
-                                </span>
-
-                            </div>
-
-
-                            <div class="avance-item">
-
-                                <i class="bi bi-check-circle-fill"></i>
-
-                                <span>
-                                    Oficinas administrativas
-                                </span>
-
-                            </div>
-
-
-                            <div class="avance-item pendiente">
-
-                                <i class="bi bi-circle"></i>
-
-                                <span>
-                                    Implementación de nuevas áreas
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="col-lg-6 order-lg-2 animar-derecha">
+              <img
+                src="../img/CR.png"
+                alt="Centro Recreacional de la Asociación Virgen de Loreto"
+                class="proyecto-detalle-img"
+              />
             </div>
 
+            <!-- INFORMACIÓN -->
 
+            <div class="col-lg-6 order-lg-1 animar-izquierda">
+              <span class="estado-proyecto estado-desarrollo">
+                <i class="bi bi-tools me-1"></i>
+
+                En desarrollo
+              </span>
+
+              <h3>Centro Recreacional</h3>
+
+              <p>
+                El Centro Recreacional es un espacio de la asociación destinado
+                a actividades deportivas, recreativas y administrativas.
+              </p>
+
+              <p>
+                Actualmente el recinto ya cuenta con algunas instalaciones
+                implementadas y continuará desarrollándose progresivamente.
+              </p>
+
+              <!-- AVANCES -->
+
+              <div class="avances-proyecto">
+                <h5>Avances actuales</h5>
+
+                <div class="avance-item">
+                  <i class="bi bi-check-circle-fill"></i>
+
+                  <span> Canchas sintéticas </span>
+                </div>
+
+                <div class="avance-item">
+                  <i class="bi bi-check-circle-fill"></i>
+
+                  <span> Oficinas administrativas </span>
+                </div>
+
+                <div class="avance-item pendiente">
+                  <i class="bi bi-circle"></i>
+
+                  <span> Implementación de nuevas áreas </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+<!-- ==================================================
+                 PROYECTO 3
+                
+            =================================================== -->
 
+        <div class="proyecto-detalle animar">
+          <div class="row g-4 align-items-center">
+            <!-- IMAGEN -->
+
+            <div class="col-lg-6 order-lg-2 animar-derecha">
+              <img
+                src="../img/pry-habi.png"
+                alt="Ampliación para habilitación urbana"
+                class="proyecto-detalle-img"
+              />
+            </div>
+
+            <!-- INFORMACIÓN -->
+
+           <div class="col-lg-6 order-lg-1 animar-izquierda">
+
+    <span class="estado-proyecto estado-desarrollo">
+        <i class="bi bi-tools me-1"></i>
+        En desarrollo
+    </span>
+
+    <h3>Ampliación para habilitación urbana</h3>
+
+    <p>
+        Proyecto de ampliación orientado a la habilitación urbana
+        de los socios copropietarios de la asociación.
+    </p>
+
+    <div class="objetivo-proyecto">
+
+        <span>Objetivo del proyecto</span>
+
+        <p>
+            Contribuir al desarrollo y acondicionamiento
+            del área destinada a la futura habilitación urbana.
+        </p>
+
+    </div>
+
+</div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- ==================================================
          MENSAJE FINAL
     =================================================== -->
 
-  <section class="proyectos-compromiso">
+    <section class="proyectos-compromiso">
+      <div class="container contenido-web">
+        <div class="compromiso-contenido animar">
+          <div class="compromiso-icono">
+            <i class="bi bi-people-fill"></i>
+          </div>
 
-    <div class="container contenido-web">
+          <div>
+            <p class="seccion-etiqueta">Nuestro compromiso</p>
 
-            <div class="compromiso-contenido animar">
+            <h2>Seguimos trabajando por nuestra comunidad</h2>
 
-                <div class="compromiso-icono">
-
-                    <i class="bi bi-people-fill"></i>
-
-                </div>
-
-
-                <div>
-
-                    <p class="seccion-etiqueta">
-                        Nuestro compromiso
-                    </p>
-
-                    <h2>
-                        Seguimos trabajando por nuestra comunidad
-                    </h2>
-
-                    <p>
-                        Cada proyecto representa un paso importante
-                        para continuar mejorando nuestra asociación
-                        y generar mejores espacios y servicios para
-                        nuestros vecinos.
-                    </p>
-
-                </div>
-
-            </div>
-
+            <p>
+              Cada proyecto representa un paso importante para continuar
+              mejorando nuestra asociación y generar mejores espacios y
+              servicios para nuestros vecinos.
+            </p>
+          </div>
         </div>
-
+      </div>
     </section>
-
-
 
     <!-- ==================================================
          FOOTER
     =================================================== -->
 
     <footer class="footer">
-
-    <div class="container">
-
+      <div class="container">
         <div class="footer-grid">
+          <!-- IDENTIDAD -->
+          <div class="footer-col footer-marca animar">
+            <a href="index.html" class="footer-logo">
+              <span class="footer-logo-icono">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
 
-            <!-- IDENTIDAD -->
-            <div class="footer-col footer-marca animar">
-
-                <a href="index.html" class="footer-logo">
-                    <span class="footer-logo-icono">
-                        <i class="bi bi-house-door-fill"></i>
-                    </span>
-
-                    <span>Virgen de Loreto</span>
-                </a>
-
-                <p>
-                    Asociación de Vivienda Virgen de Loreto,
-                    una comunidad organizada y comprometida
-                    con su desarrollo y bienestar.
-                </p>
-
-            </div>
-
-
-            <!-- CONTACTO -->
-            <div class="footer-col animar">
-
-                <p class="footer-titulo">
-                    Contacto
-                </p>
-
-                <a href="tel:+51908912426" class="footer-dato">
-                    <i class="bi bi-telephone-fill"></i>
-                    <span>+51 908 912 426</span>
-                </a>
-
-                <a
-                    href="mailto:aviloreto@gmail.com"
-                    class="footer-dato"
-                >
-                    <i class="bi bi-envelope-fill"></i>
-                    <span>aviloreto@gmail.com</span>
-                </a>
-
-                <a href="ubicacion.html" class="footer-dato">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <span>Km 41.5 de la Panamericana Norte</span>
-                </a>
-
-            </div>
-
-
-            <!-- REDES -->
-            <div class="footer-col footer-redes-col animar">
-
-                <p class="footer-titulo">
-                    Síguenos
-                </p>
-
-                <p class="footer-redes-texto">
-                    Mantente al tanto de nuestras actividades
-                    y novedades.
-                </p>
-
-                <div class="footer-redes">
-
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100068321126724"
-                        class="footer-red-social"
-                        aria-label="Facebook"
-                    >
-                        <i class="bi bi-facebook"></i>
-                    </a>
-
-                    <a
-                        href="#"
-                        class="footer-red-social"
-                        aria-label="TikTok"
-                    >
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
+              <span>Virgen de Loreto</span>
+            </a>
 
             <p>
-                © 2026 Asociación de Vivienda Virgen de Loreto
+              Asociación de Vivienda Virgen de Loreto, una comunidad organizada
+              y comprometida con su desarrollo y bienestar.
+            </p>
+          </div>
+
+          <!-- CONTACTO -->
+          <div class="footer-col animar">
+            <p class="footer-titulo">Contacto</p>
+
+            <a href="tel:+51908912426" class="footer-dato">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+51 908 912 426</span>
+            </a>
+
+            <a href="mailto:aviloreto@gmail.com" class="footer-dato">
+              <i class="bi bi-envelope-fill"></i>
+              <span>aviloreto@gmail.com</span>
+            </a>
+
+            <a href="ubicacion.html" class="footer-dato">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Km 41.5 de la Panamericana Norte</span>
+            </a>
+          </div>
+
+          <!-- REDES -->
+          <div class="footer-col footer-redes-col animar">
+            <p class="footer-titulo">Síguenos</p>
+
+            <p class="footer-redes-texto">
+              Mantente al tanto de nuestras actividades y novedades.
             </p>
 
-            <span>
-                Todos los derechos reservados.
-            </span>
+            <div class="footer-redes">
+              <a
+                href="https://www.facebook.com/profile.php?id=100068321126724"
+                class="footer-red-social"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
 
+              <a href="#" class="footer-red-social" aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
-    </div>
+        <div class="footer-bottom">
+          <p>© 2026 Asociación de Vivienda Virgen de Loreto</p>
 
-</footer>
-
-
+          <span> Todos los derechos reservados. </span>
+        </div>
+      </div>
+    </footer>
 
     <!-- ==================================================
          WHATSAPP
     =================================================== -->
 
-    <a
-        href="#"
-        class="whatsapp-flotante"
-        aria-label="Contactar por WhatsApp"
-    >
-
-        <i class="bi bi-whatsapp"></i>
-
+    <a href="#" class="whatsapp-flotante" aria-label="Contactar por WhatsApp">
+      <i class="bi bi-whatsapp"></i>
     </a>
-
-
 
     <!-- ==================================================
          JAVASCRIPT
     =================================================== -->
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="../js/main.js"></script>
-<script src="../js/animaciones.js"></script>
-
-
-</body>
-
+    <script src="../js/main.js"></script>
+    <script src="../js/animaciones.js"></script>
+  </body>
 </html>

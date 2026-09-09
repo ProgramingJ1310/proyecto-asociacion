@@ -1,879 +1,501 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Contacto | Asociación de Vivienda
-    </title>
-
+    <title>Contacto | Asociación de Vivienda</title>
 
     <!-- BOOTSTRAP -->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- BOOTSTRAP ICONS -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    >
-
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- CSS GENERAL -->
-    <link
-        rel="stylesheet"
-        href="../css/styles.css"
-    >
-
+    <link rel="stylesheet" href="../css/styles.css" />
 
     <!-- CSS CONTACTO -->
-    <link
-        rel="stylesheet"
-        href="../css/contacto.css"
-    >
+    <link rel="stylesheet" href="../css/contacto.css" />
+  </head>
 
-</head>
-
-
-<body>
-
-
+  <body>
     <!-- ==================================================
          NAVBAR
     =================================================== -->
 
     <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="../img/logo.png"
+            alt="Asociación de Vivienda Virgen de Loreto"
+            class="navbar-logo"
+          />
+        </a>
 
-        <div class="container">
+        <!-- BOTÓN MÓVIL -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- MENÚ -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Inicio </a>
+            </li>
 
-            <!-- LOGO -->
-            <a
-                class="navbar-brand"
-                href="index.html"
-            >
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html"> Nosotros </a>
+            </li>
 
-                <img
-                    src="../img/logo.png"
-                    alt="Asociación de Vivienda Virgen de Loreto"
-                    class="navbar-logo"
-                >
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html"> Proyectos </a>
+            </li>
 
-            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html"> Galería </a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html"> Ubicación </a>
+            </li>
 
-            <!-- BOTÓN MÓVIL -->
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-                aria-controls="menuPrincipal"
-                aria-expanded="false"
-                aria-label="Abrir menú"
-            >
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html"> Contacto </a>
+            </li>
 
-                <span class="navbar-toggler-icon"></span>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-portal" href="login.html">
+                <i class="bi bi-person-circle me-1"></i>
 
-            </button>
-
-
-            <!-- MENÚ -->
-            <div
-                class="collapse navbar-collapse"
-                id="menuPrincipal"
-            >
-
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="index.html"
-                        >
-                            Inicio
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="nosotros.html"
-                        >
-                            Nosotros
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="proyectos.html"
-                        >
-                            Proyectos
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="galeria.html"
-                        >
-                            Galería
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="ubicacion.html"
-                        >
-                            Ubicación
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link active"
-                            href="contacto.html"
-                        >
-                            Contacto
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item ms-lg-3">
-
-                        <a
-                            class="btn btn-portal"
-                            href="login.html"
-                        >
-
-                            <i class="bi bi-person-circle me-1"></i>
-
-                            Portal del socio
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
+                Portal del socio
+              </a>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
-
-
 
     <!-- ==================================================
          PORTADA
     =================================================== -->
 
     <section class="portada-contacto">
+      <div class="container contenido-web">
+        <div class="portada-contenido animar">
+          <p class="seccion-etiqueta">Comunícate con nosotros</p>
 
-        <div class="container contenido-web">
+          <h1>Contacto</h1>
 
-            <div class="portada-contenido animar">
-
-                <p class="seccion-etiqueta">
-                    Comunícate con nosotros
-                </p>
-
-
-                <h1>
-                    Contacto
-                </h1>
-
-
-                <p>
-                    Estamos disponibles para atender tus consultas
-                    y brindarte información sobre nuestra asociación.
-                </p>
-
-            </div>
-
+          <p>
+            Estamos disponibles para atender tus consultas y brindarte
+            información sobre nuestra asociación.
+          </p>
         </div>
-
+      </div>
     </section>
-
-
 
     <!-- ==================================================
          CONTACTO
     =================================================== -->
 
     <section class="contacto">
+      <div class="container contenido-web">
+        <div class="row g-5">
+          <!-- INFORMACIÓN -->
+          <div class="col-lg-5 animar-izquierda">
+            <p class="seccion-etiqueta">Información</p>
 
-        <div class="container contenido-web">
+            <h2>Hablemos</h2>
 
-            <div class="row g-5">
+            <p class="contacto-intro">
+              Puedes comunicarte con nosotros mediante nuestros diferentes
+              canales de atención.
+            </p>
 
+            <!-- TELÉFONO -->
+            <div class="contacto-dato animar">
+              <div class="contacto-icono">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
 
-                <!-- INFORMACIÓN -->
-                <div class="col-lg-5 animar-izquierda">
+              <div>
+                <h5>Teléfono</h5>
 
-                    <p class="seccion-etiqueta">
-                        Información
-                    </p>
+                <p>
+                  <a href="tel:+51908912426"> +51 908 912 426 </a>
+                </p>
+              </div>
+            </div>
 
+            <!-- CORREO -->
+            <div class="contacto-dato animar">
+              <div class="contacto-icono">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
 
-                    <h2>
-                        Hablemos
-                    </h2>
+              <div>
+                <h5>Correo electrónico</h5>
 
+                <p>
+                  <a href="mailto:aviloreto@gmail.com"> aviloreto@gmail.com </a>
+                </p>
+              </div>
+            </div>
+          </div>
 
-                    <p class="contacto-intro">
-                        Puedes comunicarte con nosotros mediante
-                        nuestros diferentes canales de atención.
-                    </p>
-
-
-
-
-                    <!-- TELÉFONO -->
-                    <div class="contacto-dato animar">
-
-                        <div class="contacto-icono">
-
-                            <i class="bi bi-telephone-fill"></i>
-
-                        </div>
-
-
-                        <div>
-
-                            <h5>
-                                Teléfono
-                            </h5>
-
-                            <p>
-
-                                <a href="tel:+51908912426">
-                                    +51 908 912 426
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- CORREO -->
-                    <div class="contacto-dato animar">
-
-                        <div class="contacto-icono">
-
-                            <i class="bi bi-envelope-fill"></i>
-
-                        </div>
-
-
-                        <div>
-
-                            <h5>
-                                Correo electrónico
-                            </h5>
-
-                            <p>
-
-                                <a href="mailto:aviloreto@gmail.com">
-                                    aviloreto@gmail.com
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ==================================================
+          <!-- ==================================================
                      FORMULARIO
                 =================================================== -->
 
-                <!-- ==================================================
+          <!-- ==================================================
      FORMULARIO
 =================================================== -->
 
-<div class="col-lg-7 animar-derecha">
+          <div class="col-lg-7 animar-derecha">
+            <div class="formulario-contacto">
+              <!-- ENCABEZADO DEL FORMULARIO -->
+              <div class="formulario-encabezado">
+                <span class="formulario-icono">
+                  <i class="bi bi-chat-dots-fill"></i>
+                </span>
 
-    <div class="formulario-contacto">
+                <div>
+                  <p class="seccion-etiqueta">Escríbenos</p>
 
-        <!-- ENCABEZADO DEL FORMULARIO -->
-        <div class="formulario-encabezado">
+                  <h3>Realiza tu consulta en línea</h3>
+                </div>
+              </div>
 
-            <span class="formulario-icono">
-                <i class="bi bi-chat-dots-fill"></i>
-            </span>
+              <!-- DESCRIPCIÓN -->
+              <p class="formulario-descripcion">
+                Completa el formulario y envía tu consulta directamente a la asociación mediante WhatsApp
+              </p>
 
-            <div>
-
-                <p class="seccion-etiqueta">
-                    Escríbenos
-                </p>
-
-                <h3>
-                    Envíanos un mensaje
-                </h3>
-
-            </div>
-
-        </div>
-
-
-        <!-- DESCRIPCIÓN -->
-        <p class="formulario-descripcion">
-            Completa el formulario y envíanos tu consulta
-            directamente por WhatsApp.
-        </p>
-
-
-        <!-- ==================================================
+              <!-- ==================================================
              FORMULARIO
         =================================================== -->
 
-        <form id="formContacto">
-
-
-            <!-- ==================================================
+              <form id="formContacto">
+                <!-- ==================================================
                  NOMBRE
             =================================================== -->
 
-            <div class="campo-formulario">
+                <div class="campo-formulario">
+                  <label for="nombre"> Nombre completo </label>
 
-                <label for="nombre">
-                    Nombre completo
-                </label>
-
-                <div class="input-con-icono">
-
+                  <div class="input-con-icono">
                     <i class="bi bi-person"></i>
 
                     <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        placeholder="Ingresa tu nombre completo"
-                        autocomplete="name"
-                        required
-                    >
-
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Ingresa tu nombre completo"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
                 </div>
 
-            </div>
-
-
-            <!-- ==================================================
+                <!-- ==================================================
                  TELÉFONO
             =================================================== -->
 
-            <div class="campo-formulario">
+                <div class="campo-formulario">
+                  <label for="telefono"> Teléfono </label>
 
-                <label for="telefono">
-                    Teléfono
-                </label>
-
-                <div class="input-con-icono">
-
+                  <div class="input-con-icono">
                     <i class="bi bi-telephone"></i>
 
                     <input
-                        type="tel"
-                        id="telefono"
-                        name="telefono"
-                        placeholder="Ej. 987654321"
-                        maxlength="9"
-                        inputmode="numeric"
-                        autocomplete="tel"
-                        required
-                    >
-
+                      type="tel"
+                      id="telefono"
+                      name="telefono"
+                      placeholder="Ej. 987654321"
+                      maxlength="9"
+                      inputmode="numeric"
+                      autocomplete="tel"
+                      required
+                    />
+                  </div>
                 </div>
 
-            </div>
-
-
-            <!-- ==================================================
+                <!-- ==================================================
                  TIPO DE PERSONA
             =================================================== -->
 
-            <div class="campo-formulario">
+                <div class="campo-formulario">
+                  <label for="tipoPersona"> Tipo de persona </label>
 
-                <label for="tipoPersona">
-                    Tipo de persona
-                </label>
-
-                <div class="input-con-icono">
-
+                  <div class="input-con-icono">
                     <i class="bi bi-people"></i>
 
-                    <select
-                        id="tipoPersona"
-                        name="tipoPersona"
-                        required
-                    >
+                    <select id="tipoPersona" name="tipoPersona" required>
+                      <option value="" selected disabled>
+                        Selecciona una opción
+                      </option>
 
-                        <option
-                            value=""
-                            selected
-                            disabled
-                        >
-                            Selecciona una opción
-                        </option>
+                      <option value="Socio">Socio</option>
 
-                        <option value="Socio">
-                            Socio
-                        </option>
-
-                        <option value="Visitante">
-                            Visitante
-                        </option>
-
+                      <option value="Visitante">Visitante</option>
                     </select>
-
+                  </div>
                 </div>
 
-            </div>
-
-
-            <!-- ==================================================
+                <!-- ==================================================
                  DATOS DEL SOCIO
                  Solo aparecen si selecciona "Socio"
             =================================================== -->
 
-            <div
-                class="datos-socio"
-                id="datosSocio"
-            >
-
-                <div class="datos-socio-titulo">
-
+                <div class="datos-socio" id="datosSocio">
+                  <div class="datos-socio-titulo">
                     <i class="bi bi-house-door-fill"></i>
 
-                    <span>
-                        Datos del predio
-                    </span>
+                    <span> Datos del predio </span>
+                  </div>
 
-                </div>
-
-
-                <div class="row g-3">
-
-
+                  <div class="row g-3">
                     <!-- MANZANA -->
                     <div class="col-md-6">
+                      <div class="campo-formulario">
+                        <label for="manzana"> Manzana </label>
 
-                        <div class="campo-formulario">
+                        <div class="input-con-icono">
+                          <i class="bi bi-grid-3x3-gap"></i>
 
-                            <label for="manzana">
-                                Manzana
-                            </label>
-
-                            <div class="input-con-icono">
-
-                                <i class="bi bi-grid-3x3-gap"></i>
-
-                                <input
-                                    type="text"
-                                    id="manzana"
-                                    name="manzana"
-                                    placeholder="Ej. B"
-                                    maxlength="5"
-                                >
-
-                            </div>
-
+                          <input
+                            type="text"
+                            id="manzana"
+                            name="manzana"
+                            placeholder="Ej. B"
+                            maxlength="5"
+                          />
                         </div>
-
+                      </div>
                     </div>
-
 
                     <!-- LOTE -->
                     <div class="col-md-6">
+                      <div class="campo-formulario">
+                        <label for="lote"> Lote </label>
 
-                        <div class="campo-formulario">
+                        <div class="input-con-icono">
+                          <i class="bi bi-house"></i>
 
-                            <label for="lote">
-                                Lote
-                            </label>
-
-                            <div class="input-con-icono">
-
-                                <i class="bi bi-house"></i>
-
-                                <input
-                                    type="text"
-                                    id="lote"
-                                    name="lote"
-                                    placeholder="Ej. 15"
-                                    maxlength="5"
-                                >
-
-                            </div>
-
+                          <input
+                            type="text"
+                            id="lote"
+                            name="lote"
+                            placeholder="Ej. 15"
+                            maxlength="5"
+                          />
                         </div>
-
+                      </div>
                     </div>
-
+                  </div>
                 </div>
 
-            </div>
-
-
-            <!-- ==================================================
+                <!-- ==================================================
                  MOTIVO DE CONSULTA
             =================================================== -->
 
-            <div class="campo-formulario">
+                <div class="campo-formulario">
+                  <label for="asunto"> Motivo de consulta </label>
 
-                <label for="asunto">
-                    Motivo de consulta
-                </label>
-
-                <div class="input-con-icono">
-
+                  <div class="input-con-icono">
                     <i class="bi bi-card-text"></i>
 
-                    <select
-                        id="asunto"
-                        name="asunto"
-                        required
-                    >
+                    <select id="asunto" name="asunto" required>
+                      <option value="" selected disabled>
+                        Selecciona una opción
+                      </option>
 
-                        <option
-                            value=""
-                            selected
-                            disabled
-                        >
-                            Selecciona una opción
-                        </option>
+                      <option value="Información general">
+                        Información general
+                      </option>
 
-                        <option value="Información general">
-                            Información general
-                        </option>
+                      <option value="Proyectos">Proyectos de la asociación</option>
 
-                        <option value="Proyectos">
-                            Proyectos
-                        </option>
+                      <option value="Consulta de socio">
+                        Consulta de socio
+                      </option>
 
-                        <option value="Consulta de socio">
-                            Consulta de socio
-                        </option>
+                      <option value="Ubicación">Ubicación</option>
 
-                        <option value="Ubicación">
-                            Ubicación
-                        </option>
-
-                        <option value="Otro">
-                            Otro
-                        </option>
-
+                      <option value="Otro">Otro</option>
                     </select>
-
+                  </div>
                 </div>
 
-            </div>
-
-
-            <!-- ==================================================
+                <!-- ==================================================
                  MENSAJE
             =================================================== -->
 
-            <div class="campo-formulario">
+                <div class="campo-formulario">
+                  <label for="mensaje"> Mensaje </label>
 
-                <label for="mensaje">
-                    Mensaje
-                </label>
-
-                <textarea
+                  <textarea
                     id="mensaje"
                     name="mensaje"
                     rows="5"
                     maxlength="500"
                     placeholder="Cuéntanos en qué podemos ayudarte..."
                     required
-                ></textarea>
+                  ></textarea>
 
-
-                <!-- CONTADOR -->
-                <div class="contador-mensaje">
-
-                    <span id="contadorCaracteres">
-                        0
-                    </span>
+                  <!-- CONTADOR -->
+                  <div class="contador-mensaje">
+                    <span id="contadorCaracteres"> 0 </span>
 
                     / 500
-
+                  </div>
                 </div>
 
-            </div>
-
-
-            <!-- ==================================================
+                <!-- ==================================================
                  BOTÓN ENVIAR
             =================================================== -->
 
-            <button
-                type="submit"
-                class="btn-enviar-contacto"
-            >
+                <button type="submit" class="btn-enviar-contacto">
+                  <i class="bi bi-whatsapp"></i>
 
-                <i class="bi bi-whatsapp"></i>
+                  <span> Enviar por WhatsApp </span>
 
-                <span>
-                    Enviar por WhatsApp
-                </span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
 
-                <i class="bi bi-arrow-right"></i>
+                <!-- AVISO -->
+                <p class="formulario-aviso">
+                  <i class="bi bi-shield-check"></i>
 
-            </button>
-
-
-            <!-- AVISO -->
-            <p class="formulario-aviso">
-
-                <i class="bi bi-shield-check"></i>
-
-                Tus datos serán utilizados únicamente
-                para atender tu consulta.
-
-            </p>
-
-        </form>
-
-    </div>
-
-</div>
-
+                  Tus datos serán utilizados únicamente para atender tu
+                  consulta.
+                </p>
+              </form>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </section>
-
-
 
     <!-- ==================================================
          FOOTER
     =================================================== -->
 
     <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- IDENTIDAD -->
+          <div class="footer-col footer-marca animar">
+            <a href="index.html" class="footer-logo">
+              <span class="footer-logo-icono">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
 
-        <div class="container">
+              <span> Virgen de Loreto </span>
+            </a>
 
-            <div class="footer-grid">
+            <p>
+              Asociación de Vivienda Virgen de Loreto, una comunidad organizada
+              y comprometida con su desarrollo y bienestar.
+            </p>
+          </div>
 
+          <!-- CONTACTO -->
+          <div class="footer-col animar">
+            <p class="footer-titulo">Contacto</p>
 
-                <!-- IDENTIDAD -->
-                <div class="footer-col footer-marca animar">
+            <a href="tel:+51908912426" class="footer-dato">
+              <i class="bi bi-telephone-fill"></i>
 
-                    <a
-                        href="index.html"
-                        class="footer-logo"
-                    >
+              <span> +51 908 912 426 </span>
+            </a>
 
-                        <span class="footer-logo-icono">
+            <a href="mailto:aviloreto@gmail.com" class="footer-dato">
+              <i class="bi bi-envelope-fill"></i>
 
-                            <i class="bi bi-house-door-fill"></i>
+              <span> aviloreto@gmail.com </span>
+            </a>
 
-                        </span>
+            <a href="ubicacion.html" class="footer-dato">
+              <i class="bi bi-geo-alt-fill"></i>
 
-                        <span>
-                            Virgen de Loreto
-                        </span>
+              <span> Km 41.5 de la Panamericana Norte </span>
+            </a>
+          </div>
 
-                    </a>
+          <!-- REDES -->
+          <div class="footer-col footer-redes-col animar">
+            <p class="footer-titulo">Síguenos</p>
 
+            <p class="footer-redes-texto">
+              Mantente al tanto de nuestras actividades y novedades.
+            </p>
 
-                    <p>
-                        Asociación de Vivienda Virgen de Loreto,
-                        una comunidad organizada y comprometida
-                        con su desarrollo y bienestar.
-                    </p>
+            <div class="footer-redes">
+              <a
+                href="https://www.facebook.com/profile.php?id=100068321126724"
+                class="footer-red-social"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
 
-                </div>
-
-
-
-                <!-- CONTACTO -->
-                <div class="footer-col animar">
-
-                    <p class="footer-titulo">
-                        Contacto
-                    </p>
-
-
-                    <a
-                        href="tel:+51908912426"
-                        class="footer-dato"
-                    >
-
-                        <i class="bi bi-telephone-fill"></i>
-
-                        <span>
-                            +51 908 912 426
-                        </span>
-
-                    </a>
-
-
-                    <a
-                        href="mailto:aviloreto@gmail.com"
-                        class="footer-dato"
-                    >
-
-                        <i class="bi bi-envelope-fill"></i>
-
-                        <span>
-                            aviloreto@gmail.com
-                        </span>
-
-                    </a>
-
-
-                    <a
-                        href="ubicacion.html"
-                        class="footer-dato"
-                    >
-
-                        <i class="bi bi-geo-alt-fill"></i>
-
-                        <span>
-                            Km 41.5 de la Panamericana Norte
-                        </span>
-
-                    </a>
-
-                </div>
-
-
-
-                <!-- REDES -->
-                <div class="footer-col footer-redes-col animar">
-
-                    <p class="footer-titulo">
-                        Síguenos
-                    </p>
-
-
-                    <p class="footer-redes-texto">
-                        Mantente al tanto de nuestras actividades
-                        y novedades.
-                    </p>
-
-
-                    <div class="footer-redes">
-
-                        <a
-                            href="https://www.facebook.com/profile.php?id=100068321126724"
-                            class="footer-red-social"
-                            aria-label="Facebook"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <i class="bi bi-facebook"></i>
-
-                        </a>
-
-
-                        <a
-                            href="#"
-                            class="footer-red-social"
-                            aria-label="TikTok"
-                        >
-
-                            <i class="bi bi-tiktok"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
+              <a href="#" class="footer-red-social" aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+              </a>
             </div>
-
-
-
-            <!-- FOOTER INFERIOR -->
-            <div class="footer-bottom">
-
-                <p>
-                    © 2026 Asociación de Vivienda Virgen de Loreto
-                </p>
-
-                <span>
-                    Todos los derechos reservados.
-                </span>
-
-            </div>
-
+          </div>
         </div>
 
+        <!-- FOOTER INFERIOR -->
+        <div class="footer-bottom">
+          <p>© 2026 Asociación de Vivienda Virgen de Loreto</p>
+
+          <span> Todos los derechos reservados. </span>
+        </div>
+      </div>
     </footer>
-
-
 
     <!-- ==================================================
          WHATSAPP
     =================================================== -->
 
     <a
-        href="https://wa.me/51908912426?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20Asociaci%C3%B3n%20de%20Vivienda%20Virgen%20de%20Loreto."
-        class="whatsapp-flotante"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contactar por WhatsApp"
+      href="https://wa.me/51908912426?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20Asociaci%C3%B3n%20de%20Vivienda%20Virgen%20de%20Loreto."
+      class="whatsapp-flotante"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
     >
-
-        <i class="bi bi-whatsapp"></i>
-
+      <i class="bi bi-whatsapp"></i>
     </a>
 
-
-
     <!-- BOOTSTRAP JS -->
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="../js/main.js"></script>
-<script src="../js/animaciones.js"></script>
-<script src="../js/contacto.js"></script>
-
-</body>
-
+    <script src="../js/main.js"></script>
+    <script src="../js/animaciones.js"></script>
+    <script src="../js/contacto.js"></script>
+  </body>
 </html>
