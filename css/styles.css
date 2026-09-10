@@ -125,7 +125,7 @@ body {
 /* LOGO TEMPORAL */
 
 .navbar-logo {
-    height: 80px;
+    height: 90px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -246,7 +246,7 @@ body {
 }
 
 .navbar-logo {
-    height: 58px;
+    height: 80px;
     width: auto;
 }
 
