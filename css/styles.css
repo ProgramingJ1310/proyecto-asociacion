@@ -1212,6 +1212,188 @@ body {
   }
 }
 
+
+/* =========================================
+   OFICINA DE ATENCIÓN
+========================================= */
+
+.oficina-atencion {
+    background-color: var(--blanco);
+}
+
+
+/* IMAGEN */
+
+.oficina-imagen {
+    position: relative;
+}
+
+.oficina-imagen img {
+    width: 100%;
+    height: 420px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 35px rgba(27, 48, 72, 0.13);
+}
+
+
+/* ETIQUETA SOBRE LA FOTO */
+
+.oficina-distintivo {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 11px 17px;
+
+    background-color: var(--blanco);
+    color: var(--azul-oscuro);
+
+    border-radius: 10px;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    box-shadow:
+        0 7px 20px rgba(27, 48, 72, 0.15);
+}
+
+.oficina-distintivo i {
+    color: var(--terracota);
+    font-size: 1.05rem;
+}
+
+
+/* CONTENIDO */
+
+.oficina-contenido h2 {
+    margin-bottom: 18px;
+
+    color: var(--azul-oscuro);
+
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    font-weight: 800;
+}
+
+.oficina-descripcion {
+    margin-bottom: 30px;
+
+    color: var(--texto-suave);
+
+    line-height: 1.8;
+}
+
+
+/* DATOS */
+
+.oficina-dato {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.oficina-icono {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--terracota-suave);
+    color: var(--terracota);
+
+    border-radius: 12px;
+
+    font-size: 1.15rem;
+}
+
+.oficina-dato span {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.oficina-dato p {
+    margin: 0;
+
+    color: var(--texto-suave);
+
+    font-size: 0.9rem;
+}
+
+
+/* BOTÓN */
+
+.btn-oficina {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 12px;
+    padding: 12px 21px;
+
+    background-color: var(--terracota);
+    color: var(--blanco);
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 0.88rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.btn-oficina:hover {
+    color: var(--blanco);
+
+    transform: translateY(-2px);
+
+    opacity: 0.92;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .oficina-imagen img {
+        height: 320px;
+    }
+
+    .oficina-distintivo {
+        left: 15px;
+        bottom: 15px;
+    }
+
+}
 /* =========================================
    GALERÍA - INICIO
 ========================================= */
