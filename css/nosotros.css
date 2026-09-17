@@ -318,6 +318,48 @@
         0 14px 32px rgba(27, 48, 72, 0.12);
 }
 
+/* =========================================
+   BOTÓN HOJA DE VIDA
+========================================= */
+
+.btn-hoja-vida {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 15px;
+    padding: 10px 17px;
+
+    background-color: var(--terracota);
+    color: var(--blanco);
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.btn-hoja-vida:hover {
+    color: var(--blanco);
+
+    background-color: var(--azul-oscuro);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(27, 48, 72, 0.15);
+}
+
+.btn-hoja-vida i {
+    font-size: 1rem;
+}
 
 /* ==================================================
    FOTO
