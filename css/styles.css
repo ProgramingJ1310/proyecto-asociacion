@@ -2807,7 +2807,7 @@ body {
 
   inset: 0;
 
-  background-image: url("../img/hero-asoc.png");
+  background-image: url("../assets/images/hero/portada-asociacion-virgen-loreto.png");
 
   background-size: cover;
   background-position: center;
@@ -3438,9 +3438,7 @@ body.lightbox-abierto {
     }
 
 }
-/* =========================================
-   CORRECCIÓN GALERÍA + CANCHAS EN MÓVIL
-========================================= */
+
 
 @media (max-width: 576px) {
 

@@ -333,12 +333,15 @@
     background-color: var(--terracota);
     color: var(--blanco);
 
+    border: none;
     border-radius: 8px;
 
     text-decoration: none;
 
     font-size: 0.82rem;
     font-weight: 700;
+
+    cursor: pointer;
 
     transition:
         transform 0.2s ease,
@@ -361,6 +364,123 @@
     font-size: 1rem;
 }
 
+/* ==================================================
+   MODAL HOJA DE VIDA
+================================================== */
+
+.modal-hoja-vida .modal-content {
+    border: none;
+    border-radius: 16px;
+
+    box-shadow:
+        0 24px 70px rgba(27, 48, 72, 0.22);
+}
+
+.modal-hoja-vida .modal-header {
+    align-items: flex-start;
+
+    padding: 28px 30px 22px;
+
+    background-color: var(--color-fondo-suave);
+    border-bottom: 1px solid rgba(39, 76, 119, 0.10);
+}
+
+.modal-hoja-vida .modal-body {
+    padding: 28px 30px 32px;
+}
+
+.modal-etiqueta {
+    display: inline-block;
+
+    color: var(--terracota);
+
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.modal-hoja-vida .modal-title {
+    color: var(--color-principal);
+
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.trayectoria-resumen {
+    color: var(--color-texto-suave);
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    margin-bottom: 24px;
+}
+
+.trayectoria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.trayectoria-item {
+    display: flex;
+    gap: 14px;
+
+    padding: 18px;
+
+    background-color: var(--blanco);
+    border: 1px solid rgba(39, 76, 119, 0.10);
+    border-radius: 12px;
+}
+
+.trayectoria-icono {
+    width: 42px;
+    height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background-color: var(--color-principal);
+    color: var(--blanco);
+
+    border-radius: 10px;
+}
+
+.trayectoria-item h3 {
+    color: var(--color-principal);
+
+    font-size: 0.98rem;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.trayectoria-item p {
+    color: var(--color-texto-suave);
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .modal-hoja-vida .modal-header,
+    .modal-hoja-vida .modal-body {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .trayectoria-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* ==================================================
    FOTO
 ================================================== */
