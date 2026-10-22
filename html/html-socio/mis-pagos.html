@@ -30,9 +30,9 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../../CSS/styles.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
 
-    <link rel="stylesheet" href="../../CSS/portal.css" />
+    <link rel="stylesheet" href="../../css/portal.css" />
   </head>
 
   <body class="portal-body">
@@ -186,13 +186,13 @@
                 <label for="predioPago"> Predio </label>
 
                 <select id="predioPago" class="cuenta-select">
-                  <option>Todos mis predios</option>
+                  <option value="todos">Todos mis predios</option>
 
-                  <option>Mz. 2 - Lote 8</option>
+                  <option value="Mz. 2 - Lote 8">Mz. 2 - Lote 8</option>
 
-                  <option>Mz. 17 - Lote 5</option>
+                  <option value="Mz. 17 - Lote 5">Mz. 17 - Lote 5</option>
 
-                  <option>Mz. 20 - Lote 3</option>
+                  <option value="Mz. 20 - Lote 3">Mz. 20 - Lote 3</option>
                 </select>
               </div>
 
@@ -200,9 +200,10 @@
                 <label for="anioPago"> Año </label>
 
                 <select id="anioPago" class="cuenta-select">
-                  <option>2026</option>
-                  <option>2025</option>
-                  <option>2024</option>
+                  <option value="todos">Todos los años</option>
+                  <option value="2026" selected>2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
                 </select>
               </div>
             </div>
@@ -218,7 +219,7 @@
               <div>
                 <span> Pagos registrados </span>
 
-                <strong> 8 </strong>
+                <strong id="pagosRegistrados">4</strong>
               </div>
             </article>
 
@@ -230,7 +231,7 @@
               <div>
                 <span> Total pagado </span>
 
-                <strong class="estado-pagado-texto"> S/ 1,250.00 </strong>
+                <strong class="estado-pagado-texto" id="totalPagado">S/ 350.00</strong>
               </div>
             </article>
 
@@ -242,7 +243,7 @@
               <div>
                 <span> Último pago </span>
 
-                <strong> 15/08/2026 </strong>
+                <strong id="ultimoPago">15/08/2026</strong>
               </div>
             </article>
           </section>
@@ -280,7 +281,14 @@
                 </thead>
 
                 <tbody>
-                  <tr>
+                  <tr
+                    class="pago-fila"
+                    data-anio="2026"
+                    data-predio="Mz. 2 - Lote 8"
+                    data-fecha="2026-08-15"
+                    data-monto="50"
+                    data-estado="pagado"
+                  >
                     <td>15/08/2026</td>
 
                     <td>Cuota ordinaria</td>
@@ -302,7 +310,14 @@
                     </td>
                   </tr>
 
-                  <tr>
+                  <tr
+                    class="pago-fila"
+                    data-anio="2026"
+                    data-predio="Mz. 17 - Lote 5"
+                    data-fecha="2026-08-01"
+                    data-monto="100"
+                    data-estado="pagado"
+                  >
                     <td>01/08/2026</td>
 
                     <td>Cuota ordinaria</td>
@@ -324,7 +339,14 @@
                     </td>
                   </tr>
 
-                  <tr>
+                  <tr
+                    class="pago-fila"
+                    data-anio="2026"
+                    data-predio="Mz. 20 - Lote 3"
+                    data-fecha="2026-07-18"
+                    data-monto="150"
+                    data-estado="pagado"
+                  >
                     <td>18/07/2026</td>
 
                     <td>Aporte extraordinario</td>
@@ -346,7 +368,14 @@
                     </td>
                   </tr>
 
-                  <tr>
+                  <tr
+                    class="pago-fila"
+                    data-anio="2026"
+                    data-predio="Mz. 2 - Lote 8"
+                    data-fecha="2026-07-05"
+                    data-monto="50"
+                    data-estado="pagado"
+                  >
                     <td>05/07/2026</td>
 
                     <td>Cuota ordinaria</td>
@@ -367,9 +396,22 @@
                       </button>
                     </td>
                   </tr>
+                  <tr id="pagosSinResultados" hidden>
+                    <td colspan="6" class="text-center py-4">
+                      No hay pagos para los filtros seleccionados.
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
+            <p
+              id="pagosMensaje"
+              class="panel-descripcion mt-3 mb-0"
+              role="status"
+              aria-live="polite"
+            >
+              Se muestran 4 pagos.
+            </p>
           </section>
 
           <!-- NOTA -->
@@ -392,10 +434,53 @@
       </main>
     </div>
 
+    <!-- VISTA PREVIA DEL COMPROBANTE -->
+    <div
+      class="modal fade"
+      id="comprobanteModal"
+      tabindex="-1"
+      aria-labelledby="comprobanteModalTitulo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="comprobanteModalTitulo">
+              Comprobante de pago
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="panel-descripcion mb-3">
+              Vista previa de un comprobante de demostración.
+            </p>
+            <dl class="mb-0">
+              <dt>Fecha</dt>
+              <dd id="comprobanteFecha"></dd>
+              <dt>Concepto</dt>
+              <dd id="comprobanteConcepto"></dd>
+              <dt>Predio</dt>
+              <dd id="comprobantePredio"></dd>
+              <dt>Monto</dt>
+              <dd id="comprobanteMonto"></dd>
+              <dt>Estado</dt>
+              <dd id="comprobanteEstado"></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JS -->
     <script src="../../js/portal.js"></script>
+    <script src="../../js/mis-pagos.js"></script>
   </body>
 </html>

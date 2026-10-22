@@ -1,0 +1,48 @@
+.predio-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.predio-card h4 {
+    margin: 0 0 16px;
+    color: var(--portal-azul-oscuro);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.predio-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.predio-info > div {
+    padding: 11px 12px;
+    background-color: var(--portal-blanco);
+    border: 1px solid var(--portal-borde);
+    border-radius: 9px;
+}
+
+.predio-info span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--portal-texto-suave);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.predio-info strong {
+    color: var(--portal-azul-oscuro);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+@media (max-width: 380px) {
+    .predio-info {
+        grid-template-columns: 1fr;
+    }
+}
