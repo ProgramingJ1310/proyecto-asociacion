@@ -34,6 +34,9 @@
 
     <!-- CSS PROYECTOS -->
     <link rel="stylesheet" href="../css/proyectos.css" />
+
+    <!-- RECURSOS FOTOGRÁFICOS -->
+    <link rel="stylesheet" href="../css/recursos.css" />
   </head>
 
   <body>
@@ -47,10 +50,9 @@
 
         <a class="navbar-brand" href="index.html">
           <img
-            src="../assets/images/brand/logo-asociacion-color.png"
+            src="../assets/images/brand/logo-asociacion-color.webp"
             alt="Asociación de Vivienda Virgen de Loreto"
-            class="navbar-logo"
-          />
+            class="navbar-logo" width="900" height="338" decoding="async">
         </a>
 
         <!-- BOTÓN CELULAR -->
@@ -147,21 +149,29 @@
           </p>
         </div>
 
+        <nav class="indice-pagina indice-proyectos" aria-label="Proyectos de la asociación">
+          <div class="indice-pagina-enlaces">
+            <a href="#electrificacion"><i class="bi bi-lightning-charge" aria-hidden="true"></i> Electrificación</a>
+            <a href="#centro-recreacional"><i class="bi bi-tree" aria-hidden="true"></i> Centro Recreacional</a>
+            <a href="#habilitacion-urbana"><i class="bi bi-geo" aria-hidden="true"></i> Habilitación urbana</a>
+            <a href="#apertura-vias"><i class="bi bi-signpost-2" aria-hidden="true"></i> Apertura de vías</a>
+          </div>
+        </nav>
+
         <!-- ==================================================
                  PROYECTO 1
                  ELECTRIFICACIÓN DEFINITIVA
             =================================================== -->
 
-        <div class="proyecto-detalle animar">
+        <div class="proyecto-detalle animar" id="electrificacion">
           <div class="row g-4 align-items-center">
             <!-- IMAGEN -->
 
             <div class="col-lg-6 animar-izquierda">
               <img
-                src="../assets/images/proyectos/electrificacion-definitiva-pluz.jpeg"
+                src="../assets/images/proyectos/electrificacion-definitiva-pluz.webp"
                 alt="Proyecto de electrificación definitiva"
-                class="proyecto-detalle-img"
-              />
+                class="proyecto-detalle-img" width="1600" height="900" decoding="async" loading="lazy">
             </div>
 
             <!-- INFORMACIÓN -->
@@ -170,7 +180,7 @@
               <span class="estado-proyecto estado-proceso">
                 <i class="bi bi-hourglass-split me-1"></i>
 
-                En proceso
+                En ejecución
               </span>
 
               <h3>Electrificación definitiva</h3>
@@ -202,12 +212,72 @@
                 </div>
 
                 <div>
-                  <h5>Estado actual</h5>
+                  <h5>Proceso y alcance</h5>
 
-                  <p>Proyecto actualmente en proceso.</p>
+                  <p>
+                    Proceso de factibilidad y ejecución de la Electrificación
+                    Definitiva de AVILORETO. El proceso contempla tres años de
+                    trabajo, beneficiará a 2,000 familias y representa una
+                    inversión superior a S/ 15 millones.
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="proyecto-recursos">
+            <section class="proyecto-subseccion">
+              <div class="recursos-encabezado">
+                <p class="seccion-etiqueta">Coordinación</p>
+                <h4>Reuniones de coordinación con PLUZ</h4>
+              </div>
+              <div class="recursos-grid recursos-grid-tres">
+                <figure class="recurso-foto" data-imagen="../assets/images/proyectos/reuniones-pluz-01.webp" data-titulo="Reunión con PLUZ 01">
+                  <img src="../assets/images/proyectos/reuniones-pluz-01.webp" alt="Reunión de coordinación con PLUZ por la electrificación definitiva" loading="lazy" decoding="async" width="1600" height="900">
+                </figure>
+                <figure class="recurso-foto" data-imagen="../assets/images/proyectos/reuniones-pluz-02.webp" data-titulo="Reunión con PLUZ 02">
+                  <img src="../assets/images/proyectos/reuniones-pluz-02.webp" alt="Coordinación en campo con el equipo de PLUZ" loading="lazy" decoding="async" width="1600" height="900">
+                </figure>
+                <figure class="recurso-foto" data-imagen="../assets/images/proyectos/reuniones-pluz-03.webp" data-titulo="Reunión con PLUZ 03">
+                  <img src="../assets/images/proyectos/reuniones-pluz-03.webp" alt="Revisión de avances con representantes de PLUZ" loading="lazy" decoding="async" width="1600" height="900">
+                </figure>
+              </div>
+            </section>
+
+            <section class="proyecto-subseccion">
+              <div class="recursos-encabezado">
+                <p class="seccion-etiqueta">Ejecución</p>
+                <h4>Electrificación Definitiva: una OBRA HISTÓRICA</h4>
+                <p>Registro fotográfico de la ejecución del proyecto.</p>
+              </div>
+              <div class="recursos-grid recursos-grid-tres">
+                <figure class="recurso-foto recurso-foto-ajuste-completo" data-imagen="../assets/images/proyectos/electrificacion-definitiva-ejecucion-02.webp" data-titulo="Ejecución 02">
+                  <img src="../assets/images/proyectos/electrificacion-definitiva-ejecucion-02.webp" alt="Trabajo de electrificación en el sector" loading="lazy" decoding="async" width="900" height="1600">
+                </figure>
+                <figure class="recurso-foto recurso-foto-ajuste-completo" data-imagen="../assets/images/proyectos/electrificacion-definitiva-ejecucion-03.webp" data-titulo="Ejecución 03">
+                  <img src="../assets/images/proyectos/electrificacion-definitiva-ejecucion-03.webp" alt="Personal trabajando en la ejecución de la electrificación definitiva" loading="lazy" decoding="async" width="900" height="808">
+                </figure>
+                <figure class="recurso-foto" data-imagen="../assets/images/proyectos/electrificacion-definitiva-ejecucion-04.webp" data-titulo="Ejecución 04">
+                  <img src="../assets/images/proyectos/electrificacion-definitiva-ejecucion-04.webp" alt="Materiales en la zona de ejecución del proyecto" loading="lazy" decoding="async" width="1600" height="900">
+                </figure>
+              </div>
+              <div class="videos-proyecto-grid">
+                <div class="video-proyecto-pendiente">
+                  <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Video de la ejecución de la Electrificación Definitiva"
+                  >
+                    <source src="../assets/images/proyectos/electrificacion-definitiva-ejecucion-01.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                  </video>
+                  <p>
+                    Ejecución de la Electrificación Definitiva
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
 
@@ -216,16 +286,15 @@
                  CENTRO RECREACIONAL
             =================================================== -->
 
-        <div class="proyecto-detalle animar">
+        <div class="proyecto-detalle animar" id="centro-recreacional">
           <div class="row g-4 align-items-center">
             <!-- IMAGEN -->
 
             <div class="col-lg-6 order-lg-2 animar-derecha">
               <img
-                src="../assets/images/proyectos/centro-recreacional-render.png"
+                src="../assets/images/proyectos/centro-recreacional-render.webp"
                 alt="Centro Recreacional de la Asociación Virgen de Loreto"
-                class="proyecto-detalle-img"
-              />
+                class="proyecto-detalle-img" width="1071" height="972" decoding="async" loading="lazy">
             </div>
 
             <!-- INFORMACIÓN -->
@@ -274,22 +343,62 @@
               </div>
             </div>
           </div>
+
+          <section class="proyecto-subseccion local-multiusos">
+            <div class="recursos-encabezado">
+              <p class="seccion-etiqueta">Espacio del Centro Recreacional</p>
+              <h4>Local Multiusos de AVILORETO</h4>
+              <p>
+                Espacio destinado a asambleas, matrimonios, bautizos,
+                conferencias, seminarios y otros usos.
+              </p>
+            </div>
+            <div class="recursos-grid recursos-grid-tres">
+              <figure class="recurso-foto" data-imagen="../assets/images/proyectos/local-multiusos-01.webp" data-titulo="Local Multiusos 01">
+                <img src="../assets/images/proyectos/local-multiusos-01.webp" alt="Vista de la obra del Local Multiusos en el Centro Recreacional" loading="lazy" decoding="async" width="1600" height="900">
+              </figure>
+              <figure class="recurso-foto recurso-foto-ajuste-completo" data-imagen="../assets/images/proyectos/local-multiusos-02.webp" data-titulo="Local Multiusos 02">
+                <img src="../assets/images/proyectos/local-multiusos-02.webp" alt="Avance del proyecto del Local Multiusos" loading="lazy" decoding="async" width="900" height="1104">
+              </figure>
+              <figure class="recurso-foto" data-imagen="../assets/images/proyectos/local-multiusos-03.webp" data-titulo="Local Multiusos 03">
+                <img src="../assets/images/proyectos/local-multiusos-03.webp" alt="Área del Centro Recreacional destinada al Local Multiusos" loading="lazy" decoding="async" width="1600" height="900">
+              </figure>
+            </div>
+          </section>
+
+          <section class="proyecto-subseccion primera-piedra">
+            <div class="recursos-encabezado">
+              <p class="seccion-etiqueta">Obra del Centro Recreacional</p>
+              <h4>Colocación de la primera piedra del Local Multiusos</h4>
+              <p>Registro del inicio de la edificación en el Centro Recreacional.</p>
+            </div>
+            <div class="recursos-grid recursos-grid-tres">
+              <figure class="recurso-foto" data-imagen="../assets/images/proyectos/primera-piedra-local-multiusos-01.webp" data-titulo="Primera piedra 01">
+                <img src="../assets/images/proyectos/primera-piedra-local-multiusos-01.webp" alt="Colocación de la primera piedra del Local Multiusos" loading="lazy" decoding="async" width="1600" height="900">
+              </figure>
+              <figure class="recurso-foto" data-imagen="../assets/images/proyectos/primera-piedra-local-multiusos-02.webp" data-titulo="Primera piedra 02">
+                <img src="../assets/images/proyectos/primera-piedra-local-multiusos-02.webp" alt="Acto de colocación de la primera piedra en el Centro Recreacional" loading="lazy" decoding="async" width="1600" height="900">
+              </figure>
+              <figure class="recurso-foto" data-imagen="../assets/images/proyectos/primera-piedra-local-multiusos-03.webp" data-titulo="Primera piedra 03">
+                <img src="../assets/images/proyectos/primera-piedra-local-multiusos-03.webp" alt="Vecinos durante la colocación de la primera piedra" loading="lazy" decoding="async" width="1600" height="900">
+              </figure>
+            </div>
+          </section>
         </div>
 <!-- ==================================================
                  PROYECTO 3
                 
             =================================================== -->
 
-        <div class="proyecto-detalle animar">
+        <div class="proyecto-detalle animar" id="habilitacion-urbana">
           <div class="row g-4 align-items-center">
             <!-- IMAGEN -->
 
             <div class="col-lg-6 order-lg-2 animar-derecha">
               <img
-                src="../assets/images/proyectos/habilitacion-urbana-ampliacion.png"
+                src="../assets/images/proyectos/habilitacion-urbana-ampliacion.webp"
                 alt="Ampliación para habilitación urbana"
-                class="proyecto-detalle-img"
-              />
+                class="proyecto-detalle-img" width="1670" height="941" decoding="async" loading="lazy">
             </div>
 
             <!-- INFORMACIÓN -->
@@ -322,6 +431,32 @@
 </div>
           </div>
         </div>
+
+        <section class="proyecto-detalle proyecto-vias animar" id="apertura-vias">
+          <div class="recursos-encabezado">
+            <p class="seccion-etiqueta">Proyectos / Obras</p>
+            <h3>Apertura de vías</h3>
+            <p>
+              La apertura de vías permite el acceso a servicios básicos y
+              recreativos. Esta mejora beneficia a personas con discapacidad,
+              adultos mayores, niños y mujeres embarazadas.
+            </p>
+          </div>
+          <div class="recursos-grid recursos-grid-cuatro">
+            <figure class="recurso-foto" data-imagen="../assets/images/proyectos/apertura-vias-01.webp" data-titulo="Apertura de vías 01">
+              <img src="../assets/images/proyectos/apertura-vias-01.webp" alt="Apertura de una vía de acceso a la asociación" loading="lazy" decoding="async" width="1600" height="900">
+            </figure>
+            <figure class="recurso-foto" data-imagen="../assets/images/proyectos/apertura-vias-02.webp" data-titulo="Apertura de vías 02">
+              <img src="../assets/images/proyectos/apertura-vias-02.webp" alt="Vía abierta para mejorar el acceso a servicios" loading="lazy" decoding="async" width="1600" height="900">
+            </figure>
+            <figure class="recurso-foto" data-imagen="../assets/images/proyectos/apertura-vias-03.webp" data-titulo="Apertura de vías 03">
+              <img src="../assets/images/proyectos/apertura-vias-03.webp" alt="Trabajos de apertura de vías en AVILORETO" loading="lazy" decoding="async" width="1920" height="1069">
+            </figure>
+            <figure class="recurso-foto" data-imagen="../assets/images/proyectos/apertura-vias-04.jpeg" data-titulo="Apertura de vías 04">
+              <img src="../assets/images/proyectos/apertura-vias-04.jpeg" alt="Acceso vial en el sector de la asociación" loading="lazy" decoding="async" width="1600" height="900">
+            </figure>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -391,6 +526,16 @@
     <!-- ==================================================
          FOOTER
     =================================================== -->
+
+    <div class="visor-imagen" id="visorImagen" aria-hidden="true">
+      <button class="visor-cerrar" id="cerrarVisor" type="button" aria-label="Cerrar imagen">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="visor-contenido">
+        <img src="" alt="" id="imagenAmpliada" class="imagen-ampliada" />
+        <p class="visor-titulo" id="tituloImagen"></p>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container">
@@ -478,5 +623,6 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/animaciones.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

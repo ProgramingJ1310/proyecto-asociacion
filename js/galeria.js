@@ -13,6 +13,11 @@ const fotosGaleria =
         ".galeria-item"
     );
 
+const acontecimientosGaleria =
+    document.querySelectorAll(
+        ".galeria-acontecimiento"
+    );
+
 
 botonesCategoria.forEach((boton) => {
 
@@ -67,6 +72,19 @@ botonesCategoria.forEach((boton) => {
                 foto.classList.toggle(
                     "d-none",
                     !mostrarFoto
+                );
+
+            });
+
+            acontecimientosGaleria.forEach((acontecimiento) => {
+
+                const mostrarAcontecimiento =
+                    categoriaSeleccionada === "todas" ||
+                    categoriaSeleccionada === acontecimiento.dataset.categoria;
+
+                acontecimiento.classList.toggle(
+                    "d-none",
+                    !mostrarAcontecimiento
                 );
 
             });

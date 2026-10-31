@@ -943,6 +943,82 @@ body {
   margin: 0;
 }
 
+.resumen-electrificacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 36px;
+  padding: 22px 26px;
+  background: var(--blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 18px;
+}
+
+.resumen-electrificacion-intro {
+  max-width: 430px;
+}
+
+.resumen-electrificacion-intro .seccion-etiqueta {
+  margin-bottom: 7px;
+}
+
+.resumen-electrificacion-intro h3 {
+  margin: 0;
+  color: var(--color-principal);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.resumen-electrificacion-datos {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.resumen-electrificacion-dato {
+  display: grid;
+  gap: 3px;
+}
+
+.resumen-electrificacion-dato strong {
+  color: var(--color-acento);
+  font-size: 1.2rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.resumen-electrificacion-dato span {
+  color: var(--color-texto-suave);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 991px) {
+  .resumen-electrificacion {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .resumen-electrificacion-datos {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .resumen-electrificacion {
+    gap: 18px;
+    padding: 19px;
+  }
+
+  .resumen-electrificacion-datos {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 /* =========================================
    TARJETA DEL PROYECTO
 ========================================= */
@@ -2807,7 +2883,7 @@ body {
 
   inset: 0;
 
-  background-image: url("../assets/images/hero/portada-asociacion-virgen-loreto.png");
+  background-image: url("../assets/images/hero/portada-asociacion-virgen-loreto.webp");
 
   background-size: cover;
   background-position: center;

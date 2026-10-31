@@ -4,7 +4,7 @@
 
 const itemsGaleriaIndex =
     document.querySelectorAll(
-        ".galeria-inicio .galeria-item, .galeria .galeria-item"
+        ".galeria-inicio .galeria-item, .galeria .galeria-item, .recurso-foto"
     );
 
 const visorImagen =
@@ -38,7 +38,10 @@ itemsGaleriaIndex.forEach((item) => {
             item.dataset.imagen || imagen?.getAttribute("src");
 
         const titulo =
-            item.dataset.titulo || imagen?.alt || "Imagen de la galeria";
+            item.dataset.titulo ||
+            imagen?.alt ||
+            item.querySelector("figcaption span")?.textContent ||
+            "Imagen de la galeria";
 
 
         if (!rutaImagen) {
@@ -62,6 +65,7 @@ itemsGaleriaIndex.forEach((item) => {
             "activo"
         );
 
+        visorImagen.setAttribute("aria-hidden", "false");
 
         document.body.style.overflow =
             "hidden";
@@ -80,6 +84,8 @@ function cerrarImagen() {
     visorImagen.classList.remove(
         "activo"
     );
+
+    visorImagen.setAttribute("aria-hidden", "true");
 
     document.body.style.overflow =
         "";
