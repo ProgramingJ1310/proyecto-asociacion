@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/proyecto-institucional.css" />
   </head>
-  <body class="corporativo-minimalista proyecto-institucional">
+  <body class="corporativo-minimalista proyecto-institucional partida-registral-pagina">
     <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion"><div class="container">
       <a class="navbar-brand" href="index.html"><img src="../assets/images/brand/logo-asociacion-color.webp" alt="Asociación de Vivienda Virgen de Loreto" class="navbar-logo" width="900" height="338" decoding="async" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
@@ -22,18 +22,92 @@
       </ul></div>
     </div></nav>
     <main>
-      <header class="proyecto-cabecera legal-cabecera"><div class="container contenido-web"><div class="proyecto-cabecera-texto">
-        <p class="seccion-etiqueta">Nosotros / Información Legal</p><h1>Partida Registral</h1>
-        <p>Información registral de la Asociación de Vivienda Virgen de Loreto.</p>
-        <a class="btn btn-principal" href="legal.html"><i class="bi bi-arrow-left me-2"></i>Volver a Información Legal</a>
-      </div></div></header>
-      <section class="proyecto-seccion"><div class="container contenido-web">
-        <div class="proyecto-texto legal-introduccion"><p class="seccion-etiqueta">Documento institucional</p><h2>Consulta de la Partida Registral</h2>
-          <p>La Partida Registral forma parte de la documentación institucional de AVILORETO. El archivo digital no se encuentra publicado en el sitio actual, por lo que no se muestra un documento ni datos registrales que no hayan sido proporcionados.</p>
-          <p>Para consultar su disponibilidad o solicitar orientación, comunícate directamente con la asociación.</p>
-          <a class="btn btn-principal" href="contacto.html">Contactar a AVILORETO <i class="bi bi-arrow-right ms-2"></i></a>
+      <header class="proyecto-cabecera legal-cabecera partida-cabecera">
+        <div class="container contenido-web">
+          <div class="proyecto-cabecera-texto">
+            <p class="seccion-etiqueta">Nosotros / Información legal</p>
+            <h1>Partida Registral</h1>
+            <p>
+              Documento de inscripción de la Asociación de Vivienda Virgen de Loreto
+              en el Registro de Personas Jurídicas.
+            </p>
+            <a class="btn btn-principal" href="#documento">
+              <i class="bi bi-file-earmark-text me-2" aria-hidden="true"></i>
+              Ver documento
+            </a>
+            <a class="partida-volver" href="legal.html">
+              <i class="bi bi-arrow-left me-1" aria-hidden="true"></i>
+              Información legal
+            </a>
+          </div>
+
+          <aside class="partida-resumen" aria-label="Datos de la partida registral">
+            <span class="partida-resumen-etiqueta">Registro público</span>
+            <strong class="partida-resumen-numero">N.º 13353992</strong>
+            <span class="partida-resumen-linea"></span>
+            <div>
+              <span>Zona registral</span>
+              <strong>IX - Sede Lima</strong>
+            </div>
+            <div>
+              <span>Registro</span>
+              <strong>Personas Jurídicas</strong>
+            </div>
+          </aside>
         </div>
-      </div></section>
+      </header>
+
+      <section class="proyecto-seccion partida-documento-seccion" id="documento">
+        <div class="container contenido-web">
+          <div class="partida-documento-encabezado">
+            <p class="seccion-etiqueta">Documento institucional</p>
+            <h2>Inscripción de la asociación</h2>
+            <p>
+              Consulta la imagen de la partida registral emitida por SUNARP.
+              Puedes abrirla en tamaño completo o descargarla.
+            </p>
+          </div>
+
+          <figure class="partida-documento">
+            <div class="partida-documento-barra">
+              <span><i class="bi bi-patch-check-fill" aria-hidden="true"></i> Documento registral</span>
+              <div>
+                <a
+                  href="../assets/images/documentos/partida-registral.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                  Ver tamaño completo
+                </a>
+                <a href="../assets/images/documentos/partida-registral.jpg" download>
+                  <i class="bi bi-download" aria-hidden="true"></i>
+                  Descargar
+                </a>
+              </div>
+            </div>
+            <a
+              class="partida-documento-imagen"
+              href="../assets/images/documentos/partida-registral.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir la imagen de la Partida Registral en tamaño completo"
+            >
+              <img
+                src="../assets/images/documentos/partida-registral.jpg"
+                alt="Partida Registral de la Asociación de Vivienda Virgen de Loreto, emitida por SUNARP"
+                width="724"
+                height="1024"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </a>
+            <figcaption>
+              Partida N.º 13353992 · Zona Registral N.º IX - Sede Lima
+            </figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
     <footer class="footer"><div class="container"><div class="footer-grid">
       <div class="footer-col footer-marca"><a href="index.html" class="footer-logo"><span class="footer-logo-icono"><i class="bi bi-house-door-fill"></i></span><span>Virgen de Loreto</span></a><p>Asociación de Vivienda Virgen de Loreto, una comunidad organizada y comprometida con su desarrollo y bienestar.</p></div>

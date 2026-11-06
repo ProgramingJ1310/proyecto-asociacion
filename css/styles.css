@@ -3625,9 +3625,19 @@ body.lightbox-abierto {
   background-color: var(--color-principal);
 }
 
+@keyframes acercarHeroInicio {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
 .pagina-inicio .hero-fondo {
-  transform: none;
-  animation: none;
+  transform: scale(1);
+  animation: acercarHeroInicio 2.4s ease-out both;
   background-position: center 48%;
 }
 
@@ -4278,6 +4288,28 @@ body.lightbox-abierto {
   cursor: pointer;
 }
 
+.corporativo-minimalista .submenu-alternar::before {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  content: "";
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 160ms ease;
+}
+
+.corporativo-minimalista .item-con-submenu.submenu-abierto > .submenu-alternar::before {
+  transform: translateY(2px) rotate(225deg);
+}
+
+.corporativo-minimalista .submenu-navegacion .submenu-alternar::before {
+  transform: rotate(-45deg);
+}
+
+.corporativo-minimalista .submenu-navegacion .tiene-submenu.submenu-abierto > .submenu-alternar::before {
+  transform: rotate(45deg);
+}
+
 .corporativo-minimalista .submenu-navegacion {
   position: absolute;
   top: 100%;
@@ -4484,6 +4516,14 @@ body.lightbox-abierto {
 
   .corporativo-minimalista .navbar-nav > .item-con-submenu .submenu-alternar {
     color: #ffffff;
+  }
+
+  .corporativo-minimalista .navbar-nav .submenu-navegacion .submenu-alternar::before {
+    transform: translateY(-2px) rotate(45deg);
+  }
+
+  .corporativo-minimalista .navbar-nav .submenu-navegacion .tiene-submenu.submenu-abierto > .submenu-alternar::before {
+    transform: translateY(2px) rotate(225deg);
   }
 
   .corporativo-minimalista .navbar-nav > .item-con-submenu .submenu-navegacion .submenu-navegacion {

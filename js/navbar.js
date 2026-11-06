@@ -25,7 +25,8 @@ const menuSubmenus = {
     ],
     Proyectos: [
         { label: "Centro Recreacional", href: "centro-recreacional.html" },
-        { label: "Proyecto de Electrificación", href: "electrificacion.html" }
+        { label: "Proyecto de Electrificación", href: "electrificacion.html" },
+        { label: "Habilitación Urbana", href: "habilitacion-urbana.html" }
     ]
 };
 
@@ -48,7 +49,6 @@ function createSubmenu(items, parentLabel) {
             listItem.classList.add("tiene-submenu");
             toggle.type = "button";
             toggle.className = "submenu-alternar";
-            toggle.textContent = "+";
             toggle.setAttribute("aria-label", `Mostrar opciones de ${item.label}`);
             toggle.setAttribute("aria-haspopup", "true");
             toggle.setAttribute("aria-expanded", "false");
@@ -127,7 +127,6 @@ function initializeDropdownNavigation() {
         listItem.classList.add("item-con-submenu");
         toggle.type = "button";
         toggle.className = "submenu-alternar";
-        toggle.textContent = "+";
         toggle.setAttribute("aria-label", `Mostrar opciones de ${label}`);
         toggle.setAttribute("aria-haspopup", "true");
         toggle.setAttribute("aria-expanded", "false");

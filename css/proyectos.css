@@ -233,6 +233,18 @@
     border-radius: 15px;
 }
 
+.proyectos-destacados .proyecto-detalle {
+    margin-bottom: 42px;
+    padding: 28px;
+}
+
+.proyectos-destacados .proyecto-detalle-img {
+    display: block;
+    height: auto;
+    max-height: 430px;
+    aspect-ratio: auto;
+}
+
 
 /* ==================================================
    TÍTULO Y TEXTO
@@ -715,6 +727,11 @@
 
     .proyecto-detalle h3 {
         font-size: 1.45rem;
+    }
+
+    .proyectos-destacados .proyecto-detalle {
+        padding: 18px;
+        margin-bottom: 28px;
     }
 
     .informacion-proyecto {
