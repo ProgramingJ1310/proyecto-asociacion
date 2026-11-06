@@ -5,247 +5,375 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Conoce el Centro Recreacional de AVILORETO, sus canchas deportivas y el proyecto del Local Multiusos."
+      content="Descubre el Centro Recreacional AVILORETO: canchas disponibles, oficinas administrativas y nuevos espacios en desarrollo."
     />
+    <meta name="theme-color" content="#123c31" />
     <title>Centro Recreacional | AVILORETO</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/recursos.css" />
-    <link rel="stylesheet" href="../css/proyecto-institucional.css" />
+    <link rel="stylesheet" href="../css/centro-recreacional.css" />
   </head>
-  <body class="corporativo-minimalista proyecto-institucional">
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-asociacion">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
+  <body class="pagina-centro">
+    <nav class="centro-nav" aria-label="Navegación del centro recreacional">
+      <div class="container centro-nav-contenido">
+        <a class="centro-marca" href="#inicio" aria-label="Centro Recreacional AVILORETO, inicio">
           <img
-            src="../assets/images/brand/logo-asociacion-color.webp"
-            alt="Asociación de Vivienda Virgen de Loreto"
-            class="navbar-logo"
-            width="900"
-            height="338"
+            class="centro-marca-logo"
+            src="../assets/images/brand/logo-centro-recreacional.png"
+            alt="AVILORETO Centro Recreacional"
+            width="668"
+            height="373"
+            fetchpriority="high"
             decoding="async"
           />
         </a>
         <button
-          class="navbar-toggler"
+          class="centro-menu-boton"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#menuPrincipal"
-          aria-controls="menuPrincipal"
+          data-bs-target="#menuCentro"
+          aria-controls="menuCentro"
           aria-expanded="false"
           aria-label="Abrir menú"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list" aria-hidden="true"></i>
         </button>
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link active" href="proyectos.html">Proyectos</a></li>
-            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-            <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-            <li class="nav-item ms-lg-3">
-              <a class="btn btn-portal" href="login.html">
-                <i class="bi bi-person-circle me-1"></i>Portal del socio
-              </a>
-            </li>
-          </ul>
+        <div class="collapse centro-menu" id="menuCentro">
+          <a href="#inicio">Inicio</a>
+          <a href="#espacios">Instalaciones</a>
+          <a href="#oficinas">Oficinas</a>
+          <a href="#local-multiusos">Eventos</a>
+          <a href="#avances">Avances</a>
+          <a href="#contacto">Contacto</a>
+          <a
+            class="centro-nav-reservar"
+            href="https://wa.me/51908912426?text=Hola,%20quisiera%20reservar%20una%20cancha%20del%20Centro%20Recreacional."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Reservas <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+          <a class="centro-volver" href="index.html">Asociación</a>
         </div>
       </div>
     </nav>
 
     <main>
-      <header class="proyecto-cabecera centro-cabecera">
-        <div class="container contenido-web">
-          <div class="proyecto-cabecera-texto">
-            <p class="seccion-etiqueta">Proyectos de AVILORETO</p>
-            <h1>Centro Recreacional</h1>
-            <p>
-              Un espacio para el deporte, la recreación, la convivencia y las
-              actividades de nuestra comunidad.
-            </p>
-            <a class="btn btn-principal" href="#espacios-centro">
-              Conoce sus espacios <i class="bi bi-arrow-down ms-2"></i>
+      <header class="centro-hero" id="inicio">
+        <img
+          class="centro-hero-imagen"
+          src="../assets/images/espacios/centro-vista-aerea.jpg"
+          alt="Vista aérea ilustrativa del Centro Recreacional AVILORETO con cancha deportiva y piscina proyectada"
+          width="768"
+          height="771"
+          fetchpriority="high"
+        />
+        <p class="centro-hero-referencial">
+          Vista ilustrativa · incluye espacios proyectados
+        </p>
+        <div class="centro-hero-capa"></div>
+        <div class="centro-hero-contenido animar-derecha">
+          <p class="centro-etiqueta centro-etiqueta-clara">
+            <span></span> El centro recreacional de AVILORETO
+          </p>
+          <h1>Deporte y diversión <em>para todos.</em></h1>
+          <p class="centro-hero-descripcion">
+            Canchas de grass, espacios para compartir y nuevos proyectos para nuestra comunidad.
+          </p>
+          <div class="centro-hero-acciones">
+            <a class="centro-boton centro-boton-sol" href="#espacios">
+              Conoce el centro <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
             </a>
-          </div>
-          <img
-            class="proyecto-cabecera-imagen"
-            src="../assets/images/espacios/cancha-principal.webp"
-            alt="Cancha deportiva del Centro Recreacional Virgen de Loreto"
-            width="1500"
-            height="1125"
-          />
-        </div>
-      </header>
-
-      <section class="proyecto-seccion" id="historia-centro">
-        <div class="container contenido-web proyecto-intro-imagen">
-          <div class="proyecto-texto">
-            <p class="seccion-etiqueta">Presentación</p>
-            <h2>Un espacio para encontrarnos</h2>
-            <p>
-              El Centro Recreacional es un espacio de AVILORETO destinado a
-              actividades deportivas, recreativas y administrativas. El recinto
-              ya cuenta con canchas sintéticas y oficinas administrativas, y
-              continúa desarrollándose progresivamente con nuevas áreas.
-            </p>
-            <p>
-              El centro ocupa un área de 9,000 m² y cuenta con cerco
-              perimétrico, cuya inversión superó los S/ 3 millones.
-            </p>
-            <p>
-              La asociación impulsa la implementación de sus espacios para
-              aportar al bienestar de los propietarios, sus familias y la
-              comunidad.
-            </p>
-          </div>
-          <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/centro-recreacional-render.webp" data-titulo="Proyección del Centro Recreacional">
-            <img src="../assets/images/proyectos/centro-recreacional-render.webp" alt="Vista de la proyección del Centro Recreacional de AVILORETO" width="1071" height="972" loading="lazy" decoding="async" />
-          </a>
-        </div>
-      </section>
-
-      <section class="proyecto-seccion proyecto-fondo" id="espacios-centro">
-        <div class="container contenido-web">
-          <div class="proyecto-texto">
-            <p class="seccion-etiqueta">Deporte y recreación</p>
-            <h2>Canchas para compartir y hacer deporte</h2>
-            <p>
-              Las canchas deportivas están disponibles para asociados, vecinos
-              y visitantes. Para consultar disponibilidad y coordinar una
-              reserva, comunícate con la asociación.
-            </p>
             <a
-              class="btn btn-principal"
-              href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20para%20el%20alquiler%20de%20las%20canchas."
+              class="centro-boton centro-boton-transparente"
+              href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20sobre%20el%20Centro%20Recreacional."
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="bi bi-whatsapp me-2"></i>Consultar disponibilidad
+              <i class="bi bi-whatsapp" aria-hidden="true"></i> Consultar
             </a>
           </div>
-          <div class="proyecto-galeria recursos-grid recursos-grid-tres">
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/espacios/cancha-principal.webp" data-titulo="Cancha principal">
-              <img src="../assets/images/espacios/cancha-principal.webp" alt="Vista de la cancha principal del Centro Recreacional" width="1500" height="1125" loading="lazy" decoding="async" />
-            </a>
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/espacios/cancha-deportiva-01.webp" data-titulo="Espacio deportivo">
-              <img src="../assets/images/espacios/cancha-deportiva-01.webp" alt="Instalaciones deportivas del Centro Recreacional" width="1500" height="1125" loading="lazy" decoding="async" />
-            </a>
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/galeria/deportes/deporte-centro-recreacional-04.webp" data-titulo="Actividad en el Centro Recreacional">
-              <img src="../assets/images/galeria/deportes/deporte-centro-recreacional-04.webp" alt="Actividad deportiva en el Centro Recreacional" width="1600" height="900" loading="lazy" decoding="async" />
-            </a>
+          <div class="centro-hero-nota">
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+            Km 41.5 de la Panamericana Norte
+          </div>
+        </div>
+        <a class="centro-hero-siguiente" href="#espacios" aria-label="Ir a los espacios disponibles">
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </a>
+      </header>
+
+      <section class="centro-intro" id="espacios">
+        <div class="container">
+          <div class="centro-intro-cabecera">
+            <div class="animar-izquierda">
+              <p class="centro-etiqueta"><span></span> El centro hoy</p>
+              <h2>Un espacio vivo,<br /><em>en crecimiento.</em></h2>
+            </div>
+            <p class="animar-derecha">
+              El Centro Recreacional AVILORETO se desarrolla por etapas. Hoy ya puedes
+              disfrutar de sus canchas deportivas y acercarte a las oficinas administrativas;
+              nuevos espacios se irán sumando en el camino.
+            </p>
+          </div>
+
+          <div class="centro-actuales">
+            <article class="centro-cancha animar-izquierda">
+              <img
+                src="../assets/images/espacios/cancha-centro.png"
+                alt="Vista aérea de las canchas deportivas del Centro Recreacional AVILORETO"
+                width="1024"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="centro-cancha-sombra"></div>
+              <div class="centro-tarjeta-contenido">
+                <span class="centro-estado centro-estado-disponible">
+                  Disponible
+                </span>
+                <h3>Canchas deportivas</h3>
+                <p>Grass, deporte y buenos momentos para compartir.</p>
+                <a
+                  href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20para%20el%20alquiler%20de%20las%20canchas."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Consultar disponibilidad <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="centro-oficinas animar-derecha" id="oficinas">
+              <img
+                class="centro-oficinas-imagen"
+                src="../assets/images/nosotros/oficina-moderna-02.webp"
+                alt="Área de trabajo en las oficinas administrativas de AVILORETO"
+                width="1600"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="centro-oficinas-capa"></div>
+              <span class="centro-estado centro-estado-disponible">
+                En funcionamiento
+              </span>
+              <h3>Oficinas administrativas</h3>
+              <p>
+                Atención administrativa de AVILORETO dentro del Centro Recreacional.
+              </p>
+              <a
+                href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20sobre%20las%20oficinas%20administrativas%20del%20Centro%20Recreacional."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consultar sobre las oficinas <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="proyecto-seccion" id="local-multiusos">
-        <div class="container contenido-web proyecto-intro-imagen">
-          <div class="proyecto-texto">
-            <p class="seccion-etiqueta">Infraestructura comunitaria</p>
-            <h2>Local Multiusos</h2>
+      <section class="centro-futuro" id="proximamente">
+        <div class="container">
+          <div class="centro-seccion-cabecera animar-izquierda">
+            <p class="centro-etiqueta centro-etiqueta-clara"><span></span> Lo que viene</p>
+            <h2>Más motivos para<br /><em>quedarnos un rato más.</em></h2>
             <p>
-              El Local Multiusos está destinado a asambleas y eventos como
-              matrimonios, bautizos, conferencias, seminarios y otras
-              actividades de la comunidad. También puede servir como espacio
-              de velatorio para los asociados.
-            </p>
-            <p>
-              La asociación cuenta con registros fotográficos de la obra y de
-              la colocación de la primera piedra. Las imágenes muestran el
-              desarrollo de este espacio dentro del Centro Recreacional.
+              El proyecto contempla nuevas áreas para disfrutar en familia y celebrar
+              momentos especiales. Se habilitarán progresivamente.
             </p>
           </div>
-          <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/local-multiusos-01.webp" data-titulo="Construcción del Local Multiusos">
-            <img src="../assets/images/proyectos/local-multiusos-01.webp" alt="Vista de la construcción del Local Multiusos" width="1600" height="900" loading="lazy" decoding="async" />
+
+          <div class="centro-futuro-grid">
+            <article class="centro-futuro-tarjeta centro-multiuso animar-izquierda" id="local-multiusos">
+              <span class="centro-estado centro-estado-obra">
+                En construcción
+              </span>
+              <h3>Local Multiusos</h3>
+              <p>
+                Un futuro espacio para matrimonios, bautizos, reuniones y celebraciones
+                de nuestra comunidad.
+              </p>
+              <a href="#avances">
+                Ver avances de obra <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="centro-futuro-tarjeta animar-derecha">
+              <span class="centro-estado centro-estado-proyecto">
+                En proyecto
+              </span>
+              <h3>Piscinas</h3>
+              <p>Un futuro espacio para refrescarse y disfrutar los días de sol.</p>
+            </article>
+
+            <article class="centro-futuro-tarjeta animar-izquierda">
+              <span class="centro-estado centro-estado-proyecto">
+                En proyecto
+              </span>
+              <h3>Gimnasio</h3>
+              <p>Un espacio pensado para cuidar la salud y mantenerse en movimiento.</p>
+            </article>
+
+            <article class="centro-futuro-tarjeta animar-derecha">
+              <span class="centro-estado centro-estado-proyecto">
+                En proyecto
+              </span>
+              <h3>Áreas verdes</h3>
+              <p>Jardines y lugares con bancas para relajarse y compartir al aire libre.</p>
+            </article>
+          </div>
+          <p class="centro-futuro-nota animar-izquierda">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            Las áreas futuras forman parte de la proyección del centro y aún no están disponibles.
+          </p>
+        </div>
+      </section>
+
+      <section class="centro-avances" id="avances">
+        <div class="container">
+          <div class="centro-avances-cabecera">
+            <div class="animar-izquierda">
+              <p class="centro-etiqueta"><span></span> Paso a paso</p>
+              <h2>Así avanza el<br /><em>Local Multiusos.</em></h2>
+            </div>
+            <p class="animar-derecha">
+              Registramos el proceso de construcción de este nuevo espacio para eventos
+              y actividades de la comunidad.
+            </p>
+          </div>
+
+          <a
+            class="centro-obra-portada recurso-foto animar-izquierda"
+            href="#"
+            data-imagen="../assets/images/proyectos/local-multiusos-01.webp"
+            data-titulo="Construcción del Local Multiusos"
+          >
+            <img
+              src="../assets/images/proyectos/local-multiusos-01.webp"
+              alt="Avance de construcción del Local Multiusos"
+              width="1600"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="centro-obra-portada-texto">
+              <span>Registro de obra</span>
+              <strong>Un espacio para celebrar lo que nos une.</strong>
+            </span>
           </a>
-        </div>
-      </section>
 
-      <section class="proyecto-seccion proyecto-fondo" id="avances-obra">
-        <div class="container contenido-web">
-          <div class="proyecto-texto">
-            <p class="seccion-etiqueta">Registro de obra</p>
-            <h2>Materiales y avances de construcción</h2>
-            <p>
-              Fotografías de materiales, cimentación y levantamiento de muros
-              en las obras del Centro Recreacional.
-            </p>
-          </div>
-          <div class="proyecto-galeria recursos-grid recursos-grid-tres">
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/centro-recreacional/materiales-cemento-02.jpg" data-titulo="Acopio de cemento en obra">
-              <img src="../assets/images/proyectos/centro-recreacional/materiales-cemento-02.jpg" alt="Material de cemento acopiado en el área de trabajo" width="1599" height="899" loading="lazy" decoding="async" />
+          <div class="centro-galeria recursos-grid recursos-grid-tres">
+            <a
+              class="recurso-foto animar-izquierda"
+              href="#"
+              data-imagen="../assets/images/proyectos/centro-recreacional/materiales-cemento-02.jpg"
+              data-titulo="Materiales para la obra"
+            >
+              <img
+                src="../assets/images/proyectos/centro-recreacional/materiales-cemento-02.jpg"
+                alt="Materiales de construcción acopiados en la obra"
+                width="1599"
+                height="899"
+                loading="lazy"
+                decoding="async"
+              />
             </a>
-            <a class="recurso-foto recurso-foto-ajuste-completo" href="#" data-imagen="../assets/images/proyectos/centro-recreacional/cimentacion-armada-02.jpg" data-titulo="Cimentación en proceso">
-              <img src="../assets/images/proyectos/centro-recreacional/cimentacion-armada-02.jpg" alt="Cimiento de concreto y acero durante su ejecución" width="899" height="1599" loading="lazy" decoding="async" />
+            <a
+              class="recurso-foto recurso-foto-ajuste-completo animar-derecha"
+              href="#"
+              data-imagen="../assets/images/proyectos/centro-recreacional/cimentacion-armada-02.jpg"
+              data-titulo="Cimentación en proceso"
+            >
+              <img
+                src="../assets/images/proyectos/centro-recreacional/cimentacion-armada-02.jpg"
+                alt="Trabajos de cimentación del Local Multiusos"
+                width="899"
+                height="1599"
+                loading="lazy"
+                decoding="async"
+              />
             </a>
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/centro-recreacional/muro-de-ladrillo-02.jpg" data-titulo="Avance de muro de ladrillo">
-              <img src="../assets/images/proyectos/centro-recreacional/muro-de-ladrillo-02.jpg" alt="Vista de un muro de ladrillo durante la construcción" width="1599" height="899" loading="lazy" decoding="async" />
-            </a>
-            <a class="recurso-foto recurso-foto-ajuste-completo" href="#" data-imagen="../assets/images/proyectos/centro-recreacional/cimiento-corrido-02.jpg" data-titulo="Cimiento corrido">
-              <img src="../assets/images/proyectos/centro-recreacional/cimiento-corrido-02.jpg" alt="Cimiento corrido de concreto en una zona de construcción" width="899" height="1599" loading="lazy" decoding="async" />
-            </a>
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/centro-recreacional/materiales-agregados-01.jpg" data-titulo="Materiales agregados para obra">
-              <img src="../assets/images/proyectos/centro-recreacional/materiales-agregados-01.jpg" alt="Acopio de agregados y materiales en el área de construcción" width="1599" height="899" loading="lazy" decoding="async" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="proyecto-seccion proyecto-fondo" id="primera-piedra">
-        <div class="container contenido-web">
-          <div class="proyecto-texto">
-            <p class="seccion-etiqueta">Registro de obra</p>
-            <h2>La primera piedra del Local Multiusos</h2>
-            <p>
-              Fotografías del acto que marcó el inicio de la edificación del
-              Local Multiusos en el Centro Recreacional.
-            </p>
-          </div>
-          <div class="proyecto-galeria recursos-grid recursos-grid-tres">
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/primera-piedra-local-multiusos-01.webp" data-titulo="Primera piedra del Local Multiusos">
-              <img src="../assets/images/proyectos/primera-piedra-local-multiusos-01.webp" alt="Colocación de la primera piedra del Local Multiusos" width="1600" height="900" loading="lazy" decoding="async" />
-            </a>
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/primera-piedra-local-multiusos-02.webp" data-titulo="Acto en el Centro Recreacional">
-              <img src="../assets/images/proyectos/primera-piedra-local-multiusos-02.webp" alt="Acto de colocación de la primera piedra en el Centro Recreacional" width="1600" height="900" loading="lazy" decoding="async" />
-            </a>
-            <a class="recurso-foto" href="#" data-imagen="../assets/images/proyectos/primera-piedra-local-multiusos-03.webp" data-titulo="Participación de la comunidad">
-              <img src="../assets/images/proyectos/primera-piedra-local-multiusos-03.webp" alt="Vecinos durante la colocación de la primera piedra" width="1600" height="900" loading="lazy" decoding="async" />
+            <a
+              class="recurso-foto animar-izquierda"
+              href="#"
+              data-imagen="../assets/images/proyectos/centro-recreacional/muro-de-ladrillo-02.jpg"
+              data-titulo="Avance de muro"
+            >
+              <img
+                src="../assets/images/proyectos/centro-recreacional/muro-de-ladrillo-02.jpg"
+                alt="Muro de ladrillo en construcción"
+                width="1599"
+                height="899"
+                loading="lazy"
+                decoding="async"
+              />
             </a>
           </div>
         </div>
       </section>
 
-      <section class="proyecto-seccion">
-        <div class="container contenido-web proyecto-cierre">
-          <div>
-            <p class="seccion-etiqueta">Conoce más</p>
-            <h2>Espacios para una comunidad activa</h2>
-            <p>Comunícate con AVILORETO para consultar sobre sus instalaciones.</p>
+      <section class="centro-contacto" id="contacto">
+        <div class="container centro-contacto-contenido">
+          <div class="animar-izquierda">
+            <p class="centro-etiqueta centro-etiqueta-clara"><span></span> Ven a conocernos</p>
+            <h2>Tu próximo partido<br />empieza aquí.</h2>
+            <p>Escríbenos para consultar sobre las canchas y el Centro Recreacional.</p>
           </div>
-          <a class="btn btn-principal" href="contacto.html">
-            Contactar a la asociación <i class="bi bi-arrow-right ms-2"></i>
-          </a>
+          <div class="centro-contacto-visual animar-derecha">
+            <img
+              class="centro-contacto-familia"
+              src="../assets/images/espacios/familia-centro.png"
+              alt="Familia sonriendo, invitada a disfrutar un día en el centro recreacional"
+              width="500"
+              height="500"
+              loading="lazy"
+              decoding="async"
+            />
+            <a
+              class="centro-boton centro-boton-sol"
+              href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20sobre%20el%20Centro%20Recreacional."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp" aria-hidden="true"></i> Escríbenos por WhatsApp
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
+    <footer class="centro-footer">
+      <div class="container centro-footer-contenido">
+        <a class="centro-footer-marca" href="#inicio">
+          <i class="bi bi-flower1" aria-hidden="true"></i>
+          <span><strong>Centro Recreacional</strong><small>AVILORETO</small></span>
+        </a>
+        <p>Un espacio de encuentro para nuestra comunidad.</p>
+        <a class="centro-footer-volver" href="index.html">
+          Volver al sitio de la asociación <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+
     <div class="visor-imagen" id="visorImagen" aria-hidden="true">
       <button class="visor-cerrar" id="cerrarVisor" type="button" aria-label="Cerrar imagen">
-        <i class="bi bi-x-lg"></i>
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
       </button>
       <div class="visor-contenido">
         <img src="" alt="" id="imagenAmpliada" class="imagen-ampliada" />
@@ -253,36 +381,7 @@
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col footer-marca">
-            <a href="index.html" class="footer-logo">
-              <span class="footer-logo-icono"><i class="bi bi-house-door-fill"></i></span>
-              <span>Virgen de Loreto</span>
-            </a>
-            <p>Asociación de Vivienda Virgen de Loreto, una comunidad organizada y comprometida con su desarrollo y bienestar.</p>
-          </div>
-          <div class="footer-col">
-            <p class="footer-titulo">Contacto</p>
-            <a href="tel:+51908912426" class="footer-dato"><i class="bi bi-telephone-fill"></i><span>+51 908 912 426</span></a>
-            <a href="mailto:aviloreto@gmail.com" class="footer-dato"><i class="bi bi-envelope-fill"></i><span>aviloreto@gmail.com</span></a>
-            <a href="ubicacion.html" class="footer-dato"><i class="bi bi-geo-alt-fill"></i><span>Km 41.5 de la Panamericana Norte</span></a>
-          </div>
-          <div class="footer-col">
-            <p class="footer-titulo">Navegación</p>
-            <a href="proyectos.html" class="footer-dato">Todos los proyectos</a>
-            <a href="contacto.html" class="footer-dato">Contáctanos</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>© 2026 Asociación de Vivienda Virgen de Loreto</p>
-          <span>Todos los derechos reservados.</span>
-        </div>
-      </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/navbar.js"></script>
     <script src="../js/animaciones.js"></script>
     <script src="../js/index.js"></script>
   </body>
