@@ -450,6 +450,38 @@ body {
     padding: 35px 40px 60px;
 }
 
+.datos-demostracion {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border: 1px solid rgba(201, 111, 74, 0.35);
+    border-left: 4px solid var(--portal-terracota);
+    border-radius: 10px;
+    background-color: #fff8f4;
+    color: var(--portal-azul-oscuro);
+}
+
+.datos-demostracion i {
+    flex: 0 0 auto;
+    color: var(--portal-terracota);
+    font-size: 1.15rem;
+}
+
+.datos-demostracion strong {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.9rem;
+}
+
+.datos-demostracion p {
+    margin: 0;
+    color: var(--portal-texto-suave);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
 
 /* ==================================================
    BIENVENIDA
@@ -637,7 +669,7 @@ body {
     border:
         1px solid var(--portal-borde);
 
-    border-radius: 16px;
+    border-radius: var(--radio-panel);
 }
 
 .portal-panel-header {
@@ -1354,6 +1386,16 @@ body {
     overflow-x: auto;
 
     border-radius: 10px;
+    scrollbar-color: var(--portal-azul-claro) rgba(39, 76, 119, 0.08);
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabla-desplazamiento {
+    display: none;
+    margin: 0 0 8px;
+    color: var(--portal-texto-suave);
+    font-size: 0.78rem;
 }
 
 .cuenta-tabla {
@@ -1792,6 +1834,14 @@ body {
     .portal-main {
         padding:
             20px 18px 40px;
+    }
+
+    .datos-demostracion {
+        padding: 12px 14px;
+    }
+
+    .tabla-desplazamiento {
+        display: block;
     }
 
 

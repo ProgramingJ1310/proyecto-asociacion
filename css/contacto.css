@@ -460,6 +460,13 @@
     border-radius: 14px;
 }
 
+.datos-socio-indicacion {
+    margin: -4px 0 16px;
+    color: var(--color-texto-suave);
+    font-size: 0.84rem;
+    line-height: 1.5;
+}
+
 
 /* CUANDO JAVASCRIPT LO ACTIVA */
 

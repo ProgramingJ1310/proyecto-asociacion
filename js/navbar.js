@@ -8,6 +8,9 @@ const navbar =
 const hero =
     document.querySelector(".hero");
 
+const topbar =
+    document.querySelector(".inicio-topbar");
+
 const menuSubmenus = {
     Nosotros: [
         { label: "Quiénes Somos", href: "quienes-somos.html" },
@@ -193,6 +196,12 @@ function cambiarNavbar() {
         return;
     }
 
+    const topbarOculta = window.scrollY > 0;
+
+    if (topbar) {
+        topbar.classList.toggle("inicio-topbar-oculta", topbarOculta);
+        navbar.classList.toggle("topbar-oculta", topbarOculta);
+    }
 
     const finalHero =
         hero.offsetHeight - navbar.offsetHeight;

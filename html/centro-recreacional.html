@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
@@ -59,14 +59,6 @@
           <a href="#local-multiusos">Eventos</a>
           <a href="#avances">Avances</a>
           <a href="#contacto">Contacto</a>
-          <a
-            class="centro-nav-reservar"
-            href="https://wa.me/51908912426?text=Hola,%20quisiera%20reservar%20una%20cancha%20del%20Centro%20Recreacional."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Reservas <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-          </a>
           <a class="centro-volver" href="index.html">Asociación</a>
         </div>
       </div>
@@ -76,15 +68,13 @@
       <header class="centro-hero" id="inicio">
         <img
           class="centro-hero-imagen"
-          src="../assets/images/espacios/centro-vista-aerea.jpg"
-          alt="Vista aérea ilustrativa del Centro Recreacional AVILORETO con cancha deportiva y piscina proyectada"
-          width="768"
-          height="771"
+          src="../assets/images/proyectos/centro-recreacional/Complejo%20urbano%20con%20piscina%20y%20f%C3%BAtbol.png"
+          alt="Vista aérea ilustrativa de un complejo recreacional con piscina y cancha de fútbol"
+          width="1109"
+          height="1109"
           fetchpriority="high"
         />
-        <p class="centro-hero-referencial">
-          Vista ilustrativa · incluye espacios proyectados
-        </p>
+        
         <div class="centro-hero-capa"></div>
         <div class="centro-hero-contenido animar-derecha">
           <p class="centro-etiqueta centro-etiqueta-clara">
@@ -112,9 +102,6 @@
             Calle Virgen de Cocharcas
           </div>
         </div>
-        <a class="centro-hero-siguiente" href="#espacios" aria-label="Ir a los espacios disponibles">
-          <i class="bi bi-chevron-down" aria-hidden="true"></i>
-        </a>
       </header>
 
       <section class="centro-intro" id="espacios">
@@ -131,194 +118,188 @@
             </p>
           </div>
 
-          <div class="centro-actuales">
-            <article class="centro-cancha animar-izquierda">
-              <div
-                class="centro-cancha-collage"
-                role="group"
-                aria-label="Galería de canchas deportivas"
-              >
-                <a
-                  class="centro-cancha-foto centro-cancha-foto-principal recurso-foto"
-                  href="#"
-                  data-imagen="../assets/images/espacios/cancha-centro-02.png"
-                  data-titulo="Cancha deportiva de grass"
-                  aria-label="Ampliar foto de la cancha deportiva de grass"
+          <div class="centro-hoy" data-centro-hoy>
+            <div class="centro-hoy-menu">
+              <div class="centro-hoy-opciones" role="group" aria-label="Espacios disponibles hoy">
+                <button
+                  class="centro-hoy-opcion activa"
+                  type="button"
+                  data-imagen="../assets/images/proyectos/centro-recreacional/cancha%20profesional.jpg"
+                  data-alternativo="Cancha profesional de grass sintético al atardecer"
+                  data-contacto="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20para%20el%20alquiler%20de%20las%20canchas."
+                  data-contacto-texto="Consultar disponibilidad"
+                  aria-controls="centroHoyVisual"
+                  aria-pressed="true"
                 >
-                  <img
-                    src="../assets/images/espacios/cancha-centro-02.png"
-                    alt="Cancha de grass con líneas blancas y cerros al fondo"
-                    width="1024"
-                    height="768"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
-                <a
-                  class="centro-cancha-foto centro-cancha-foto-secundaria recurso-foto"
-                  href="#"
-                  data-imagen="../assets/images/espacios/cancha-centro-03.png"
-                  data-titulo="Vista de la cancha deportiva"
-                  aria-label="Ampliar segunda foto de la cancha deportiva"
+                  <span class="centro-hoy-numero">01.</span>
+                  <span class="centro-hoy-nombre">Canchas<br />deportivas</span>
+                  <span class="centro-estado centro-estado-disponible">Disponible</span>
+                </button>
+                <button
+                  class="centro-hoy-opcion"
+                  id="oficinas"
+                  type="button"
+                  data-imagen="../assets/images/nosotros/oficina-moderna-02.webp"
+                  data-alternativo="Área de trabajo en las oficinas administrativas de AVILORETO"
+                  data-contacto="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20sobre%20las%20oficinas%20administrativas%20del%20Centro%20Recreacional."
+                  data-contacto-texto="Consultar sobre las oficinas"
+                  aria-controls="centroHoyVisual"
+                  aria-pressed="false"
                 >
-                  <img
-                    src="../assets/images/espacios/cancha-centro-03.png"
-                    alt="Vista lateral de la cancha deportiva de grass"
-                    width="768"
-                    height="1024"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
+                  <span class="centro-hoy-numero">02.</span>
+                  <span class="centro-hoy-nombre">Oficinas<br />administrativas</span>
+                  <span class="centro-estado centro-estado-disponible">En funcionamiento</span>
+                </button>
               </div>
-              <div class="centro-cancha-info">
-                <span class="centro-estado centro-estado-disponible">
-                  Disponible
-                </span>
-                <h3>Canchas deportivas</h3>
-                <p>Grass natural para jugar, entrenar y compartir en comunidad.</p>
-                <a
-                  href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20para%20el%20alquiler%20de%20las%20canchas."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Consultar disponibilidad <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-                </a>
-              </div>
-            </article>
-
-            <article class="centro-oficinas animar-derecha" id="oficinas">
-              <img
-                class="centro-oficinas-imagen"
-                src="../assets/images/nosotros/oficina-moderna-02.webp"
-                alt="Área de trabajo en las oficinas administrativas de AVILORETO"
-                width="1600"
-                height="900"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="centro-oficinas-capa"></div>
-              <span class="centro-estado centro-estado-disponible">
-                En funcionamiento
-              </span>
-              <h3>Oficinas administrativas</h3>
-              <p>
-                Atención administrativa de AVILORETO dentro del Centro Recreacional.
-              </p>
               <a
-                href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20sobre%20las%20oficinas%20administrativas%20del%20Centro%20Recreacional."
+                class="centro-hoy-contacto"
+                href="https://wa.me/51908912426?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20para%20el%20alquiler%20de%20las%20canchas."
                 target="_blank"
                 rel="noopener noreferrer"
+                data-centro-hoy-contacto
               >
-                Consultar sobre las oficinas <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                <span data-centro-hoy-contacto-texto>Consultar disponibilidad</span>
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
-            </article>
+            </div>
+
+            <div class="centro-hoy-visual" id="centroHoyVisual" aria-live="polite">
+              <div class="centro-hoy-marco" data-centro-hoy-marco>
+                <img
+                  class="centro-hoy-foto centro-hoy-foto-actual"
+                  src="../assets/images/proyectos/centro-recreacional/cancha%20profesional.jpg"
+                  alt="Cancha profesional de grass sintético al atardecer"
+                  fetchpriority="low"
+                  decoding="async"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="centro-futuro" id="proximamente">
         <div class="container">
-          <div class="centro-seccion-cabecera animar-izquierda">
-            <p class="centro-etiqueta centro-etiqueta-clara"><span></span> Lo que viene</p>
-            <h2>Más motivos para<br /><em>quedarnos un rato más.</em></h2>
-            <p>
-              El proyecto contempla nuevas áreas para disfrutar en familia y celebrar
-              momentos especiales. Se habilitarán progresivamente.
-            </p>
-          </div>
-
-          <div class="centro-futuro-grid">
-            <article class="centro-futuro-tarjeta centro-multiuso animar-izquierda" id="local-multiusos">
-              <span class="centro-estado centro-estado-obra">
-                En construcción
-              </span>
-              <h3>Local Multiusos</h3>
-              <p>
-                Un futuro espacio para matrimonios, bautizos, reuniones y celebraciones
-                de nuestra comunidad.
+          <div class="centro-futuro-experiencia" data-centro-futuro>
+            <div class="centro-futuro-contenido">
+              <p class="centro-futuro-etiqueta"><span></span> Lo que viene</p>
+              <h2>Espacios para<br /><em>compartir y disfrutar.</em></h2>
+              <p class="centro-futuro-introduccion">
+                Explora los proyectos que estamos preparando para nuestra comunidad.
+                Selecciona un espacio para conocerlo.
               </p>
-              <a href="#avances">
-                Ver avances de obra <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </a>
-            </article>
 
-            <article class="centro-futuro-tarjeta centro-futuro-piscina animar-derecha">
-              <img
-                class="centro-futuro-imagen"
-                src="../assets/images/espacios/piscina-proyecto.png"
-                alt=""
-                aria-hidden="true"
-                width="740"
-                height="493"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="centro-estado centro-estado-proyecto">
-                En proyecto
-              </span>
-              <h3>Piscinas</h3>
-              <p>Un futuro espacio para refrescarse y disfrutar los días de sol.</p>
-            </article>
+              <div class="centro-futuro-opciones" role="group" aria-label="Espacios futuros">
+                <button
+                  class="centro-futuro-opcion activa"
+                  id="local-multiusos"
+                  type="button"
+                  data-imagen="../assets/images/proyectos/centro-recreacional/local-multiusos-avance-04.png"
+                  data-alternativo="Avance de construcción del Local Multiusos"
+                  data-titulo="Local Multiusos"
+                  data-descripcion="Un espacio para matrimonios, bautizos y otras celebraciones de nuestra comunidad."
+                  data-estado="En construcción"
+                  data-estado-clase="centro-estado-obra"
+                  aria-controls="centroFuturoVisual"
+                  aria-pressed="true"
+                >
+                  <span class="centro-futuro-numero">01</span>
+                  <span class="centro-futuro-nombre">Local Multiusos</span>
+                  <span class="centro-futuro-estado">En construcción</span>
+                </button>
+                <button
+                  class="centro-futuro-opcion"
+                  type="button"
+                  data-imagen="../assets/images/proyectos/centro-recreacional/piscina.jpg"
+                  data-alternativo="Familia disfrutando de la piscina del centro recreacional"
+                  data-titulo="Piscinas"
+                  data-descripcion="Un futuro espacio para refrescarse y disfrutar los días de sol en familia."
+                  data-estado="En proyecto"
+                  data-estado-clase="centro-estado-proyecto"
+                  aria-controls="centroFuturoVisual"
+                  aria-pressed="false"
+                >
+                  <span class="centro-futuro-numero">02</span>
+                  <span class="centro-futuro-nombre">Piscinas</span>
+                  <span class="centro-futuro-estado">En proyecto</span>
+                </button>
+                <button
+                  class="centro-futuro-opcion"
+                  type="button"
+                  data-imagen="../assets/images/proyectos/centro-recreacional/parrilas.jpg"
+                  data-alternativo="Familia compartiendo en la zona de parrillas"
+                  data-titulo="Zona de parrilla"
+                  data-descripcion="Un lugar para preparar algo rico y compartir al aire libre."
+                  data-estado="En proyecto"
+                  data-estado-clase="centro-estado-proyecto"
+                  aria-controls="centroFuturoVisual"
+                  aria-pressed="false"
+                >
+                  <span class="centro-futuro-numero">03</span>
+                  <span class="centro-futuro-nombre">Zona de parrilla</span>
+                  <span class="centro-futuro-estado">En proyecto</span>
+                </button>
+                <button
+                  class="centro-futuro-opcion"
+                  type="button"
+                  data-imagen="../assets/images/proyectos/centro-recreacional/gym.jpg"
+                  data-alternativo="Personas entrenando en el gimnasio"
+                  data-titulo="Gimnasio"
+                  data-descripcion="Un futuro espacio para mantenerse activo y cuidar el bienestar."
+                  data-estado="En proyecto"
+                  data-estado-clase="centro-estado-proyecto"
+                  aria-controls="centroFuturoVisual"
+                  aria-pressed="false"
+                >
+                  <span class="centro-futuro-numero">04</span>
+                  <span class="centro-futuro-nombre">Gimnasio</span>
+                  <span class="centro-futuro-estado">En proyecto</span>
+                </button>
+                <button
+                  class="centro-futuro-opcion"
+                  type="button"
+                  data-imagen="../assets/images/proyectos/centro-recreacional/areas%20verdes.jpg"
+                  data-alternativo="Familias disfrutando de las áreas verdes del centro recreacional"
+                  data-titulo="Áreas verdes"
+                  data-descripcion="Jardines y lugares con bancas para relajarse y compartir al aire libre."
+                  data-estado="En proyecto"
+                  data-estado-clase="centro-estado-proyecto"
+                  aria-controls="centroFuturoVisual"
+                  aria-pressed="false"
+                >
+                  <span class="centro-futuro-numero">05</span>
+                  <span class="centro-futuro-nombre">Áreas verdes</span>
+                  <span class="centro-futuro-estado">En proyecto</span>
+                </button>
+              </div>
+            </div>
 
-            <article class="centro-futuro-tarjeta centro-futuro-parrilla animar-izquierda">
-              <img
-                class="centro-futuro-imagen"
-                src="../assets/images/espacios/zona-parrilla.png"
-                alt=""
-                aria-hidden="true"
-                width="678"
-                height="452"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="centro-estado centro-estado-proyecto">
-                En proyecto
-              </span>
-              <h3>Zona de parrilla</h3>
-              <p>Un espacio para preparar una parrilla y compartir al aire libre.</p>
-            </article>
-
-            <article class="centro-futuro-tarjeta centro-futuro-gimnasio animar-izquierda">
-              <img
-                class="centro-futuro-imagen"
-                src="../assets/images/espacios/gimnasio-proyecto.png"
-                alt=""
-                aria-hidden="true"
-                width="1024"
-                height="683"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="centro-estado centro-estado-proyecto">
-                En proyecto
-              </span>
-              <h3>Gimnasio</h3>
-              <p>Un espacio pensado para cuidar la salud y mantenerse en movimiento.</p>
-            </article>
-
-            <article class="centro-futuro-tarjeta centro-futuro-areas-verdes animar-derecha">
-              <img
-                class="centro-futuro-imagen"
-                src="../assets/images/espacios/areas-verdes-proyecto.png"
-                alt=""
-                aria-hidden="true"
-                width="1117"
-                height="768"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="centro-estado centro-estado-proyecto">
-                En proyecto
-              </span>
-              <h3>Áreas verdes</h3>
-              <p>Jardines y lugares con bancas para relajarse y compartir al aire libre.</p>
-            </article>
+            <div class="centro-futuro-visual" id="centroFuturoVisual" aria-live="polite">
+              <div class="centro-futuro-marco" data-centro-futuro-marco>
+                <img
+                  class="centro-futuro-foto centro-futuro-foto-actual"
+                  src="../assets/images/proyectos/centro-recreacional/local-multiusos-avance-04.png"
+                  alt="Avance de construcción del Local Multiusos"
+                  fetchpriority="low"
+                  decoding="async"
+                />
+              </div>
+              <div class="centro-futuro-ficha">
+                <span class="centro-futuro-ficha-numero" data-centro-futuro-numero>01</span>
+                <div>
+                  <h3 data-centro-futuro-titulo>Local Multiusos</h3>
+                  <p data-centro-futuro-descripcion>
+                    Un espacio para matrimonios, bautizos y otras celebraciones de nuestra comunidad.
+                  </p>
+                </div>
+                <span
+                  class="centro-estado centro-estado-obra"
+                  data-centro-futuro-estado
+                >En construcción</span>
+              </div>
+            </div>
           </div>
-          <p class="centro-futuro-nota animar-izquierda">
-            <i class="bi bi-info-circle" aria-hidden="true"></i>
-            Las áreas futuras forman parte de la proyección del centro y aún no están disponibles.
-          </p>
+        
         </div>
       </section>
 
@@ -354,9 +335,46 @@
               <strong>Un espacio para celebrar lo que nos une.</strong>
             </span>
           </a>
-
           <div class="centro-galeria recursos-grid recursos-grid-tres">
-
+            <a
+              class="recurso-foto"
+              href="#"
+              data-imagen="../assets/images/proyectos/centro-recreacional/local-multiusos-avance-05.png"
+              data-titulo="Avance de construcción del Local Multiusos"
+            >
+              <img
+                src="../assets/images/proyectos/centro-recreacional/local-multiusos-avance-05.png"
+                alt="Avance de construcción del Local Multiusos"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <a
+              class="recurso-foto"
+              href="#"
+              data-imagen="../assets/images/proyectos/centro-recreacional/muro-de-ladrillo-01.jpg"
+              data-titulo="Construcción de los muros del Local Multiusos"
+            >
+              <img
+                src="../assets/images/proyectos/centro-recreacional/muro-de-ladrillo-01.jpg"
+                alt="Construcción de los muros del Local Multiusos"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <a
+              class="recurso-foto"
+              href="#"
+              data-imagen="../assets/images/proyectos/centro-recreacional/materiales-cemento-01.jpg"
+              data-titulo="Materiales para la construcción del Local Multiusos"
+            >
+              <img
+                src="../assets/images/proyectos/centro-recreacional/materiales-cemento-01.jpg"
+                alt="Materiales para la construcción del Local Multiusos"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -471,6 +489,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/animaciones.js"></script>
+    <script src="../js/centro-hoy.js"></script>
+    <script src="../js/centro-futuro.js"></script>
     <script src="../js/index.js"></script>
   </body>
 </html>

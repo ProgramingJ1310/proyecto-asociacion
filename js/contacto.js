@@ -33,6 +33,7 @@ tipoPersona.addEventListener("change", () => {
     if (tipoPersona.value === "Socio") {
 
         datosSocio.classList.add("activo");
+        tipoPersona.setAttribute("aria-expanded", "true");
 
         manzana.required = true;
         lote.required = true;
@@ -40,6 +41,7 @@ tipoPersona.addEventListener("change", () => {
     } else {
 
         datosSocio.classList.remove("activo");
+        tipoPersona.setAttribute("aria-expanded", "false");
 
         manzana.required = false;
         lote.required = false;

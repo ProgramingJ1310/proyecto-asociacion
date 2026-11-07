@@ -153,6 +153,14 @@
             =================================================== -->
 
         <div class="portal-main">
+          <aside class="datos-demostracion" role="note" aria-label="Aviso: datos de demostración">
+            <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+            <div>
+              <strong>Datos de demostración</strong>
+              <p>Los montos y movimientos mostrados son ejemplos; no representan información financiera real de tu cuenta.</p>
+            </div>
+          </aside>
+
           <!-- PRESENTACIÓN -->
           <section class="portal-bienvenida">
             <div>
@@ -266,21 +274,22 @@
               </div>
             </div>
 
-            <div class="tabla-responsive">
+            <p class="tabla-desplazamiento">Desliza horizontalmente para consultar todas las columnas.</p>
+            <div class="tabla-responsive" role="region" aria-label="Detalle de obligaciones; desliza horizontalmente para ver todas las columnas" tabindex="0">
               <table class="cuenta-tabla">
                 <thead>
                   <tr>
-                    <th>Concepto</th>
+                    <th scope="col">Concepto</th>
 
-                    <th>Predio</th>
+                    <th scope="col">Predio</th>
 
-                    <th>Monto</th>
+                    <th scope="col">Monto</th>
 
-                    <th>Pagado</th>
+                    <th scope="col">Pagado</th>
 
-                    <th>Pendiente</th>
+                    <th scope="col">Pendiente</th>
 
-                    <th>Estado</th>
+                    <th scope="col">Estado</th>
                   </tr>
                 </thead>
 

@@ -7,6 +7,13 @@
 
     <title>Contacto | Asociación de Vivienda</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -248,7 +255,13 @@
                   <div class="input-con-icono">
                     <i class="bi bi-people"></i>
 
-                    <select id="tipoPersona" name="tipoPersona" required>
+                    <select
+                      id="tipoPersona"
+                      name="tipoPersona"
+                      required
+                      aria-controls="datosSocio"
+                      aria-expanded="false"
+                    >
                       <option value="" selected disabled>
                         Selecciona una opción
                       </option>
@@ -265,18 +278,21 @@
                  Solo aparecen si selecciona "Socio"
             =================================================== -->
 
-                <div class="datos-socio" id="datosSocio">
+                <div class="datos-socio" id="datosSocio" aria-live="polite">
                   <div class="datos-socio-titulo">
                     <i class="bi bi-house-door-fill"></i>
 
                     <span> Datos del predio </span>
                   </div>
+                  <p class="datos-socio-indicacion" id="datosSocioIndicacion">
+                    Completa ambos campos para que podamos identificar tu predio.
+                  </p>
 
                   <div class="row g-3">
                     <!-- MANZANA -->
                     <div class="col-md-6">
                       <div class="campo-formulario">
-                        <label for="manzana"> Manzana </label>
+                        <label for="manzana"> Manzana (obligatorio) </label>
 
                         <div class="input-con-icono">
                           <i class="bi bi-grid-3x3-gap"></i>
@@ -295,7 +311,7 @@
                     <!-- LOTE -->
                     <div class="col-md-6">
                       <div class="campo-formulario">
-                        <label for="lote"> Lote </label>
+                        <label for="lote"> Lote (obligatorio) </label>
 
                         <div class="input-con-icono">
                           <i class="bi bi-house"></i>
