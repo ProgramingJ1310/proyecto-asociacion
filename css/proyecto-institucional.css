@@ -242,6 +242,78 @@
   width: 100%;
 }
 
+.quienes-accesos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.quienes-acceso {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: 12px;
+  min-height: 78px;
+  padding: 12px;
+  color: #1b3048;
+  background-color: #ffffff;
+  border: 1px solid #dce2e8;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.quienes-acceso:hover {
+  transform: translateY(-2px);
+  color: #1b3048;
+  border-color: #9aaaba;
+  box-shadow: 0 8px 20px rgb(27 48 72 / 8%);
+}
+
+.quienes-acceso:focus-visible {
+  outline: 3px solid rgb(73 100 126 / 35%);
+  outline-offset: 3px;
+}
+
+.quienes-acceso-icono {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  color: #274c77;
+  background-color: #edf2f6;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.quienes-acceso-texto {
+  display: grid;
+  gap: 4px;
+}
+
+.quienes-acceso-texto strong {
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.quienes-acceso-texto small {
+  color: #5e6a76;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.quienes-acceso-flecha {
+  color: #49647e;
+  font-size: 0.9rem;
+  transition: transform 180ms ease;
+}
+
+.quienes-acceso:hover .quienes-acceso-flecha {
+  transform: translate(2px, -2px);
+}
+
 .proyecto-inversion {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(250px, 0.65fr);
@@ -374,7 +446,7 @@
   color: #b8d7ed;
 }
 
-.partida-registral-pagina .partida-cabecera-texto h1 {
+.partida-registral-pagina .partida-cabecera .proyecto-cabecera-texto h1 {
   color: #fff;
 }
 
@@ -581,6 +653,10 @@
   .proyecto-cabecera > .container,
   .proyecto-intro-imagen,
   .proyecto-inversion {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .quienes-accesos {
     grid-template-columns: minmax(0, 1fr);
   }
 

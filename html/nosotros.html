@@ -393,11 +393,33 @@
             <span class="directiva-periodo">Período 2026 - 2029</span>
         </div>
 
-        <div class="directiva-grid">
-            <article class="directivo-card directivo-sin-foto animar">
-                <span class="directivo-cargo">Presidente</span>
+        <article class="directivo-card presidente-directivo animar">
+            <img
+                class="presidente-directivo-foto"
+                src="../assets/images/directiva/presidente.jpeg"
+                alt="Presidente de AVILORETO, Elvis Antonio Tello Tarrillo"
+                width="1200"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+            >
+            <div class="presidente-directivo-info">
+                <span class="directivo-cargo">Presidente del Consejo Directivo</span>
                 <h3>Elvis Antonio Tello Tarrillo</h3>
-            </article>
+                <p>Consejo Directivo · Período 2026 - 2029</p>
+                <button
+                    class="btn btn-principal presidente-directivo-boton"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalHojaVidaPresidente"
+                >
+                    <i class="bi bi-file-earmark-person me-2" aria-hidden="true"></i>
+                    Ver hoja de vida
+                </button>
+            </div>
+        </article>
+
+        <div class="directiva-grid">
             <article class="directivo-card directivo-sin-foto animar">
                 <span class="directivo-cargo">Vicepresidente</span>
                 <h3>Luis Alberto Alucillas Pomalia</h3>
@@ -499,6 +521,99 @@
     <div class="visor-contenido">
         <img src="" alt="" id="imagenAmpliada" class="imagen-ampliada">
         <p class="visor-titulo" id="tituloImagen"></p>
+    </div>
+</div>
+
+<div
+    class="modal fade modal-hoja-vida"
+    id="modalHojaVidaPresidente"
+    tabindex="-1"
+    aria-labelledby="modalHojaVidaPresidenteTitulo"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-etiqueta">Hoja de vida</span>
+                    <h2 class="modal-title" id="modalHojaVidaPresidenteTitulo">
+                        Elvis Antonio Tello Tarrillo
+                    </h2>
+                </div>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                ></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="trayectoria-resumen">
+                    Abogado con formación especializada en derecho constitucional,
+                    derechos humanos, gestión pública y gestión por procesos.
+                    Cuenta con amplia experiencia profesional en el ámbito civil,
+                    constitucional, laboral y administrativo.
+                </p>
+
+                <div class="trayectoria-grid">
+                    <article class="trayectoria-item">
+                        <span class="trayectoria-icono" aria-hidden="true">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </span>
+                        <div>
+                            <h3>Formación académica</h3>
+                            <p>
+                                Abogado por la Universidad Tecnológica del Perú (UTP),
+                                con maestría en Derecho Constitucional y Derechos
+                                Humanos por la Universidad Nacional Mayor de San Marcos
+                                (UNMSM).
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="trayectoria-item">
+                        <span class="trayectoria-icono" aria-hidden="true">
+                            <i class="bi bi-award-fill"></i>
+                        </span>
+                        <div>
+                            <h3>Especialización</h3>
+                            <p>
+                                Especialista en Gestión Pública y Gestión por Procesos
+                                por la Pontificia Universidad Católica del Perú (PUCP).
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="trayectoria-item">
+                        <span class="trayectoria-icono" aria-hidden="true">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </span>
+                        <div>
+                            <h3>Experiencia profesional</h3>
+                            <p>
+                                Posee experiencia en derecho civil, constitucional y
+                                laboral. Trabajó en la Fuerza Aérea del Perú, en la
+                                especialidad de administrativo, desde 2001 hasta 2024.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="trayectoria-item">
+                        <span class="trayectoria-icono" aria-hidden="true">
+                            <i class="bi bi-building-fill-check"></i>
+                        </span>
+                        <div>
+                            <h3>Asesoría legal</h3>
+                            <p>
+                                Se ha desempeñado como abogado externo de la Cooperativa
+                                San Hilarión, entre otras instituciones.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

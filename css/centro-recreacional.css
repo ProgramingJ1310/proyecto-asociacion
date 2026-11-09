@@ -2474,18 +2474,26 @@
 
   .centro-futuro-visual {
     min-height: 0;
+    overflow: hidden;
+    border-radius: 18px;
   }
 
   .centro-futuro-marco {
     height: auto;
     min-height: 0;
-    aspect-ratio: 1.35 / 1;
+    aspect-ratio: 1.2 / 1;
   }
 
   .centro-futuro-ficha {
-    min-height: 100px;
-    padding: 16px 19px;
-    border-radius: 0 24px 0 0;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    min-height: 0;
+    padding: 18px 20px;
+    border-radius: 0;
+    background: #fffaf0;
+    box-shadow: none;
   }
 }
 
@@ -2504,7 +2512,7 @@
   }
 
   .centro-futuro-ficha {
-    width: 94%;
+    width: 100%;
     grid-template-columns: 36px minmax(0, 1fr);
     gap: 9px;
     padding: 14px;

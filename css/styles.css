@@ -3737,6 +3737,12 @@ body.lightbox-abierto {
   letter-spacing: -0.035em;
 }
 
+.pagina-inicio .hero h1 .hero-ubicacion {
+  font-size: 0.78em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
 .pagina-inicio .hero-descripcion {
   max-width: 540px;
   font-size: 1.08rem;
@@ -4285,8 +4291,34 @@ body.lightbox-abierto {
   }
 }
 
+@media (max-width: 575px) {
+  .pagina-inicio .galeria-inicio .galeria-grid .galeria-ancha {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .pagina-inicio .galeria-inicio .galeria-footer {
+    position: static;
+    display: flex;
+    width: 100%;
+    margin: 24px 0 0;
+    padding: 0;
+    clear: both;
+    transform: none;
+  }
+
+  .pagina-inicio .galeria-inicio .galeria-boton {
+    position: static;
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    margin: 0;
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .pagina-inicio *,
+  .pagina-inicio * ,
   .pagina-inicio *::before,
   .pagina-inicio *::after {
     scroll-behavior: auto !important;

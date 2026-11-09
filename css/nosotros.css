@@ -325,6 +325,51 @@
     line-height: 1.45;
 }
 
+.presidente-directivo {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+    max-width: 900px;
+    min-height: 320px;
+    margin: 0 auto 28px;
+    border-radius: 18px;
+}
+
+.presidente-directivo-foto {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    object-position: center 28%;
+}
+
+.presidente-directivo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 38px;
+}
+
+.presidente-directivo-info h3 {
+    margin: 0 0 12px;
+    color: var(--azul-oscuro);
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.presidente-directivo-info p {
+    margin: 0 0 24px;
+    color: var(--texto-suave);
+    line-height: 1.6;
+}
+
+.presidente-directivo-boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .directivo-cargo {
     display: block;
 
@@ -361,6 +406,10 @@
             repeat(2, minmax(0, 1fr));
     }
 
+    .presidente-directivo {
+        grid-template-columns: minmax(210px, 0.8fr) minmax(0, 1.2fr);
+    }
+
 }
 
 
@@ -380,6 +429,22 @@
         grid-template-columns: 1fr;
 
         gap: 18px;
+    }
+
+    .presidente-directivo {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin-bottom: 24px;
+    }
+
+    .presidente-directivo-foto {
+        height: 280px;
+        min-height: 0;
+        object-position: center 24%;
+    }
+
+    .presidente-directivo-info {
+        padding: 25px 22px;
     }
 
     .directivo-card {
@@ -443,6 +508,105 @@
 
     .proposito-card {
         padding: 30px;
+    }
+}
+
+.modal-hoja-vida .modal-content {
+    overflow: hidden;
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 24px 70px rgba(27, 48, 72, 0.22);
+}
+
+.modal-hoja-vida .modal-header {
+    align-items: flex-start;
+    padding: 28px 30px 22px;
+    background-color: var(--crema);
+    border-bottom: 1px solid rgba(39, 76, 119, 0.1);
+}
+
+.modal-hoja-vida .modal-body {
+    padding: 28px 30px 32px;
+}
+
+.modal-etiqueta {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--terracota);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.modal-hoja-vida .modal-title {
+    color: var(--azul-oscuro);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.trayectoria-resumen {
+    margin-bottom: 24px;
+    color: var(--texto-suave);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.trayectoria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.trayectoria-item {
+    display: flex;
+    gap: 14px;
+    padding: 18px;
+    background-color: var(--blanco);
+    border: 1px solid rgba(39, 76, 119, 0.1);
+    border-radius: 12px;
+}
+
+.trayectoria-icono {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+    background-color: var(--azul-oscuro);
+    border-radius: 10px;
+}
+
+.trayectoria-item h3 {
+    margin-bottom: 8px;
+    color: var(--azul-oscuro);
+    font-size: 0.98rem;
+    font-weight: 800;
+}
+
+.trayectoria-item p {
+    margin-bottom: 0;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .modal-hoja-vida .modal-header,
+    .modal-hoja-vida .modal-body {
+        padding-right: 22px;
+        padding-left: 22px;
+    }
+
+    .trayectoria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-hoja-vida .modal-title {
+        padding-right: 12px;
+        font-size: 1.4rem;
     }
 }
 
